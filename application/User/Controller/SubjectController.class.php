@@ -106,7 +106,7 @@ class SubjectController extends AdminbaseController
 		$this->display();
 	}
 
-
+	public function()
 
 
 }
