@@ -1,0 +1,17 @@
+
+<p style="width:800px; margin:5px auto 5px auto;">适用月龄：{$info.age}个月{$info.day}天&nbsp;&nbsp;&nbsp;&nbsp;适用订单：{$info.order_money}&nbsp;&nbsp;&nbsp;&nbsp;喂养方式:{:getFeedTypeName($info['feed_type'])}
+</p>
+<php>
+$data = unserialize($info[info]);
+</php>
+<foreach name="data" item="vo">
+
+<p style="width:800px; margin:5px auto 5px auto;">
+<table width="800" border="0">
+  <tr>
+    <td width="302">{$key+1}.{:getTestStoreName($vo[id])}</td>
+    <td width="265">开始时间：{$vo.from_time}</td>
+    <td width="219">结束时间：{$vo.to_time}</td>
+  </tr>
+</table></p>
+</foreach>

@@ -1,0 +1,26 @@
+[ 2016-09-14T15:37:38+08:00 ] ::1 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002141s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008321s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0018s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-09-14 15:37:38',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0003s ]
+
+[ 2016-09-14T15:38:05+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=phoneInfo
+ERR: 模板不存在:tpl_admin/simpleboot/Admin/User/phoneInfo.html
+
+[ 2016-09-14T15:44:22+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=deletePhoneInfo&id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008908s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_phone_info` [ RunTime:0.0020s ]
+SQL: DELETE FROM `sp_phone_info` WHERE `id` = 4 [ RunTime:0.0002s ]
+

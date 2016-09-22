@@ -1,0 +1,71 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">宝宝列表</a></li>
+			<!--<li><a href="{:U('teacher/add_user')}">添加用户</a></li>-->
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">
+						宝宝名称： 
+						<input type="text" name="name" id="name" style="width: 200px;" value="{$name}" placeholder="请输入宝宝名称..."> --
+						妈妈手机：
+						<input type="text" name="phone" id="phone" style="width: 200px;" value="{$phone}" placeholder="请输入妈妈手机...">
+						<a href="javascript:;" onclick="todo()" class="btn btn-primary">搜索</a>
+					</span>
+					<script>
+					function todo() {
+						var name = $("#name").val();
+						var phone = $("#phone").val();
+						window.location.href='index.php?g=User&m=Baby&a=index&menuid=165&name='+name+'&phone='+phone;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>用户名</th>
+						<th>生日</th>
+                        <th>剩余成长册天数</th>
+                        <th>妈妈</th>
+                        <th>成长册分类</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="rows" item="vo">
+				<tr>
+					<td>{$vo.id}</td>
+					<td>{$vo.name}</td>
+					<th>{$vo.birthday}</th>
+                    <td>{$vo.handbookdays}</td>
+                    <td>{$vo.phone}</td>
+                    <td>{$vo.term}</td>
+					<td>
+                    <a href="{:U('baby/give',array('id'=>$vo['id']))}">分配</a> |
+						<a href="{:U('baby/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+            <div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<admintpl file="header" />
+<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+<link rel="stylesheet" href="__TMPL__Public/css/css.css" media="screen" type="text/css" />
+<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/jquery.datetimepicker.css"/>
+<script>
+                function toremove()
+				{
+					alert(123456);
+					alert($(this).parent().val());
+					$(this).parent().html('dsadasdsadsa');
+					$(this).parent().hide(500);
+				}
+                </script>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+    <li><a href="{:U('Default/index')}">默认成长册</a></li>
+    <li class="active"><a href="javascript:;">修改成长册内容</a></li>
+  </ul>
+  <div class="common-form">
+    <form method="post" name="myform" id="myform" class="form-horizontal J_ajaxForm" action="{:U('Default/edit_post')}">
+      <fieldset style="margin-top:30px">
+        <div class="control-group">
+          <label class="control-label">宝宝年龄:</label>
+          <div class="controls">
+            <input type="text" value="{$month}" disabled="disabled" /><input type="hidden" name="month" value="{$month}" />
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">天数:</label>
+          <div class="controls">
+            <input type="text" value="{$day}" disabled="disabled" /><input type="hidden" name="day" value="{$day}" />
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">喂养方式:</label>
+          <div class="controls">
+            <input type="text" value="{:getFeedTypeName($feed_type)}" disabled="disabled" />
+            <input type="hidden" name="feed_type" value="{$feed_type}" />
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">适用订单:</label>
+          <div class="controls">
+            <input type="text" value="{$order_money}" disabled="disabled" />
+            <input type="hidden" name="order_money" value="{$order_money}" />
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">模糊查询:</label>
+          <div class="controls">
+            <input type="text" value="" id="search"/>
+            <span class="must_red"><a href="javascript:;" id="sou">点击查询</a></span> </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">筛选条件:</label>
+          <php>
+          $kus = array(
+          	array('id'=>1,'name'=>'行为库'),
+            array('id'=>2,'name'=>'游戏库'),
+            array('id'=>3,'name'=>'儿保库'),
+            array('id'=>4,'name'=>'菜谱库'),
+          );
+          </php>
+          <div class="controls">
+            <select id="ku">
+            <option value="0">库存选择</option>
+            <foreach name="kus" item="self">
+            <option value="{$self.id}" <if condition="$typ eq $self['id']">selected</if>>{$self.name}</option>
+            </foreach>
+            </select>
+            -
+            <select id="month">
+            <option>月份选择</option>
+            <php>
+            for($i = 0;$i<=36;$i++)
+            {
+            </php>
+            <option value="{$i}" <if condition="$i eq $mon">selected</if>>第{$i}个月</option>
+            <php>
+            }
+            </php>
+            </select>
+            
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <div class="container">
+            <div class="form-group"> 
+              <!--<input class="form-control" type="text" name="name" placeholder="Title" />--> 
+            </div>
+            <!--<details>
+              <div class="form-group">
+                <input class="form-control" type="text" name="blah" placeholder="Additional details here" />
+              </div>
+            </details>-->
+            <div class="row">
+              <div class="col-sm-6">
+                <div id="modules">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div id="dropzone">
+                <foreach name="result" item="vo">
+                <div class="drop-item" id="{$vo.id}"><details><summary>{$vo.id}&nbsp;&nbsp;{$vo.title}&nbsp;&nbsp;{$vo.from_time}至{$vo.to_time}</summary><div><label>时间段：<input type="text" name="from_time[]" value="{$vo.from_time}">
+                <input type="text" name="to_time[]" value="{$vo.to_time}"></label></div></details><button type="button" class="btn btn-default btn-xs remove" onClick="$(this).parent().remove()"><span class="glyphicon glyphicon-trash"></span></button>
+                <input type="hidden" name="test_id[]" value="{$vo.id}"></input>
+                
+               
+                </div>
+                
+                
+                </foreach>
+                <script src="__TMPL__Public/js/index.js"></script>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<input type="hidden" name="post[id]" value="{$info.id}" />-->
+      </fieldset>
+      <div class="form-actions">
+      <button class="btn btn-primary btn_submit J_ajax_submit_btn"type="submit">修改</button>
+      </div>
+    </form>
+  </div>
+</div> 
+</body>
+</html><script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+<script src="__TMPL__Public/js/index.js"></script>
+
+<style>
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+	color: #95a5a6;
+	cursor: default;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+}
+.active {
+	outline: 0px solid red;
+}
+#adds {
+	height: 36px!important
+}
+</style>
+<script>
+$(function(){
+	$("#month").change(function(){
+		if ($("#ku").val() == 0) {
+			alert('请选择库');
+			return false;
+		}
+		var type = $("#ku").val();
+		var month = $("#month").val();
+		$("#modules").load('{:U("book/find_month")}&month='+month+'&type='+type);		
+	});
+	$("#sou").click(function(){
+		var searchs = $("#search").val();
+		if (searchs == '') {
+			alert("请输入内容");
+			return false;
+		}
+		$("#modules").load('{:U("book/find_month")}&search='+searchs);
+	})
+})
+</script>
+<if condition="$mon && $typ">
+<script>
+$("#modules").load('{:U("book/find_month")}&month={$mon}&type={$typ}');
+</script>
+</if>
+<script src="__ROOT__/statics/js/common.js"></script>

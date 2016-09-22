@@ -1,0 +1,347 @@
+[ 2015-12-03T09:06:27+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0140s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0090s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='192.168.1.48',`last_login_time`='2015-12-03 09:06:27',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:06:38+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:07:16+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=add&parentid=196&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:10:55+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:11:27+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=roleadd_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sp_role` (`name`,`remark`,`status`,`create_time`) VALUES ('handbook','handbook','1','1449105087') [ RunTime:0.0000s ]
+
+[ 2015-12-03T09:11:33+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=authorize&id=8
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T09:11:41+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=authorize_post
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T09:11:44+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=authorize&id=8
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T09:11:56+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=authorize_post
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T09:12:26+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=User&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'handbook' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sp_users` (`user_login`,`user_pass`,`user_email`) VALUES ('handbook','c535018ee94691e5e3bad15912505c8ea6e8a2fa121c89af','handbook@qq.com') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0020s ]
+SQL: INSERT INTO `sp_role_user` (`role_id`,`user_id`) VALUES ('8','51') [ RunTime:0.0140s ]
+
+[ 2015-12-03T09:12:52+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'handbook' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '51' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='handbook',`user_pass`='c535018ee94691e5e3bad15912505c8ea6e8a2fa121c89af',`user_nicename`='',`user_email`='handbook@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='192.168.1.48',`last_login_time`='2015-12-03 09:12:52',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '51' [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:13:17+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='192.168.1.48',`last_login_time`='2015-12-03 09:13:17',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:13:49+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=authorize&id=8
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T09:14:04+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:14:12+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=edit&id=197&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:14:14+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0020s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'edit' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `sp_menu` SET `parentid`='196',`name`='修改默认成长册内容',`app`='User',`model`='Default',`action`='edit',`data`='',`icon`='',`remark`='',`status`='0',`type`='1' WHERE `id` = 197 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/edit' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/edit','User','admin_url','修改默认成长册内容') [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:14:15+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=edit&id=197&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:14:18+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=edit&id=198&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:14:34+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0060s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'edit_post' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `sp_menu` SET `parentid`='196',`name`='提交修改',`app`='User',`model`='Default',`action`='edit_post',`data`='',`icon`='',`remark`='',`status`='0',`type`='1' WHERE `id` = 198 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/edit_post' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/edit_post','User','admin_url','提交修改') [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:14:34+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=edit&id=198&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:14:39+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=authorize&id=8
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T09:14:45+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Rbac&a=authorize_post
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T09:14:50+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'handbook' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '51' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='handbook',`user_pass`='c535018ee94691e5e3bad15912505c8ea6e8a2fa121c89af',`user_nicename`='',`user_email`='handbook@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='192.168.1.48',`last_login_time`='2015-12-03 09:14:50',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '51' [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:18:10+08:00 ] 192.168.1.159 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'handbook ' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2015-12-03T09:18:15+08:00 ] 192.168.1.159 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'handbook ' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0020s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '51' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: UPDATE `sp_users` SET `user_login`='handbook',`user_pass`='c535018ee94691e5e3bad15912505c8ea6e8a2fa121c89af',`user_nicename`='',`user_email`='handbook@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='192.168.1.159',`last_login_time`='2015-12-03 09:18:15',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '51' [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:23:17+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='192.168.1.48',`last_login_time`='2015-12-03 09:23:17',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0010s ]
+
+[ 2015-12-03T09:23:39+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:24:37+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=add&parentid=166&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:25:36+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'store' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sp_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('166','库管理','User','Default','store','','','','1','1') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/store' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/store','User','admin_url','库管理') [ RunTime:0.0000s ]
+
+[ 2015-12-03T09:25:37+08:00 ] 192.168.1.48 /info/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T09:33:37+08:00 ] ::1 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0312s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0156s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2015-12-03 09:33:37',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0156s ]
+
+[ 2015-12-03T10:40:48+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T10:40:56+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add&parentid=199&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T10:41:22+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'edit_store' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','修改库','User','Default','edit_store','','','','0','1') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/edit_store' LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/edit_store','User','admin_url','修改库') [ RunTime:0.0000s ]
+
+[ 2015-12-03T10:41:23+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T10:41:45+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add&parentid=199
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T10:42:15+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'edit_store_post' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','提交修改库','User','Default','edit_store_post','','','','0','1') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/edit_store_post' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/edit_store_post','User','admin_url','提交修改库') [ RunTime:0.0000s ]
+
+[ 2015-12-03T10:42:16+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:21:08+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add&parentid=199
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:21:52+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'add_store' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','添加库','User','Default','add_store','','','','0','1') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/add_store' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/add_store','User','admin_url','添加库') [ RunTime:0.0010s ]
+
+[ 2015-12-03T11:21:53+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:22:00+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add&parentid=199
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:22:21+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0040s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'add_store_post' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','提交添加库','User','Default','add_store_post','','','','0','1') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/add_store_post' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/add_store_post','User','admin_url','提交添加库') [ RunTime:0.0000s ]
+
+[ 2015-12-03T11:22:22+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:22:30+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add&parentid=199
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:22:42+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `sp_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_menu` WHERE `app` = 'User' AND `model` = 'Default' AND `action` = 'store_delete' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `sp_menu` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','删除库','User','Default','store_delete','','','','0','1') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_auth_rule` WHERE `name` = 'user/default/store_delete' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('user/default/store_delete','User','admin_url','删除库') [ RunTime:0.0000s ]
+
+[ 2015-12-03T11:22:42+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:22:54+08:00 ] ::1 /info/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-03T11:23:06+08:00 ] ::1 /info/index.php?g=Admin&m=Rbac&a=authorize&id=8
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T11:23:12+08:00 ] ::1 /info/index.php?g=Admin&m=Rbac&a=authorize_post
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-12-03T11:23:21+08:00 ] ::1 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'handbook' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '51' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `sp_users` SET `user_login`='handbook',`user_pass`='c535018ee94691e5e3bad15912505c8ea6e8a2fa121c89af',`user_nicename`='',`user_email`='handbook@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2015-12-03 11:23:21',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '51' [ RunTime:0.0000s ]
+

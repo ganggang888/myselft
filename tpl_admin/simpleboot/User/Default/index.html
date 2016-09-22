@@ -1,0 +1,87 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">默认成长册列表</a></li>
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">
+						喂养方式：
+                    <select name="feed_type" id="feed_type">
+                        <foreach name="feed_type" item="v">
+                        <option value="{$v.id}" <if condition="$v['id'] eq $type">selected="selected"</if>>{$v.name}</option>
+                        </foreach>
+                        </select>  --
+						月份：
+                        <select name="month" id="month">
+                        <option value="0">选择月份</option>
+                        <?php
+                        for($i=1;$i<=36;$i++)
+                        {
+                        ?>
+                        <option value="{$i}" <if condition="$i eq $month">selected="selected"</if>>{$i}月</option>
+                        <?php
+                        }
+                        ?>
+                        </select>
+                          --
+                          适用订单：
+                          <select name="money" id="money">
+                          <foreach name="orderMoney" item="v">
+                          <option value="{$v.number}" <if condition="$money eq $v['number']">selected="selected"</if>>{$v.number}</option>
+                          </foreach>
+                          </select>
+						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+					</span>
+				  <script>
+					function todo() {
+						var feed_type = $("#feed_type").val();
+						var month = $("#month").val();
+						var money = $("#money").val();
+						window.location.href='index.php?g=User&m=Default&a=index&menuid=185&feed_type='+feed_type+'&month='+month+"&orderMoney="+money;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>月份</th>
+                        <th>天数</th>
+                        <th>喂养方式</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr>
+					<td>{$vo.id}</td>
+					<td>{$vo.month}</td>
+                    <td>{$vo.day}</td>
+                    <td>{:getFeedTypeName($vo['feed_type'])}</td>
+                    <td>
+                    <a href="{:U('User/Default/edit',array('month'=>$vo['month'],'day'=>$vo['day'],'feed_type'=>$vo['feed_type'],'order_money'=>$vo['order_money']))}">修改</a>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+[ 2016-09-06T15:55:45+08:00 ] ::1 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002064s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008987s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0350s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0098s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-09-06 15:55:45',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0107s ]
+
+[ 2016-09-06T17:10:50+08:00 ] ::1 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002779s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008859s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0014s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-09-06 17:10:50',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0002s ]
+
+[ 2016-09-06T17:12:36+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+ERR: 模板不存在:tpl_admin/simpleboot/Admin/User/savePhone.html
+
+[ 2016-09-06T17:13:40+08:00 ] ::1 /info/index.php?g=Admin&m=ad&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002237s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007966s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_ad` [ RunTime:0.0015s ]
+
+[ 2016-09-06T17:26:28+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002058s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009017s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0016s ]
+
+[ 2016-09-06T17:26:50+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002059s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007749s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0015s ]
+
+[ 2016-09-06T17:27:41+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008927s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0024s ]
+
+[ 2016-09-06T17:27:58+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002117s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008137s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0016s ]
+
+[ 2016-09-06T17:28:44+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002226s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008368s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0014s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_number_info' doesn't exist
+
+[ 2016-09-06T17:29:28+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002862s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008724s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sp_number_info` (`name`,`phone`,`id`) VALUES ('1.0','13564900192','NTdjZThjNzhjZDRiODI0NzE='),('2.0','13761500192','NTdjZThjNzhjZDRjNzYxNTQ='),('3.0','13901610197','NTdjZThjNzhjZDRjZjEzNzU='),('4.0','13961543029','NTdjZThjNzhjZDRkOTg2MTY='),('5.0','13918600192','NTdjZThjNzhjZDRlMTIxOTU='),('6.0','13800210111','NTdjZThjNzhjZDRlODEzMTA='),('鲍冬华(中介）','13907032878','NTdjZThjNzhjZDRlZTI5MDE='),('曹香红(中介）','13816474776','NTdjZThjNzhjZDRmNjEzNTc='),('常萍(中介）','13761821087','NTdjZThjNzhjZDRmZDUxODk='),('陈爱梅(中介）','13818387604','NTdjZThjNzhjZDUwNDE1MDI='),('陈凤琴（签约）','15801843858','NTdjZThjNzhjZDUwYjY5Njg='),('陈慧（签约）','13472647252','NTdjZThjNzhjZDUxMjQ4Mg=='),('陈慧玲(中介）','15021557458','NTdjZThjNzhjZDUxOTg1MzU='),('陈文华（签约）','13641607089','NTdjZThjNzhjZDUyMDI1MQ=='),('陈昭莉','13856096697','NTdjZThjNzhjZDUyNzExNDE='),('丁晓玲(中介）','15800503457','NTdjZThjNzhjZDUzMTg5Mzc='),('杜广玲（签约）','13661460781','NTdjZThjNzhjZDUzODUwNzI='),('冯燕（签约）','18964331320','NTdjZThjNzhjZDUzZjI4NDE='),('付冬梅(中介）','15221435635','NTdjZThjNzhjZDU0NjExNzE='),('甘丽霞(中介）','13621785245','NTdjZThjNzhjZDU0ZDU2MjQ='),('谷华玲(中介）','15026703659','NTdjZThjNzhjZDU1NDk5ODE='),('郝俊丽(中介）','15000745109','NTdjZThjNzhjZDU1YjI5MzE='),('黄朝晖（签约）','13816456872','NTdjZThjNzhjZDU2Mjc1NTg='),('黄文玲（签约）','13817372794','NTdjZThjNzhjZDU2OTQ2MTk='),('黄永侠（签约）','13866249486','NTdjZThjNzhjZDU3MDY1MzE='),('贾洁（签约）','18019287228','NTdjZThjNzhjZDU3ODUzNTc='),('李炳习(中介）','15002174767','NTdjZThjNzhjZDU3ZjcwNTc='),('李丽会（签约）','13127571607','NTdjZThjNzhjZDU4NjI4NjU='),('李立俊(中介）','18221403121','NTdjZThjNzhjZDU4ZDM1MDA='),('李梦洁(中介）','13167062566','NTdjZThjNzhjZDU5NDExOTE='),('李芹芹(中介）','15721529826','NTdjZThjNzhjZDU5YjM5NTM='),('李小兰（签约）','15800361273','NTdjZThjNzhjZDVhMjE2MTg='),('李小玉(中介）','18677347669','NTdjZThjNzhjZDVhOTIyMDg='),('李玉蓉（签约）','13564767940','NTdjZThjNzhjZDViMDM2MzY='),('丽君','13917399069','NTdjZThjNzhjZDViNzg1NjA='),('廖莉莉（签约）','15001708363','NTdjZThjNzhjZDViZTc5NzI='),('廖先菊（签约）','15800609457','NTdjZThjNzhjZDVjNzkyMDg='),('刘水荣（签约）','15821507693','NTdjZThjNzhjZDVjZTI4NzM='),('刘新华（签约）','13472450230','NTdjZThjNzhjZDVkNTQxNzQ='),('卢春梅（签约）','13661605187','NTdjZThjNzhjZDVkYzE5OTY='),('倪和娣(中介）','18221424716','NTdjZThjNzhjZDVlMzc4NTQ='),('牛丽红(中介）','15670950099','NTdjZThjNzhjZDVlYTIxNTU='),('欧星昱','13611869862','NTdjZThjNzhjZDVmMTQ3NDQ='),('乔 樱(中介）','15821077365','NTdjZThjNzhjZDVmODM0MjY='),('任仕凤（签约）','18321748773','NTdjZThjNzhjZDVmZjIyODk='),('盛萍','13818945211','NTdjZThjNzhjZDYwNTQxMzc='),('宋秀芹(中介）','13795426516','NTdjZThjNzhjZDYwZjM5Mw=='),('宋依开(中介）','15061789686','NTdjZThjNzhjZDYxNjY4NjQ='),('苏东卓（签约）','15000014500','NTdjZThjNzhjZDYxZDY4MDk='),('苏莹（签约）','15000867731','NTdjZThjNzhjZDYyNDQ5NjU='),('隋婷婷(中介）','15801715128','NTdjZThjNzhjZDYyYjkxMzg='),('孙必霞(中介）','13120842126','NTdjZThjNzhjZDYzMjcxNzI='),('孙火梅(中介）','18016455161','NTdjZThjNzhjZDYzOTg0ODY='),('孙利琴(中介）','13661575875','NTdjZThjNzhjZDYzZjQ1Njg='),('谭祖秀(中介）','13482345750','NTdjZThjNzhjZDY0Njc4MzU='),('谈吕萍(中介）','18019430623','NTdjZThjNzhjZDY0ZDcxMjc='),('唐海红(中介）','18051103415','NTdjZThjNzhjZDY1Njk3Nzg='),('唐剑虹(中介）','13816503373','NTdjZThjNzhjZDY1ZDk5Njk='),('汪素梅（签约）','15026578815','NTdjZThjNzhjZDY2NDQ2Mzg='),('王芳（签约）','13764343048','NTdjZThjNzhjZDY2YjY0MzA='),('王红岩(中介）','13818554899','NTdjZThjNzhjZDY3MjM2MQ=='),('王丽新(中介）','15921541410','NTdjZThjNzhjZDY3OTUwNTY='),('王晓霞(中介）','13293991308','NTdjZThjNzhjZDY4MDcxMjU='),('王艳萍（签约）','13816934373','NTdjZThjNzhjZDY4NzgzMTU='),('王苑（签约）','15861861427','NTdjZThjNzhjZDY4ZDY3MzI='),('王月娥(中介）','13162361487','NTdjZThjNzhjZDY5NzU1MTY='),('王竹先(中介）','15802118491','NTdjZThjNzhjZDY5ZTE0Mjc='),('魏桂珍(中介）','15618730101','NTdjZThjNzhjZDZhNTUxNzU='),('文竞樱（签约）','15950995929','NTdjZThjNzhjZDZhYzQ2NzE='),('吴霞（签约）','13764313221','NTdjZThjNzhjZDZiMzUyNDA='),('夏学英（签约）','15821338578','NTdjZThjNzhjZDZiYTIyMTM='),('徐长梅（签约）','13916052941','NTdjZThjNzhjZDZjMTI4MTc='),('徐玉霞（签约）','15357023367','NTdjZThjNzhjZDZjNzMwNjA='),('言黎雯','13501733971','NTdjZThjNzhjZDZjZTM4OTU='),('杨桂兰(中介）','13701730087','NTdjZThjNzhjZDZkNTI3NA=='),('杨艳(中介）','15801966367','NTdjZThjNzhjZDZkZDkyMA=='),('杨志敏 (中介）','13062673226','NTdjZThjNzhjZDZlNDE5MzQ='),('叶福珍(中介）','15000534533','NTdjZThjNzhjZDZlYjY3NjM='),('叶静（签约）','18202171872','NTdjZThjNzhjZDZmMjI1Njk='),('易菊珍（签约）','18717903893','NTdjZThjNzhjZDZmOTMyODU='),('雍自云(中介）','15800517093','NTdjZThjNzhjZDcwMDE1MDc='),('于玉蓉（签约）','13775498209','NTdjZThjNzhjZDcwNzU4MjI='),('余红珍（签约）','15800387369','NTdjZThjNzhjZDcwZDcyNzU='),('袁春丽(中介）','13795262118','NTdjZThjNzhjZDcxNDEzOTc='),('张春凤（签约）','18796075102','NTdjZThjNzhjZDcxYjE5Mjk='),('张翠芳（签约）','15021364605','NTdjZThjNzhjZDcyMjk1NTU='),('张海灵（签约）','13918143720','NTdjZThjNzhjZDcyYjU1OA=='),('张金芳(中介）','13918008910','NTdjZThjNzhjZDczMzIyMg=='),('张丽君','18017309883','NTdjZThjNzhjZDczYTE2MTE='),('张梅香（签约）','15239183923','NTdjZThjNzhjZDc0MTMwMjM='),('赵彩萍（签约）','15900855865','NTdjZThjNzhjZDc0NzQ2MDM='),('郑丽琴(中介）','13524854186','NTdjZThjNzhjZDc0ZjUyNw=='),('朱会芹（签约）','15216669896','NTdjZThjNzhjZDc1NjE3ODc=') [ RunTime:0.0845s ]
+
+[ 2016-09-06T17:31:54+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=savePhone
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002083s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007878s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0019s ]
+SQL: INSERT INTO `sp_number_info` (`name`,`phone`,`id`) VALUES ('1.0','13564900192','NTdjZThkMDllODgzNTg5NzQ='),('2.0','13761500192','NTdjZThkMDllODg0NDg1OTQ='),('3.0','13901610197','NTdjZThkMDllODg0YzI3NTI='),('4.0','13961543029','NTdjZThkMDllODg1MzY3MDM='),('5.0','13918600192','NTdjZThkMDllODg1YTQzMzY='),('6.0','13800210111','NTdjZThkMDllODg2MTQzMA=='),('鲍冬华(中介）','13907032878','NTdjZThkMDllODg2ODQ2NDI='),('曹香红(中介）','13816474776','NTdjZThkMDllODg2ZjQyMjk='),('常萍(中介）','13761821087','NTdjZThkMDllODg3NjMyNDM='),('陈爱梅(中介）','13818387604','NTdjZThkMDllODg3ZDg4Nzg='),('陈凤琴（签约）','15801843858','NTdjZThkMDllODg4NDg2MQ=='),('陈慧（签约）','13472647252','NTdjZThkMDllODg4Yjcw'),('陈慧玲(中介）','15021557458','NTdjZThkMDllODg5MjQ2NDg='),('陈文华（签约）','13641607089','NTdjZThkMDllODg5OTUxNzU='),('陈昭莉','13856096697','NTdjZThkMDllODhhMDM1OQ=='),('丁晓玲(中介）','15800503457','NTdjZThkMDllODhhODgyODM='),('杜广玲（签约）','13661460781','NTdjZThkMDllODhhZjU3OQ=='),('冯燕（签约）','18964331320','NTdjZThkMDllODhiNjc4NzI='),('付冬梅(中介）','15221435635','NTdjZThkMDllODhiZDUzMDE='),('甘丽霞(中介）','13621785245','NTdjZThkMDllODhjNDQwMTI='),('谷华玲(中介）','15026703659','NTdjZThkMDllODhjYjkyMDc='),('郝俊丽(中介）','15000745109','NTdjZThkMDllODhkMTY3NzU='),('黄朝晖（签约）','13816456872','NTdjZThkMDllODhkODcwMDY='),('黄文玲（签约）','13817372794','NTdjZThkMDllODhkZjEzMTE='),('黄永侠（签约）','13866249486','NTdjZThkMDllODhlNjE5ODY='),('贾洁（签约）','18019287228','NTdjZThkMDllODhlZTc4NzU='),('李炳习(中介）','15002174767','NTdjZThkMDllODhmNDM4MjU='),('李丽会（签约）','13127571607','NTdjZThkMDllODhmYjEyNTk='),('李立俊(中介）','18221403121','NTdjZThkMDllODkwMjU5MDI='),('李梦洁(中介）','13167062566','NTdjZThkMDllODkwOTkxMjM='),('李芹芹(中介）','15721529826','NTdjZThkMDllODkxMDM1ODg='),('李小兰（签约）','15800361273','NTdjZThkMDllODkxNjgxNDk='),('李小玉(中介）','18677347669','NTdjZThkMDllODkxZDMwMg=='),('李玉蓉（签约）','13564767940','NTdjZThkMDllODkyNDczNDQ='),('丽君','13917399069','NTdjZThkMDllODkyYjUyNDg='),('廖莉莉（签约）','15001708363','NTdjZThkMDllODkzMzI4NjU='),('廖先菊（签约）','15800609457','NTdjZThkMDllODkzOTU3OTU='),('刘水荣（签约）','15821507693','NTdjZThkMDllODk0MDk5ODM='),('刘新华（签约）','13472450230','NTdjZThkMDllODk0NzE5NzY='),('卢春梅（签约）','13661605187','NTdjZThkMDllODk0ZTU4NTA='),('倪和娣(中介）','18221424716','NTdjZThkMDllODk1NTE0NTg='),('牛丽红(中介）','15670950099','NTdjZThkMDllODk1YjI1OTE='),('欧星昱','13611869862','NTdjZThkMDllODk2MjYwOQ=='),('乔 樱(中介）','15821077365','NTdjZThkMDllODk2OTQ0MjM='),('任仕凤（签约）','18321748773','NTdjZThkMDllODk3MDI0OTM='),('盛萍','13818945211','NTdjZThkMDllODk3NzE2NTk='),('宋秀芹(中介）','13795426516','NTdjZThkMDllODk3ZTExMjE='),('宋依开(中介）','15061789686','NTdjZThkMDllODk4NTk2ODY='),('苏东卓（签约）','15000014500','NTdjZThkMDllODk4YzI1Mjc='),('苏莹（签约）','15000867731','NTdjZThkMDllODk5Mzc0MzU='),('隋婷婷(中介）','15801715128','NTdjZThkMDllODk5OTg2OTQ='),('孙必霞(中介）','13120842126','NTdjZThkMDllODlhMDkwMQ=='),('孙火梅(中介）','18016455161','NTdjZThkMDllODlhNzM1MTg='),('孙利琴(中介）','13661575875','NTdjZThkMDllODlhZTgxMjM='),('谭祖秀(中介）','13482345750','NTdjZThkMDllODliNTM2NjQ='),('谈吕萍(中介）','18019430623','NTdjZThkMDllODliYzE3NTA='),('唐海红(中介）','18051103415','NTdjZThkMDllODljMzgxODc='),('唐剑虹(中介）','13816503373','NTdjZThkMDllODljYTc0MzM='),('汪素梅（签约）','15026578815','NTdjZThkMDllODlkMTUwMTk='),('王芳（签约）','13764343048','NTdjZThkMDllODlkODU2MDg='),('王红岩(中介）','13818554899','NTdjZThkMDllODlkZTM2OTU='),('王丽新(中介）','15921541410','NTdjZThkMDllODllNTE1ODI='),('王晓霞(中介）','13293991308','NTdjZThkMDllODllYzUzMzg='),('王艳萍（签约）','13816934373','NTdjZThkMDllODlmMzM4ODk='),('王苑（签约）','15861861427','NTdjZThkMDllODlmOTU1OQ=='),('王月娥(中介）','13162361487','NTdjZThkMDllOGEwMTMwMTU='),('王竹先(中介）','15802118491','NTdjZThkMDllOGEwODg1MzM='),('魏桂珍(中介）','15618730101','NTdjZThkMDllOGEwZjc1MDI='),('文竞樱（签约）','15950995929','NTdjZThkMDllOGExNjc5MzY='),('吴霞（签约）','13764313221','NTdjZThkMDllOGExZDM5MjU='),('夏学英（签约）','15821338578','NTdjZThkMDllOGEyNDE3NQ=='),('徐长梅（签约）','13916052941','NTdjZThkMDllOGEyYTU5MA=='),('徐玉霞（签约）','15357023367','NTdjZThkMDllOGEzMTY4ODA='),('言黎雯','13501733971','NTdjZThkMDllOGEzODE2ODg='),('杨桂兰(中介）','13701730087','NTdjZThkMDllOGEzZjgwOTU='),('杨艳(中介）','15801966367','NTdjZThkMDllOGE0NjkwNzI='),('杨志敏 (中介）','13062673226','NTdjZThkMDllOGE0ZDM0OTE='),('叶福珍(中介）','15000534533','NTdjZThkMDllOGE1NDYwMDk='),('叶静（签约）','18202171872','NTdjZThkMDllOGE1YjMzMDM='),('易菊珍（签约）','18717903893','NTdjZThkMDllOGE2MjgwNDM='),('雍自云(中介）','15800517093','NTdjZThkMDllOGE2ODU2ODI='),('于玉蓉（签约）','13775498209','NTdjZThkMDllOGE2ZjI0OTU='),('余红珍（签约）','15800387369','NTdjZThkMDllOGE3Njk0MzA='),('袁春丽(中介）','13795262118','NTdjZThkMDllOGE3ZDEwODQ='),('张春凤（签约）','18796075102','NTdjZThkMDllOGE4MzExMzk='),('张翠芳（签约）','15021364605','NTdjZThkMDllOGE4Yzk2MTM='),('张海灵（签约）','13918143720','NTdjZThkMDllOGE5MzkwMTc='),('张金芳(中介）','13918008910','NTdjZThkMDllOGE5YTIyMzY='),('张丽君','18017309883','NTdjZThkMDllOGFhMDQ1MTc='),('张梅香（签约）','15239183923','NTdjZThkMDllOGFhNzUwNzY='),('赵彩萍（签约）','15900855865','NTdjZThkMDllOGFhZTkwNjM='),('郑丽琴(中介）','13524854186','NTdjZThkMDllOGFiNTYzODU='),('朱会芹（签约）','15216669896','NTdjZThkMDllOGFiYzQ2MjE=') [ RunTime:0.0654s ]
+
+[ 2016-09-06T17:31:54+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=numberIndex
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+
+[ 2016-09-06T17:33:22+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=numberIndex
+ERR: 模板不存在:tpl_admin/simpleboot/Admin/User/numberIndex.html
+
+[ 2016-09-06T18:10:06+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=giveMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008271s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0014s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_message_info' doesn't exist
+
+[ 2016-09-06T18:12:18+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=giveMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005593s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011635s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0016s ]
+
+[ 2016-09-06T18:15:07+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=giveMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002118s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007953s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0015s ]
+SQL: INSERT INTO `sp_message_info` (`name`,`about`,`content`,`add_time`,`id`) VALUES ('曾刚刚','感时花溅泪','恨别鸟惊心(username)','2016-09-06 18:15:07','NTdjZTk3MmJjMjFmZDYyNzY=') [ RunTime:0.0003s ]
+
+[ 2016-09-06T18:17:27+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageIndex
+ERR: 模板不存在:tpl_admin/simpleboot/Admin/User/messageIndex.html
+
+[ 2016-09-06T18:51:30+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002135s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008120s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0014s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+SQL: UPDATE `sp_message_info` SET `status`='1' WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' [ RunTime:0.0002s ]
+
+[ 2016-09-06T18:53:05+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002041s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007750s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0015s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+
+[ 2016-09-06T18:54:09+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002062s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008024s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0014s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+
+[ 2016-09-06T18:54:23+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003128s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008901s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0014s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+
+[ 2016-09-06T18:56:06+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002069s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007888s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0015s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+
+[ 2016-09-06T18:57:14+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007853s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0014s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+
+[ 2016-09-06T18:58:45+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002079s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007885s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0015s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+
+[ 2016-09-06T19:04:05+08:00 ] ::1 /info/index.php?g=Admin&m=User&a=messageStatus&id=NTdjZTk3MmJjMjFmZDYyNzY%3D&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008123s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_role` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_message_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_message_info` WHERE `id` = 'NTdjZTk3MmJjMjFmZDYyNzY=' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_number_info` [ RunTime:0.0015s ]
+SQL: SELECT `phone`,`name`,`status` FROM `sp_number_info`  [ RunTime:0.0001s ]
+

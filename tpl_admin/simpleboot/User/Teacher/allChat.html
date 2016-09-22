@@ -1,0 +1,79 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">聊天记录</a></li>
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">
+						用户名： 
+						<input type="text" name="search" id="search" style="width: 200px;" value="{$search}" placeholder="请输入手机号..."> --
+						类别：
+						<php>
+							$array = array(array('id'=>1,'name'=>'发送者'),array('id'=>2,'name'=>'接收者'));
+						</php>
+						<select id="type">
+						<foreach name="array" item="row">
+							<option value="{$row.id}" <if condition="$type eq $row['id']">selected</if>>{$row.name}</option>
+							</foreach>
+						</select>--
+
+						日期查询：
+						<input type="text" name="start_time" id="start_time" class="J_date date" value="{$start_time}" style="width: 80px;" autocomplete="off">
+						-
+						<input type="text" class="J_date date" name="end_time" id="end_time" value="{$end_time}" style="width: 80px;" autocomplete="off">
+						<a href="javascript:;" onclick="todo()" class="btn btn-primary">搜索</a>&nbsp;&nbsp;
+					</span>
+					<script>
+					function todo() {
+						var search = $("#search").val();
+						var start_time = $("#start_time").val();
+						var end_time = $("#end_time").val();
+						var type = $("#type").val();
+						window.location.href='index.php?g=User&m=Teacher&a=allChat&menuid=185&search='+search+'&start_time='+start_time+'&end_time='+end_time+'&type='+type;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>发送者</th>
+                        <th>接收者</th>
+                        <th width="600">具体内容</th>
+						<th width="120">发送时间</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr>
+					<td>{$vo.messageid}</td>
+					<td>{$vo.fromjid}</td>
+                    <td>{$vo.tojid}</td>
+                    <td>{:base64_decode($vo['body'])}</td>
+					<td>
+					{:date("Y-m-d H:i:s",substr($vo[sentdate], 0, strlen($sentdate) - 3))}
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[ 2016-03-04T09:46:20+08:00 ] 192.168.1.98 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'handbook' LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0240s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '51' AND `status` = 1  [ RunTime:0.0180s ]
+SQL: UPDATE `sp_users` SET `user_login`='handbook',`user_pass`='c535018ee94691e5e3bad15912505c8ea6e8a2fa121c89af',`user_nicename`='',`user_email`='handbook@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='192.168.1.98',`last_login_time`='2016-03-04 09:46:20',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '51' [ RunTime:0.0010s ]
+

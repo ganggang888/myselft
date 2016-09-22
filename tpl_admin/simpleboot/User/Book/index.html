@@ -1,0 +1,67 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">我的成长册</a></li>
+			<li><a href="{:U('book/add')}">添加成长册</a></li>
+		</ul>
+
+		
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>适用宝宝年龄</th>
+                        <th>喂养方式</th>
+                        <th>分类</th>
+                        <th>适用订单</th>
+                        <th>介绍</th>
+						<th width="120">主要内容</th>
+                        <th width="120">添加人</th>
+                        <th width="120">状态</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="rows" item="vo">
+				<tr>
+					<td>{$vo.id}</td>
+					<td>{$vo.age}个月{$vo.day}天</td>
+                    <td>{:getFeedTypeName($vo[feed_type])}</td>
+                    <td>{:getHandBookName($vo[term])}</td>
+                    <td>{$vo.order_money}</td>
+                    <td>{$vo.about}</td>
+                    <td><a href="{:U('book/info',array('id'=>$vo[id]))}" target="_blank">查看</a></td>
+                    <td>{:get_names($vo[aid])}</td>
+                    <td>{:returnStatus($vo[status])}</td>
+					<td>
+                    <php>
+                    $aid = get_current_admin_id();
+                    </php>
+                    <if condition="$aid eq '1'">
+                    <a href="{:U('book/open',array('id'=>$vo['id']))}" class="J_ajax_dialog_btn" data-msg="您确定要启用吗？">启用</a>|<a href="{:U('book/close',array('id'=>$vo['id']))}" class="J_ajax_dialog_btn" data-msg="您确定要启用吗？">禁用</a>|
+						<a href="{:U('book/edit',array('id'=>$vo['id']))}">修改</a>|
+						<a href="{:U('book/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a>
+                        <elseif condition="$vo['aid'] eq $aid" />
+                        <a href="{:U('book/edit',array('id'=>$vo['id']))}">修改</a>|
+						<a href="{:U('book/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a>
+                        </if>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

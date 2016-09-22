@@ -1,0 +1,22 @@
+<script src="__TMPL__Public/js/jquery.datetimepicker.js"></script>
+<foreach name="rows" item="vo">
+<script>
+$('#datetimepicker{$vo.id}').datetimepicker({
+	datepicker:false,
+	format:'H:i',
+	step:5
+});
+</script>
+<script>
+$('#two{$vo.id}').datetimepicker({
+	datepicker:false,
+	format:'H:i',
+	step:5
+});
+</script>
+<p class="drag"><a class="btn btn-default">{$vo.id}</a><input type="" value="{$vo.title}" id="title{$vo.id}" disabled style="color:#F00"><input type="text" id="datetimepicker{$vo.id}" class="one{$vo.id}" value="" style="width:77px; "placeholder='开始时间'/><input type="text" id="two{$vo.id}" class="two{$vo.id}" style="width:77px;" placeholder='结束时间'/><input type="hidden" value="{$vo.createdate}" id="time{$vo.id}" /></p>
+
+</foreach>
+
+<p class="drag">
+<script src="__TMPL__Public/js/index.js"></script>

@@ -1,0 +1,28 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">导入通讯录</a></li>
+			<li><a href="{:U('User/numberIndex')}">通讯录列表</a></li>
+		</ul>
+		<div class="common-form">
+			<form method="post" class="form-horizontal J_ajaxForm" action="">
+				<fieldset>
+					<div class="control-group">
+						<label class="control-label">选择excel文件:</label>
+						<div class="controls">
+							<input type="file" name="upload"/>
+							<span class="must_red">必须上传</span>
+						</div>
+					</div>
+					
+				</fieldset>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">添加</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

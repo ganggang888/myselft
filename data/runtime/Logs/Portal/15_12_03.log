@@ -1,0 +1,24 @@
+[ 2015-12-03T11:13:28+08:00 ] ::1 /info/index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0030s ]
+
+[ 2015-12-03T11:13:31+08:00 ] ::1 /info/index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2015-12-03 11:13:19','1','0','0','try','','','try','<p>try</p>','2015-12-03 11:13:31','1','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('2','1') [ RunTime:0.0000s ]
+

@@ -1,0 +1,112 @@
+<admintpl file="header"/>
+<style type="text/css">
+.col-auto { overflow: auto; _zoom: 1;_float: left;}
+.col-right { float: right; width: 210px; overflow: hidden; margin-left: 6px; }
+.table th, .table td {vertical-align: middle;}
+.picList li{margin-bottom: 5px;}
+</style>
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Default/store')}">所有库</a></li>
+     <li class="active"><a href="javascript:;"  target="_self">添加库</a></li>
+  </ul>
+  <form name="myform" id="myform" action="{:u('Default/add_store_post')}" method="post" class="form-horizontal J_ajaxForms" enctype="multipart/form-data">
+  
+  <div class="col-auto">
+    <div class="table_full">
+      <table class="table table-bordered">
+            <tr>
+              <th width="80">分类</th>
+              <td>
+              <select name="type" id="type">
+                        <foreach name="stotr_type" item="v">
+                        <option value="{$v.id}" <if condition="$v['id'] eq $type">selected="selected"</if>>{$v.name}</option>
+                        </foreach>
+                        </select>
+              </td>
+            </tr>
+            <tr>
+              <th width="80">标题</th>
+              <td><input type='text' name='title' id='keywords' value='{$info.title}' style='width:400px'   class='input' placeholder='请输入关键字'> </td>
+            </tr>
+            <tr>
+              <th width="80">适用月龄</th>
+              <td><input type='text' name='month' id='source' value='{$info.month}' style='width:400px'   class='input' placeholder='请输入适用月龄'></td>
+            </tr>
+            <tr id="one">
+              <th width="80">食材准备</th>
+              <td><textarea name='foodstuff' id='description'   style='width:98%;height:50px;' placeholder='请填写食材'>{$info.foodstuff}</textarea><span class="must_red">*</span></td>
+            </tr>
+            <tr id="two">
+              <th width="80">用具准备</th>
+              <td><textarea name='tool' id='description'   style='width:98%;height:50px;' placeholder='请填写用具准备'>{$info.tool}</textarea><span class="must_red">*</span></td>
+            </tr>
+            <tr id="three">
+              <th width="80">个人准备</th>
+              <td><textarea name='personal' id='description'   style='width:98%;height:50px;' placeholder='请填写个人准备'>{$info.personal}</textarea><span class="must_red">*</span></td>
+            </tr>
+            <tr id="four">
+              <th width="80">注意事项</th>
+              <td><textarea name='notes' id='description' style='width:98%;height:50px;' placeholder='请填写注意事项'>{$info.notes}</textarea><span class="must_red">*</span></td>
+            </tr>
+            <tr>
+              <th width="80">上传多媒体</th>
+              <td><input type="file" name="uploadmedia" id="uploadmedia"><span class="must_red">已上传多媒体:{$info.media}</span></td>
+            </tr>
+            <tr>
+              <th width="80">内容</th>
+              <td><div id='content_tip'></div>
+              <script type="text/plain" id="content" name="content">{$info.content}</script>
+                <script type="text/javascript">
+                //编辑器路径定义
+                var editorURL = GV.DIMAUB;
+                </script>
+                <script type="text/javascript"  src="__ROOT__/statics/js/ueditor/ueditor.config.js"></script>
+                <script type="text/javascript"  src="__ROOT__/statics/js/ueditor/ueditor.all.min.js"></script>
+				</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="form-actions">
+        <button class="btn btn-primary btn_submit J_ajax_submit_btn"type="submit">添加</button>
+        <a class="btn" href="javascript:;" onclick="history.go(-1)">返回</a>
+  </div>
+ </form>
+</div>
+<script type="text/javascript" src="__ROOT__/statics/js/common.js"></script>
+<script type="text/javascript" src="__ROOT__/statics/js/content_addtop.js"></script>
+<script>
+$(function(){
+$("#one").hide(300);
+$("#two").hide(300);
+$("#three").hide(300);
+$("#four").hide(300);
+$("#type").change(function(){
+	var type = $("#type").val();
+	if (type == 4) {
+		$("#one").show(300);
+		$("#two").show(300);
+		$("#three").show(300);
+		$("#four").show(300);
+	} else {
+		$("#one").hide(300);
+		$("#two").hide(300);
+		$("#three").hide(300);
+		$("#four").hide(300);
+	}
+})
+})
+</script>
+<script type="text/javascript"> 
+$(function(){
+	editorcontent = new baidu.editor.ui.Editor();
+	editorcontent.render( 'content' );
+	
+})
+</script>
+</body>
+</html>

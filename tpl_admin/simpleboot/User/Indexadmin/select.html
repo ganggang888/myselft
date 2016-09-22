@@ -1,0 +1,56 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">点击记录</a></li>
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">
+						手机号：
+						<textarea name="phone" id="phone" style="height:100px;width:200px">{$phone}</textarea>
+						<a href="javascript:;" onclick="todo()" class="btn btn-primary">搜索</a>&nbsp;&nbsp;
+					</span>
+					<script>
+					function todo() {
+						var phone = $("#phone").val();
+						window.location.href='index.php?g=User&m=Indexadmin&a=select&menuid=188&phone='+phone;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>用户手机</th>
+                        <th>推荐者</th>
+						<th width="120">注册时间</th>
+					</tr>
+				</thead>
+				<foreach name="info" item="vo">
+				<tr>
+					<td>{$vo.telephone}</td>
+					<td>{:getTui($vo['pid'])}</td>
+                    <td>{$vo.registtime}</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

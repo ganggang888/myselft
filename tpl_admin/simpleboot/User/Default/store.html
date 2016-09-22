@@ -1,0 +1,92 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">库管理</a></li>
+            <li><a href="{:U('Default/add_store')}">添加内容</a></li>
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">
+						库：
+                    <select name="stotr_type" id="stotr_type">
+                        <foreach name="stotr_type" item="v">
+                        <option value="0">全部</option>
+                        <option value="{$v.id}" <if condition="$v['id'] eq $type">selected="selected"</if>>{$v.name}</option>
+                        </foreach>
+                        </select>  --
+						月份：
+                        <select name="month" id="month">
+                        <option value="0">选择月份</option>
+                        <?php
+                        for($i=1;$i<=36;$i++)
+                        {
+                        ?>
+                        <option value="{$i}" <if condition="$i eq $month">selected="selected"</if>>{$i}月</option>
+                        <?php
+                        }
+                        ?>
+                        </select>
+                          --
+                          名称检索：
+                          <input type="text" id="title" value="{$title}" />
+						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+					</span>
+				  <script>
+					function todo() {
+						var stotr_type = $("#stotr_type").val();
+						var month = $("#month").val();
+						var title = $("#title").val();
+						window.location.href='index.php?g=User&m=Default&a=store&menuid=185&type='+stotr_type+'&month='+month+"&title="+title;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+        <php>
+        $ku = array('1'=>'行为库','2'=>'游戏库','3'=>'儿宝库','4'=>'菜谱库');
+        </php>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>名称</th>
+                        <th>库名称</th>
+                        <th>适用月龄</th>
+                        <th>上传视频名称</th>
+                        <th>创建时间</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr>
+					<td>{$vo.id}</td>
+					<td>{$vo.title}</td>
+                    <th>{$ku[$vo['type']]}</th>
+                    <td>{$vo.month}</td>
+                    <td>{$vo.media}</td>
+                    <td>{$vo.createdate}</td>
+                    <td>
+                    <a href="{:U('User/Default/edit_store',array('id'=>$vo['id']))}">修改</a> | <a href="{:U('User/Default/store_delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>
