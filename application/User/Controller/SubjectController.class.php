@@ -84,8 +84,14 @@ class SubjectController extends AdminbaseController
 		$name = I('get.name');
 		$where = " a.id > 0 ";
 		$term ? $where .= " AND b.id = $term " : '';
-		$name ? $where .= " AND a.name LIKE '%%'";
-		$term = $this->
+		$name ? $where .= " AND a.name LIKE '%$name%' " : '';
+		$num = $this->model->query("SELECT COUNT(*) AS num FROM ". C('DB_PREFIX')."subject_index a LEFT JOIN ".C('DB_PREFIX')."subject_term b ON a.term_id = b.id WHERE $where");
+		$page = $this->page($num[0]['sum'],20);
+		$sql = "SELECT a.name,b.name AS term_name ,a.id FROM ". C('DB_PREFIX')."subject_index a LEFT JOIN ".C('DB_PREFIX')."subject_term b ON a.term_id = b.id WHERE $where LIMIT ".$page->firstRow.",".$page->listRows;
+		$this->assign('page',$page->show('Admin'));
+		$this->assign('result',$result);
+		$this->assign('term',$term);
+		$this->assign('name',$name);
 		$this->display();
 	}
 	//添加题库
@@ -106,7 +112,7 @@ class SubjectController extends AdminbaseController
 		$this->display();
 	}
 
-	public function()
+	//修改题库
 
 
 }
