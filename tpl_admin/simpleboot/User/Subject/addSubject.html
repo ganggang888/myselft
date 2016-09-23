@@ -1,0 +1,56 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Subject/subjectIndex')}">题库列表</a></li>
+            <li class="active"><a href="javascript:;">添加题库</a></li>
+		</ul>
+		<div class="common-form">
+			<form method="post" class="form-horizontal J_ajaxForm" action="">
+				<fieldset>
+                <div class="control-group">
+						<label class="control-label">分类:</label>
+						<div class="controls">
+							<select name="term_id">
+                            <foreach name="term" item="vo">
+                            <option value="{$vo.id}">{$vo.name}</option>                            </foreach>
+                            </select>
+						</div>
+					</div>
+                    <div class="control-group">
+						<label class="control-label">分数选项:</label>
+						<div class="controls">
+							<select name="score_term">
+                            <foreach name="scoreTerm" item="v">
+                            <option value="{$v.id}">{$v.name}</option>                            </foreach>
+                            </select>
+						</div>
+					</div>
+                    <div class="control-group">
+						<label class="control-label">适应月龄:</label>
+						<div class="controls">
+							<input type="text" class="input" name="month">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">题目名称:</label>
+						<div class="controls">
+							<textarea name="name" rows="5" cols="57"></textarea>
+						</div>
+					</div>
+                    <div class="control-group">
+						<label class="control-label">注意:</label>
+						<div class="controls">
+							<textarea name="careful" rows="5" cols="57"></textarea>
+						</div>
+					</div>
+				</fieldset>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">添加</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+[ 2016-09-23T10:16:12+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=termIndex
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/termIndex.html
+
+[ 2016-09-23T10:22:45+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addTerm
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/addTerm.html
+
+[ 2016-09-23T10:26:11+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addTerm
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007950s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: INSERT INTO `sp_subject_term` (`name`,`admin_id`) VALUES ('手眼协调','1') [ RunTime:0.0002s ]
+
+[ 2016-09-23T10:27:16+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addTerm
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002446s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008366s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: INSERT INTO `sp_subject_term` (`name`,`admin_id`) VALUES ('手眼协调','1') [ RunTime:0.0003s ]
+
+[ 2016-09-23T10:28:44+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addTerm
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002160s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007664s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: INSERT INTO `sp_subject_term` (`name`,`admin_id`,`add_time`) VALUES ('手眼协调','1','2016-09-23 10:28:44') [ RunTime:0.0002s ]
+
+[ 2016-09-23T10:28:47+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editTerm&id=1
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/editTerm.html
+
+[ 2016-09-23T10:30:02+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editTerm&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007318s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: UPDATE `sp_subject_term` SET `name`='手眼协调啊',`id`='1' WHERE `id` = 1 [ RunTime:0.0002s ]
+
+[ 2016-09-23T10:30:09+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=deleteTerm&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007454s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: DELETE FROM `sp_subject_term` WHERE `id` = 1 [ RunTime:0.0001s ]
+
+[ 2016-09-23T10:30:24+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=subjectIndex
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/subjectIndex.html
+
+[ 2016-09-23T10:50:26+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=subjectIndex
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+
+[ 2016-09-23T10:50:27+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=subjectIndex
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+
+[ 2016-09-23T10:50:27+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=subjectIndex
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+
+[ 2016-09-23T10:51:34+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addTerm
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008332s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: INSERT INTO `sp_subject_term` (`name`,`admin_id`,`add_time`) VALUES ('手眼协调系列','1','2016-09-23 10:51:34') [ RunTime:0.0004s ]
+
+[ 2016-09-23T10:52:20+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/addSubject.html
+
+[ 2016-09-23T11:17:42+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+ERR: Think\Controller:score_term方法不存在！
+
+[ 2016-09-23T11:25:00+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002430s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008632s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:25:02+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002118s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007518s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:25:15+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002192s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007944s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:26:53+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002142s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007771s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:26:53+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002115s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007271s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:26:53+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007455s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+
+[ 2016-09-23T11:26:54+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002537s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007717s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:26:54+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002226s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007732s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:26:54+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008049s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:26:54+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007262s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:26:54+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002119s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007545s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:26:54+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002119s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007247s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:26:55+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002135s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007750s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:26:55+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002119s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007243s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:26:55+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007540s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:28:08+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007335s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:28:09+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002113s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007249s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:28:09+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007968s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:28:09+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002179s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007372s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:28:09+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007692s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:28:09+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002516s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007965s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+
+[ 2016-09-23T11:28:17+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002164s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007334s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:28:17+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002126s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007300s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:28:17+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007850s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:28:28+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002166s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007515s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:28:29+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007276s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+
+[ 2016-09-23T11:28:29+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007192s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0014s ]
+
+[ 2016-09-23T11:28:29+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007244s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0014s ]
+
+[ 2016-09-23T11:28:29+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002140s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007337s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:31:06+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002238s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008071s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+
+[ 2016-09-23T11:31:18+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002126s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007289s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+SQL: INSERT INTO `sp_subject_info` (`term_id`,`score_term`,`month`,`name`,`careful`) VALUES ('2','1','1','宝宝是否能正确爬楼梯','宝宝是否能正确爬楼梯') [ RunTime:0.0220s ]
+
+[ 2016-09-23T11:36:54+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editSubject&id=1
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/editSubject.html
+
+[ 2016-09-23T11:45:18+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editSubject&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002117s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007262s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+SQL: UPDATE `sp_subject_info` SET `term_id`='2',`score_term`='1',`month`='2',`name`='宝宝是否能正确爬楼梯',`careful`='宝宝是否能正确爬楼梯',`id`='1',`admin_id`='1' WHERE `id` = 1 [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS num FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sum E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 98 行.
+SQL: SELECT a.name,b.name AS term_name ,a.score_term,a.id,a.month,a.careful,a.add_time FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  LIMIT 0,20 [ RunTime:0.0003s ]
+SQL: SELECT `name`,`id` FROM `sp_subject_term`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: scoreTerm E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 68 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 75 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 81 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 87 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002047s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004355s ]
+
+[ 2016-09-23T11:45:24+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editSubject&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007574s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: UPDATE `sp_subject_info` SET `term_id`='2',`score_term`='1',`month`='2',`name`='宝宝是否能正确爬楼梯',`careful`='宝宝是否能正确爬楼梯',`id`='1',`admin_id`='1' WHERE `id` = 1 [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS num FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sum E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 98 行.
+SQL: SELECT a.name,b.name AS term_name ,a.score_term,a.id,a.month,a.careful,a.add_time FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  LIMIT 0,20 [ RunTime:0.0002s ]
+SQL: SELECT `name`,`id` FROM `sp_subject_term`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: scoreTerm E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 68 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 75 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 81 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 87 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002148s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004534s ]
+
+[ 2016-09-23T11:45:49+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editSubject&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002144s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007328s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+SQL: UPDATE `sp_subject_info` SET `term_id`='2',`score_term`='1',`month`='2',`name`='宝宝是否能正确爬楼梯',`careful`='宝宝是否能正确爬楼梯',`id`='1',`admin_id`='1' WHERE `id` = 1 [ RunTime:0.0315s ]
+SQL: SELECT COUNT(*) AS num FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sum E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 98 行.
+SQL: SELECT a.name,b.name AS term_name ,a.score_term,a.id,a.month,a.careful,a.add_time FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  LIMIT 0,20 [ RunTime:0.0002s ]
+SQL: SELECT `name`,`id` FROM `sp_subject_term`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: scoreTerm E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 68 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 75 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 81 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 87 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001979s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004286s ]
+
+[ 2016-09-23T11:46:33+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editSubject&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007268s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: UPDATE `sp_subject_info` SET `term_id`='2',`score_term`='1',`month`='2',`name`='宝宝是否能正确爬楼梯',`careful`='宝宝是否能正确爬楼梯',`id`='1',`admin_id`='1' WHERE `id` = 1 [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS num FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sum E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 98 行.
+SQL: SELECT a.name,b.name AS term_name ,a.score_term,a.id,a.month,a.careful,a.add_time FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  LIMIT 0,20 [ RunTime:0.0002s ]
+SQL: SELECT `name`,`id` FROM `sp_subject_term`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: scoreTerm E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 68 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 75 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 81 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 87 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004313s ]
+
+[ 2016-09-23T11:47:38+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editSubject&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002941s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009167s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: UPDATE `sp_subject_info` SET `term_id`='2',`score_term`='1',`month`='3',`name`='宝宝是否能正确爬楼梯',`careful`='宝宝是否能正确爬楼梯',`id`='1',`admin_id`='1' WHERE `id` = 1 [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS num FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sum E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 98 行.
+SQL: SELECT a.name,b.name AS term_name ,a.score_term,a.id,a.month,a.careful,a.add_time FROM sp_subject_info a LEFT JOIN sp_subject_term b ON a.term_id = b.id WHERE  a.id > 0  LIMIT 0,20 [ RunTime:0.0002s ]
+SQL: SELECT `name`,`id` FROM `sp_subject_term`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: scoreTerm E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 68 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 75 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 81 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 87 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\data\runtime\Cache\User\b317240d9ac065df96c854307e6930fb.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004346s ]
+
+[ 2016-09-23T11:48:03+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=editSubject&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002163s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007426s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: UPDATE `sp_subject_info` SET `term_id`='2',`score_term`='1',`month`='3',`name`='宝宝是否能正确爬楼梯',`careful`='宝宝是否能正确爬楼梯',`id`='1',`admin_id`='1' WHERE `id` = 1 [ RunTime:0.0241s ]
+
+[ 2016-09-23T11:48:13+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=deleteSubject&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002166s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007523s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: DELETE FROM `sp_subject_info` WHERE `id` = 1 [ RunTime:0.0219s ]
+
+[ 2016-09-23T11:48:43+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002845s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009025s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0023s ]
+SQL: INSERT INTO `sp_subject_info` (`term_id`,`score_term`,`month`,`name`,`careful`,`admin_id`,`add_time`) VALUES ('2','1','3','宝宝是否有序','宝宝哇哈哈哈小苏打','1','2016-09-23 11:48:43') [ RunTime:0.0220s ]
+
