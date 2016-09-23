@@ -102,6 +102,7 @@ class SubjectController extends AdminbaseController
 		$this->assign('result',$result);
 		$this->assign('term',$term);
 		$this->assign('name',$name);
+		$this->assign('month',$month);
 		$this->assign('allTerm',$this->term->getAllTerm());
 		$this->assign('score_term',$this->scoreTerm);
 		$this->display();
@@ -159,6 +160,21 @@ class SubjectController extends AdminbaseController
 	{
 		$id = I('get.id');
 		$this->subject->where(array('id'=>$id))->delete() ? $this->success('删除成功',U($this->subjectUrl)) : $this->error('删除失败',U($this->subjectUrl));
+	}
+
+
+	//宝宝试卷列表
+	public function examinationIndex()
+	{
+
+		$this->display();
+	}
+
+	//添加试卷
+	public function addExamination()
+	{
+		$this->assign('term',$this->term->allTerm());
+		$this->display();
 	}
 
 }
