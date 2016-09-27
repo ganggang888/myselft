@@ -11,3 +11,2566 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002522s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002567s ]
 
+[ 2016-09-27T11:09:51+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002256s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007948s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 24 行.
+
+[ 2016-09-27T11:13:35+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002832s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008664s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 24 行.
+
+[ 2016-09-27T11:14:27+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008797s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 24 行.
+
+[ 2016-09-27T11:21:37+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002590s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008169s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 24 行.
+
+[ 2016-09-27T11:21:53+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002986s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008454s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: info E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 187 行.
+
+[ 2016-09-27T11:30:23+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002224s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008508s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 24 行.
+
+[ 2016-09-27T11:32:10+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009496s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 23 行.
+
+[ 2016-09-27T11:32:13+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002520s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008612s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 23 行.
+
+[ 2016-09-27T11:32:26+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002914s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008738s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basic` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 23 行.
+
+[ 2016-09-27T11:38:17+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:21+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:21+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:22+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:22+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:23+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:23+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:23+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:24+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectBasicModel
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'matt_chat.sp_subject_basic' doesn't exist
+
+[ 2016-09-27T11:38:36+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002679s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008432s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 23 行.
+
+[ 2016-09-27T11:39:50+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008500s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: basic E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 23 行.
+
+[ 2016-09-27T11:47:46+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1
+
+[ 2016-09-27T11:48:25+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1
+
+[ 2016-09-27T11:48:26+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1
+
+[ 2016-09-27T11:48:26+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1
+
+[ 2016-09-27T11:48:27+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1
+
+[ 2016-09-27T11:48:56+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/defaultSubject.html
+
+[ 2016-09-27T11:50:30+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T11:50:31+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T11:50:31+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T11:50:31+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:02:01+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007796s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0015s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:02:03+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:02:04+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:02:04+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:02:05+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:03:22+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:03:25+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002231s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008269s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:03:37+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:06:06+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:06:07+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:06:07+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:06:07+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:06:15+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:06:15+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2016-09-27T13:06:55+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/defaultSubject.html
+
+[ 2016-09-27T13:10:21+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003367s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009806s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002880s ]
+
+[ 2016-09-27T13:10:23+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002858s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009192s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002061s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002318s ]
+
+[ 2016-09-27T13:12:22+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002504s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008612s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002086s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002569s ]
+
+[ 2016-09-27T13:41:05+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002256s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009341s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002090s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002276s ]
+
+[ 2016-09-27T13:41:07+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002532s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008824s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:41:10+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002496s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008701s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:41:11+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007858s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:41:12+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008339s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:41:12+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007698s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:41:13+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002238s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007867s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:41:18+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008618s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:41:30+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008756s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:42:01+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002967s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008504s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002050s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002268s ]
+
+[ 2016-09-27T13:42:05+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002598s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008058s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:42:29+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009687s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002075s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002388s ]
+
+[ 2016-09-27T13:42:33+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002253s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007787s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:44:03+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002806s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008256s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:44:06+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009618s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002159s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002616s ]
+
+[ 2016-09-27T13:44:09+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002800s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008277s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:45:00+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010041s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003523s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002757s ]
+
+[ 2016-09-27T13:45:03+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009236s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T13:46:43+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002708s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009269s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0016s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002091s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002239s ]
+
+[ 2016-09-27T13:46:46+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008491s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002183s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002282s ]
+
+[ 2016-09-27T13:46:52+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007809s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002072s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002286s ]
+
+[ 2016-09-27T13:47:07+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002372s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008654s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002207s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002376s ]
+
+[ 2016-09-27T13:47:20+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002644s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008328s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002104s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002280s ]
+
+[ 2016-09-27T13:47:29+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002232s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007915s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002268s ]
+
+[ 2016-09-27T13:47:48+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008047s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002241s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002319s ]
+
+[ 2016-09-27T13:47:56+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002655s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008201s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002098s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002265s ]
+
+[ 2016-09-27T13:48:02+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002227s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007685s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002060s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002293s ]
+
+[ 2016-09-27T13:48:08+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002243s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008118s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002346s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002241s ]
+
+[ 2016-09-27T13:48:20+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008066s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0016s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002107s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002244s ]
+
+[ 2016-09-27T13:48:26+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008076s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: rows E:\upupw\htdocs\info\data\runtime\Cache\User\40a47468f737e64685470cb181e39854.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002221s ]
+
+[ 2016-09-27T13:50:05+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002399s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009008s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002227s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002270s ]
+
+[ 2016-09-27T13:51:31+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002910s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012540s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002433s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002285s ]
+
+[ 2016-09-27T13:52:05+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008372s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002077s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002292s ]
+
+[ 2016-09-27T13:52:30+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003270s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013572s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002100s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002237s ]
+
+[ 2016-09-27T13:52:33+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002248s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008358s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002091s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002276s ]
+
+[ 2016-09-27T13:53:19+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003507s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012670s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0022s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002110s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002296s ]
+
+[ 2016-09-27T13:53:21+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002358s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008365s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002102s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002639s ]
+
+[ 2016-09-27T13:55:20+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012686s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002359s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002434s ]
+
+[ 2016-09-27T13:55:22+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002246s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008253s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002378s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002264s ]
+
+[ 2016-09-27T13:56:26+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003234s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014238s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0021s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002265s ]
+
+[ 2016-09-27T13:56:28+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002231s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007712s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002295s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002456s ]
+
+[ 2016-09-27T13:58:34+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005192s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013911s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002830s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002464s ]
+
+[ 2016-09-27T13:58:36+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002245s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007747s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002083s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002296s ]
+
+[ 2016-09-27T13:59:59+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002362s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010838s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0016s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002266s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.003323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002339s ]
+
+[ 2016-09-27T14:00:01+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007727s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002088s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002513s ]
+
+[ 2016-09-27T14:01:18+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002833s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009264s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002203s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003864s ]
+
+[ 2016-09-27T14:01:21+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002487s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008461s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002142s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002210s ]
+
+[ 2016-09-27T14:02:17+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003071s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009826s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002315s ]
+
+[ 2016-09-27T14:02:23+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008471s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002160s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002473s ]
+
+[ 2016-09-27T14:02:38+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002226s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009573s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002326s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002695s ]
+
+[ 2016-09-27T14:02:50+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005505s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012322s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.003595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002564s ]
+
+[ 2016-09-27T14:03:43+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002631s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008593s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002408s ]
+
+[ 2016-09-27T14:04:18+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002653s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008591s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002272s ]
+
+[ 2016-09-27T14:04:33+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007654s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014993s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002304s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002677s ]
+
+[ 2016-09-27T14:04:47+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003807s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013165s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002112s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002251s ]
+
+[ 2016-09-27T14:05:04+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002759s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010476s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002809s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002787s ]
+
+[ 2016-09-27T14:05:24+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002229s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007847s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: INSERT INTO `sp_subject_info` (`term_id`,`score_term`,`month`,`name`,`careful`,`admin_id`,`add_time`) VALUES ('2','1','1','哇哈哈哈哈','是大多数的方式','1','2016-09-27 14:05:24') [ RunTime:0.0299s ]
+
+[ 2016-09-27T14:05:35+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=1&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002202s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007616s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 1  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002087s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002248s ]
+
+[ 2016-09-27T14:05:38+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=2&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007827s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 2  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002298s ]
+
+[ 2016-09-27T14:05:40+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007595s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002093s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002258s ]
+
+[ 2016-09-27T14:05:42+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=4&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002226s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007725s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 4  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002553s ]
+
+[ 2016-09-27T14:08:18+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002214s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008362s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002072s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002237s ]
+
+[ 2016-09-27T14:08:29+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002732s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008243s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  AND term_id = 2  AND INSTR(`name`,'2')  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002072s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002225s ]
+
+[ 2016-09-27T14:09:28+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002589s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008129s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  AND term_id = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002479s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002391s ]
+
+[ 2016-09-27T14:09:31+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=1&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007999s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 1  AND term_id = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002132s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002275s ]
+
+[ 2016-09-27T14:09:37+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003131s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009363s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  AND term_id = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002203s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002295s ]
+
+[ 2016-09-27T14:21:26+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002530s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008416s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002319s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002441s ]
+
+[ 2016-09-27T14:21:28+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002798s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008730s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 3 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 189 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002200s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2016-09-27T14:25:06+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=3&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002870s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008676s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND month = 3  )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002276s ]
+
+[ 2016-09-27T14:33:34+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002530s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009682s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002075s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002294s ]
+
+[ 2016-09-27T14:33:43+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008966s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002094s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+
+[ 2016-09-27T14:33:47+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008185s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T14:34:06+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002724s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008973s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002260s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004991s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003317s ]
+
+[ 2016-09-27T14:34:15+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008031s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002153s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002490s ]
+
+[ 2016-09-27T14:34:17+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002262s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007943s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002072s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002626s ]
+
+[ 2016-09-27T14:34:20+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=%E6%9C%88%E4%BB%BD%E9%80%89%E6%8B%A9&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002520s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008447s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0015s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '月份选择' in 'where clause'
+
+[ 2016-09-27T14:34:38+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002694s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008731s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0015s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002795s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002317s ]
+
+[ 2016-09-27T14:34:45+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002241s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008182s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002119s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002331s ]
+
+[ 2016-09-27T14:34:49+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=0&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008291s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND term_id = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002219s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002459s ]
+
+[ 2016-09-27T14:34:54+08:00 ] ::1 /info/index.php?g=User&m=book&a=add_post
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'age' cannot be null
+
+[ 2016-09-27T14:35:17+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002641s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010690s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002073s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003145s ]
+
+[ 2016-09-27T14:35:21+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002987s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009591s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002313s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2016-09-27T14:35:33+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=0&term=2&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002233s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007895s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  AND term_id = 2  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002049s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002408s ]
+
+[ 2016-09-27T14:35:38+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002471s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008479s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0023s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002067s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002294s ]
+
+[ 2016-09-27T14:35:41+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=examinationIndex
+ERR: 模板不存在:tpl_admin/simpleboot/User/Subject/examinationIndex.html
+
+[ 2016-09-27T14:37:04+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009970s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002205s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002469s ]
+
+[ 2016-09-27T14:37:34+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002957s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011853s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002305s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.003237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002327s ]
+
+[ 2016-09-27T14:37:39+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004381s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011167s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002481s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.003100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002574s ]
+
+[ 2016-09-27T14:38:16+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002987s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011307s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002257s ]
+
+[ 2016-09-27T14:39:46+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008918s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002248s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002744s ]
+
+[ 2016-09-27T14:40:18+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003873s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010680s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002075s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002293s ]
+
+[ 2016-09-27T14:40:31+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002366s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009624s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004275s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.003190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002795s ]
+
+[ 2016-09-27T14:41:02+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008375s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0019s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002359s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002254s ]
+
+[ 2016-09-27T14:41:03+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002509s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008406s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0017s ]
+
+[ 2016-09-27T14:41:04+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002259s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008302s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+
+[ 2016-09-27T14:41:04+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002219s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008163s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0020s ]
+
+[ 2016-09-27T14:41:04+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=addExamination
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008322s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0018s ]
+
+[ 2016-09-27T14:41:14+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=defaultSubject&month=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008304s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_subject_basics` [ RunTime:0.0015s ]
+SQL: SELECT `basicexam` FROM `sp_subject_basics` WHERE `month` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\upupw\htdocs\info\application\User\Controller\SubjectController.class.php 第 202 行.
+SQL: SELECT id,name FROM sp_subject_basics  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002072s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002315s ]
+
+[ 2016-09-27T15:37:01+08:00 ] ::1 /info/index.php?g=User&m=Subject&a=selectInfo&month=0&term=0&name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002419s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007987s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_subject_term` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_subject_info` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`add_time` FROM `sp_subject_info` WHERE (  id > 0  )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002067s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.002605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002279s ]
+

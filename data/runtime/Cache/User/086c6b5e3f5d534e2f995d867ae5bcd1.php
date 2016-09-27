@@ -90,7 +90,6 @@ var GV = {
 				</fieldset>
 				<div class="form-actions">
 					<button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">添加</button>
-					<a class="btn" href="/info/index.php/User/Subject">返回</a>
 				</div>
 			</form>
 		</div>

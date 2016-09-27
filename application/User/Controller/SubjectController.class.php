@@ -20,6 +20,7 @@ class SubjectController extends AdminbaseController
 		$this->subject = D("Common/SubjectInfo");
 		$this->subjectUrl = "Subject/subjectIndex";
 		$this->scoreTerm = array(1=>array('id'=>1,'name'=>'是,否,不确定'),2=>array('id'=>2,'name'=>'能,不能,不知道'));
+		
 		$this->model = M();
 	}
 
@@ -166,13 +167,26 @@ class SubjectController extends AdminbaseController
 	//宝宝试卷列表
 	public function examinationIndex()
 	{
-
+		var_dump(unserialize('a:2:{i:0;s:1:&quot;2&quot;;i:1;s:1:&quot;3&quot;;}'));exit;
 		$this->display();
 	}
 
 	//添加试卷
 	public function addExamination()
 	{
+		if (IS_POST) {
+			$basic = D("Common/SubjectBasics");
+			$_POST['basicexam'] = serialize(I('post.test_id'));
+			if ($basic->create() !== false) {
+				if ($basic->add() !== false) {
+					$this->success('添加成功',U('Subject/examinationIndex'));
+				} else {
+					$this->error('添加失败',U('Subject/examinationIndex'));
+				}
+			} else {
+				$this->error($basic->getError());
+			}
+		}
 		$this->assign('term',$this->term->getAllTerm());
 		$this->display();
 	}
@@ -181,7 +195,34 @@ class SubjectController extends AdminbaseController
 	public function defaultSubject()
 	{
 		$month = I('get.month');
-		
+		$basic = D("Common/SubjectBasics");
+		$info = $basic->where(array('month'=>$month))->field(array('basicexam'))->find();
+		$i = '';
+		$row = unserialize($info['basicexam']);
+		foreach ($row as $vo) {
+			$i .= $vo.',';
+		}
+		$i = substr($i,0,strlen($i)-1);
+		$i ? $where = " WHERE id IN ($i) " : $where = '';
+		$result = $this->model->query("SELECT id,name FROM ".C('DB_PREFIX')."subject_basics $where");
+		$this->assign('result',$result);
+		$this->display();
+	}
+
+	//selectInfo
+	public function selectInfo()
+	{
+		$month = I('get.month');
+		$term = I('get.term');
+		$name = I('get.name');
+		$where = " id > 0 ";
+		$month ? $where .= " AND month = $month ":'';
+		$term ? $where .= " AND term_id = $term " : '';
+		$name ? $where .= " AND INSTR(`name`,'$name') " : '';
+		$result = $this->subject->where($where)->field(array('id','name','add_time'))->select();
+		//var_dump($where);
+		$this->assign('result',$result);
+		$this->display();
 	}
 
 }

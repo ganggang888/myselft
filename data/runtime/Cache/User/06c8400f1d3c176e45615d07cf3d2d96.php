@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?>
+<!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -46,8 +47,6 @@ var GV = {
 	</style><?php endif; ?>
 <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
 <link rel="stylesheet" href="/info/tpl_admin/simpleboot/Public/css/css.css" media="screen" type="text/css" />
-<link rel="stylesheet" type="text/css" href="/info/tpl_admin/simpleboot/Public/css/jquery.datetimepicker.css"/>
-
 <body class="J_scroll_fixed">
 <div class="wrap J_check_wrap">
   <ul class="nav nav-tabs">
@@ -55,21 +54,21 @@ var GV = {
     <li class="active"><a href="javascript:;">添加成长册</a></li>
   </ul>
   <div class="common-form">
-    <form method="post" name="myform" id="myform" class="form-horizontal J_ajaxForm" action="<?php echo U('book/add_post');?>">
+    <form method="post" class="form-horizontal J_ajaxForm" action="">
       <fieldset style="margin-top:30px">
       
       <div class="control-group">
           <label class="control-label">测评试卷名称:</label>
           <div class="controls">
-            <input type="text" class="input" name="month" value="">
+            <input type="text" class="input" name="name" value="" style="height:auto">
             <span class="must_red">*</span> </div>
         </div>
         <div class="control-group">
           <label class="control-label">适用月龄:</label>
           <div class="controls">
           
-            <select id="month">
-            <option>月份选择</option>
+            <select id="month" class="input">
+            <option value="0">月份选择</option>
             <?php for($i = 1;$i<=36;$i++) { ?>
             <option value="<?php echo ($i); ?>">第<?php echo ($i); ?>个月</option>
             <?php } ?>
@@ -87,20 +86,20 @@ var GV = {
         <div class="control-group">
           <label class="control-label">筛选条件:</label>
           <div class="controls">
-            <select id="ku">
+            <select id="term">
             <option value="0">分类选择</option>
             <?php if(is_array($term)): foreach($term as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
             -
-            <select id="month">
-            <option>月份选择</option>
+            <select id="months">
+            <option value="0">月份选择</option>
             <?php for($i = 1;$i<=36;$i++) { ?>
             <option value="<?php echo ($i); ?>">第<?php echo ($i); ?>个月</option>
             <?php } ?>
             </select>
             -
-            <input type="text" name="search" class="input" placeholder="请输入检索名称">
-            <span class="must_red">*</span> </div>
+            <input type="text" name="search" id="name" class="input" placeholder="请输入检索名称" style="height:auto">
+            <span class="must_red"><a href="javascript:;" id="jian">检索</a></span> </div>
         </div>
         <div class="control-group">
           <div class="container">
@@ -127,13 +126,15 @@ var GV = {
         <!--<input type="hidden" name="post[id]" value="<?php echo ($info["id"]); ?>" />-->
       </fieldset>
       <div class="form-actions">
-      <button class="btn btn-primary btn_submit J_ajax_submit_btn"type="submit">提交</button>
+      <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">提交</button>
       </div>
     </form>
   </div>
 </div> 
+<script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+<script src="/info/statics/js/common.js"></script>
 </body>
-</html><script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+</html>
 <script src="/info/tpl_admin/simpleboot/Public/js/index.js"></script>
 <style>
 .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
@@ -155,7 +156,8 @@ $(function(){
   $("#dropzone").load('<?php echo U("Subject/defaultSubject");?>&month=1');
 	$("#month").change(function(){
 		var month = $("#month").val();
-		$("#modules").load('<?php echo U("User/book/find_month");?>&month='+month+'&type='+type);		
+		alert(month);
+		$("#modules").load('<?php echo U("Subject/defaultSubject");?>&month='+month);		
 	});
   $("#day").change(function(){
     var age = $("#age").val();
@@ -163,7 +165,11 @@ $(function(){
     var feedType = $("#feedType").val();
     $("#dropzone").load('<?php echo U("book/defaultHandbook");?>&month='+age+'&day='+day+'&type='+feedType);
   })
+  $("#jian").click(function(){
+	var term = $("#term").val();
+	var month = $("#months option:selected").val();
+	var name = $("#name").val();
+	$("#modules").load('<?php echo U("Subject/selectInfo");?>&month='+month+'&term='+term+'&name='+name);
+  });
 })
 </script>
-
-<script src="/info/statics/js/common.js"></script>

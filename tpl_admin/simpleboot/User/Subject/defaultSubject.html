@@ -1,0 +1,6 @@
+<foreach name="result" item="vo">
+<div class="drop-item" id="{$vo.id}"><details><summary>{$vo.id}&nbsp;&nbsp;{$vo.name}&nbsp;&nbsp;</summary><div><label>时间段：
+</label></div></details><button type="button" class="btn btn-default btn-xs remove" onClick="$(this).parent().remove()"><span class="glyphicon glyphicon-trash"></span></button>
+<input type="hidden" name="test_id[]" value="{$vo.id}"></input>
+</div>
+</foreach>
