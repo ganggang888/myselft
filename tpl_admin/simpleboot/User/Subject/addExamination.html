@@ -1,0 +1,136 @@
+<admintpl file="header" />
+<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+<link rel="stylesheet" href="__TMPL__Public/css/css.css" media="screen" type="text/css" />
+<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/jquery.datetimepicker.css"/>
+
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+    <li><a href="{:U('book/index')}">我的成长册</a></li>
+    <li class="active"><a href="javascript:;">添加成长册</a></li>
+  </ul>
+  <div class="common-form">
+    <form method="post" name="myform" id="myform" class="form-horizontal J_ajaxForm" action="{:U('book/add_post')}">
+      <fieldset style="margin-top:30px">
+      
+      <div class="control-group">
+          <label class="control-label">测评试卷名称:</label>
+          <div class="controls">
+            <input type="text" class="input" name="month" value="">
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">适用月龄:</label>
+          <div class="controls">
+          
+            <select id="month">
+            <option>月份选择</option>
+            <php>
+            for($i = 1;$i<=36;$i++)
+            {
+            </php>
+            <option value="{$i}">第{$i}个月</option>
+            <php>
+            }
+            </php>
+            </select>
+            <span class="must_red">*</span> </div>
+        </div>
+        
+        
+        <div class="control-group">
+          <label class="control-label">说明:</label>
+          <div class="controls">
+            <textarea rows="4" name="about"></textarea>
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">筛选条件:</label>
+          <div class="controls">
+            <select id="ku">
+            <option value="0">分类选择</option>
+            <foreach name="term" item="vo">
+            <option value="{$vo.id}">{$vo.name}</option>
+            </foreach>
+            </select>
+            -
+            <select id="month">
+            <option>月份选择</option>
+            <php>
+            for($i = 1;$i<=36;$i++)
+            {
+            </php>
+            <option value="{$i}">第{$i}个月</option>
+            <php>
+            }
+            </php>
+            </select>
+            -
+            <input type="text" name="search" class="input" placeholder="请输入检索名称">
+            <span class="must_red">*</span> </div>
+        </div>
+        <div class="control-group">
+          <div class="container">
+            <div class="form-group"> 
+              <!--<input class="form-control" type="text" name="name" placeholder="Title" />--> 
+            </div>
+            <!--<details>
+              <div class="form-group">
+                <input class="form-control" type="text" name="blah" placeholder="Additional details here" />
+              </div>
+            </details>-->
+            <div class="row">
+              <div class="col-sm-6">
+                <div id="modules">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div id="dropzone"></div>
+                <!--<button class="btn btn-primary pull-right">Save</button>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<input type="hidden" name="post[id]" value="{$info.id}" />-->
+      </fieldset>
+      <div class="form-actions">
+      <button class="btn btn-primary btn_submit J_ajax_submit_btn"type="submit">提交</button>
+      </div>
+    </form>
+  </div>
+</div> 
+</body>
+</html><script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+<script src="__TMPL__Public/js/index.js"></script>
+<style>
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+	color: #95a5a6;
+	cursor: default;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+}
+.active {
+	outline: 0px solid red;
+}
+#adds {
+	height: 36px!important
+}
+</style>
+<script>
+$(function(){
+  $("#dropzone").load('{:U("Subject/defaultSubject")}&month=1');
+	$("#month").change(function(){
+		var month = $("#month").val();
+		$("#modules").load('{:U("User/book/find_month")}&month='+month+'&type='+type);		
+	});
+  $("#day").change(function(){
+    var age = $("#age").val();
+    var day = $("#day").val();
+    var feedType = $("#feedType").val();
+    $("#dropzone").load('{:U("book/defaultHandbook")}&month='+age+'&day='+day+'&type='+feedType);
+  })
+})
+</script>
+
+<script src="__ROOT__/statics/js/common.js"></script>

@@ -173,8 +173,15 @@ class SubjectController extends AdminbaseController
 	//添加试卷
 	public function addExamination()
 	{
-		$this->assign('term',$this->term->allTerm());
+		$this->assign('term',$this->term->getAllTerm());
 		$this->display();
+	}
+
+	//默认subject Index
+	public function defaultSubject()
+	{
+		$month = I('get.month');
+		
 	}
 
 }

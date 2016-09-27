@@ -1,0 +1,11 @@
+[ 2016-09-26T09:19:34+08:00 ] ::1 /info/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002177s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007960s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0262s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0078s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946baa408736e9a56dc887e48a095e6858289af',`user_nicename`='admin',`user_email`='a526584713@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-09-26 09:19:34',`create_time`='2015-05-22 09:43:39',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`term`='0' WHERE `id` = '1' [ RunTime:0.0005s ]
+

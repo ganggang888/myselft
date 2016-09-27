@@ -34,6 +34,19 @@ class BookController extends AdminbaseController
 		$this->display();
 	}
 
+	public function defaultHandbook()
+	{
+		$month = $_GET['month'];
+		$day = $_GET['day'];
+		$feed_type = $_GET['type'];
+		if ($month > 12) {
+			$feed_type = 3;
+		}
+		$order_money = 15888;
+		$rows = $this->model->query("SELECT b.ID AS ID,a.timestamp AS timestamp,a.TestStore_ID AS TestStore_ID,a.From_Time AS From_Time,a.To_Time AS To_Time,a.Feed_Type AS Feed_Type,b.Type,a.Month,b.Title AS Title,b.Media AS media FROM matt_app.M_BabyDefaultHandbook a LEFT JOIN matt_app.M_TestStore b ON a.TestStore_ID = b.ID WHERE a.Month = $month AND a.Day = $day AND a.Feed_Type = $feed_type AND a.Order_Money = $order_money AND a.Is_Deleted = 0 AND b.Title IS NOT NULL ORDER BY a.From_Time ASC ");
+		$this->assign('info',$rows);
+		$this->display();
+	}
 	//搜索
 	public function find_month()
 	{
@@ -226,6 +239,31 @@ class BookController extends AdminbaseController
 			$this->success('禁用成功');
 		} else {
 			$this->error('禁用失败');
+		}
+	}
+
+	//删除成长册分类
+	public function deleteHandBook()
+	{
+		$id = I('get.id');
+		$id = $_GET['id'];
+		if (!$id) {
+			$this->error('GET OUT!!');
+		}
+		$info = $this->_input->find($id);
+		$aid = $info['aid'];
+		$term = $info['term'];
+		$age = $info['age'];
+		$day = $info['day'];
+		$feed_type = $info['feed_type'];
+		$order_money = $info['order_money'];
+		$sql = "DELETE FROM matt_app.M_Special_BabyHandbook WHERE aid = '$aid' AND term = '$term' AND Month = '$age' AND Day = '$day' AND Feed_Type = '$feed_type' AND Order_Money = '$order_money'";
+		$row = $this->model->execute($sql);
+		$row = $this->_input->where(array('id'=>$id))->delete();
+		if ($row) {
+			$this->success('删除成功');
+		} else {
+			$this->error('删除失败');
 		}
 	}
 }
