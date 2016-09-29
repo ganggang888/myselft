@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -47,6 +46,8 @@ var GV = {
 	</style><?php endif; ?>
 <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
 <link rel="stylesheet" href="/info/tpl_admin/simpleboot/Public/css/css.css" media="screen" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="/info/tpl_admin/simpleboot/Public/css/jquery.datetimepicker.css"/>
 <body class="J_scroll_fixed">
 <div class="wrap J_check_wrap">
   <ul class="nav nav-tabs">
@@ -131,11 +132,15 @@ var GV = {
     </form>
   </div>
 </div> 
-<script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+
 <script src="/info/statics/js/common.js"></script>
+<script src='/info/tpl_admin/simpleboot/Public/js/jquery_and_jqueryui.js'></script>
+
+<script src="/info/tpl_admin/simpleboot/Public/js/index.js"></script>
+
 </body>
 </html>
-<script src="/info/tpl_admin/simpleboot/Public/js/index.js"></script>
+
 <style>
 .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
 	color: #95a5a6;

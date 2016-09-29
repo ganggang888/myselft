@@ -280,7 +280,6 @@
         if (callback._done) {
             return;
         }
-
         callback();
         callback._done = 1;
     }

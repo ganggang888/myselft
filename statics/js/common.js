@@ -8,7 +8,6 @@
             //请求失败处理
         }
     });
-
     if ($.browser.msie) {
         //ie 都不缓存
         $.ajaxSetup({
