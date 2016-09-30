@@ -162,7 +162,7 @@ $(function(){
 	$("#month").change(function(){
 		var month = $("#month").val();
 		alert(month);
-		$("#modules").load('<?php echo U("Subject/defaultSubject");?>&month='+month);		
+		$("#dropzone").load('<?php echo U("Subject/defaultSubject");?>&month='+month);		
 	});
   $("#day").change(function(){
     var age = $("#age").val();

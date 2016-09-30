@@ -167,7 +167,15 @@ class SubjectController extends AdminbaseController
 	//宝宝试卷列表
 	public function examinationIndex()
 	{
-		var_dump(unserialize('a:2:{i:0;s:1:&quot;2&quot;;i:1;s:1:&quot;3&quot;;}'));exit;
+
+		$month = I('get.month');
+		$basic = D("Common/SubjectBasics");
+		$where = array('month',$month);
+		$count = $basic->where($where)->count();
+		$page = $this->page($count,15);
+		$result = $basic->where($where)->field(array('id','name','add_time'))->limit($page->firstRow,$page->listRows)->select();
+		$this->assign('page',$page->show('Admin'));
+		$this->assign('result',$result);
 		$this->display();
 	}
 
@@ -177,8 +185,10 @@ class SubjectController extends AdminbaseController
 		if (IS_POST) {
 			$basic = D("Common/SubjectBasics");
 			$_POST['basicexam'] = serialize(I('post.test_id'));
+			$_POST['add_time'] = date("Y-m-d H:i:s");
+			$_POST['admin_id'] = $this->adminId;
 			if ($basic->create() !== false) {
-				if ($basic->add() !== false) {
+				if ($basic->add($_POST) !== false) {
 					$this->success('添加成功',U('Subject/examinationIndex'));
 				} else {
 					$this->error('添加失败',U('Subject/examinationIndex'));
@@ -204,7 +214,8 @@ class SubjectController extends AdminbaseController
 		}
 		$i = substr($i,0,strlen($i)-1);
 		$i ? $where = " WHERE id IN ($i) " : $where = '';
-		$result = $this->model->query("SELECT id,name FROM ".C('DB_PREFIX')."subject_basics $where");
+		$result = $this->model->query("SELECT id,name,add_time FROM ".C('DB_PREFIX')."subject_info $where");
+		//var_dump($result);
 		$this->assign('result',$result);
 		$this->display();
 	}
