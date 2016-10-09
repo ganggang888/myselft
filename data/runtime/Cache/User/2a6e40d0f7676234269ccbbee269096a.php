@@ -52,7 +52,7 @@ var GV = {
 <div class="wrap J_check_wrap">
   <ul class="nav nav-tabs">
     <li><a href="<?php echo U('Subject/examinationIndex');?>">试卷列表</a></li>
-    <li class="active"><a href="javascript:;">添加试卷</a></li>
+    <li class="active"><a href="javascript:;">修改试卷</a></li>
   </ul>
   <div class="common-form">
     <form method="post" class="form-horizontal J_ajaxForm" action="">
@@ -61,7 +61,7 @@ var GV = {
       <div class="control-group">
           <label class="control-label">测评试卷名称:</label>
           <div class="controls">
-            <input type="text" class="input" name="name" value="" style="height:auto">
+            <input type="text" class="input" name="name" value="<?php echo ($info["name"]); ?>" style="height:auto">
             <span class="must_red">*</span> </div>
         </div>
         <div class="control-group">
@@ -71,7 +71,7 @@ var GV = {
             <select id="month" name="month" class="input">
             <option value="0">月份选择</option>
             <?php for($i = 1;$i<=36;$i++) { ?>
-            <option value="<?php echo ($i); ?>">第<?php echo ($i); ?>个月</option>
+            <option value="<?php echo ($i); ?>" <?php if($info['month'] == $i): ?>selected<?php endif; ?>>第<?php echo ($i); ?>个月</option>
             <?php } ?>
             </select>
             <span class="must_red">*</span> </div>
@@ -81,7 +81,7 @@ var GV = {
         <div class="control-group">
           <label class="control-label">说明:</label>
           <div class="controls">
-            <textarea rows="4" name="about"></textarea>
+            <textarea rows="4" name="about"><?php echo ($info["about"]); ?></textarea>
             <span class="must_red">*</span> </div>
         </div>
         <div class="control-group">
@@ -127,7 +127,8 @@ var GV = {
         <!--<input type="hidden" name="post[id]" value="<?php echo ($info["id"]); ?>" />-->
       </fieldset>
       <div class="form-actions">
-      <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">提交</button>
+      <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
+            <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">提交</button>
       </div>
     </form>
   </div>
@@ -144,6 +145,7 @@ var GV = {
 <style>
 .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
 	color: #95a5a6;
+
 	cursor: default;
 	background-color: #fff;
 	border: 1px solid #ddd;
@@ -158,7 +160,7 @@ var GV = {
 </style>
 <script>
 $(function(){
-  //$("#dropzone").load('<?php echo U("Subject/defaultSubject");?>&month=1');
+  $("#dropzone").load('<?php echo U("Subject/defaultSubject");?>&month=<?php echo ($info["month"]); ?>');
 	$("#month").change(function(){
 		var month = $("#month").val();
 		$("#dropzone").load('<?php echo U("Subject/defaultSubject");?>&month='+month);		

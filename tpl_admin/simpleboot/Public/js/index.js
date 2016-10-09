@@ -20,7 +20,7 @@ $('#dropzone').droppable({
 	  var two = $(".two"+ls).val();
 	  var title = $("#title"+ls).val();
 	  var times = $("#time"+ls).val();
-    var $el = $('<div class="drop-item"><details><summary>' + ui.draggable.text() +'&nbsp;&nbsp;'+title+'&nbsp;&nbsp;</summary><div><label>创建时间：</label><input type="text" value="'+times+'" disabled /></div></details><input type="hidden" name="test_id[]" value="'+ls+'"></div>');
+    var $el = $('<div class="drop-item"><details><summary>' + ui.draggable.text() +'&nbsp;&nbsp;【'+one+'】'+title+'&nbsp;&nbsp;</summary><div><label>创建时间：</label><input type="text" value="'+times+'" disabled /></div></details><input type="hidden" name="test_id[]" value="'+ls+'"></div>');
     $el.append($('<button type="button" class="btn btn-default btn-xs remove"><span class="glyphicon glyphicon-trash"></span></button>').click(function () { $(this).parent().detach(); }));
     $(this).append($el);
   }

@@ -13,6 +13,9 @@ class SubjectTermModel extends CommonModel
 	public function getAllTerm()
 	{
 		$result = $this->field(array('name','id'))->select();
-		return $result;
+		foreach ($result as $vo) {
+			$data[$vo['id']][] = $vo;
+		}
+		return $data;
 	}
 }

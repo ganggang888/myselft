@@ -170,10 +170,11 @@ class SubjectController extends AdminbaseController
 
 		$month = I('get.month');
 		$basic = D("Common/SubjectBasics");
-		$where = array('month',$month);
+		$month ? $where = array('month',$month) : $where = array();
 		$count = $basic->where($where)->count();
 		$page = $this->page($count,15);
-		$result = $basic->where($where)->field(array('id','name','add_time'))->limit($page->firstRow,$page->listRows)->select();
+		$result = $basic->where($where)->field(array('id','name','month','about','add_time'))->limit($page->firstRow,$page->listRows)->select();
+		//var_dump($result);
 		$this->assign('page',$page->show('Admin'));
 		$this->assign('result',$result);
 		$this->display();
@@ -183,6 +184,7 @@ class SubjectController extends AdminbaseController
 	public function addExamination()
 	{
 		if (IS_POST) {
+			//var_dump($_POST);exit;
 			$basic = D("Common/SubjectBasics");
 			$_POST['basicexam'] = serialize(I('post.test_id'));
 			$_POST['add_time'] = date("Y-m-d H:i:s");
@@ -200,25 +202,86 @@ class SubjectController extends AdminbaseController
 		$this->assign('term',$this->term->getAllTerm());
 		$this->display();
 	}
+	//修改试卷
+	public function editExamination()
+	{
+		if (IS_POST) {
+			$basic = D("Common/SubjectBasics");
+			$_POST['basicexam'] = serialize(I('post.test_id'));
+			$_POST['add_time'] = date("Y-m-d H:i:s");
+			$_POST['admin_id'] = $this->adminId;
+			if ($basic->create() !== false) {
+				if ($basic->where(array('id'=>I('post.id')))->save($_POST) !== false) {
+					$this->success('修改成功',U('Subject/examinationIndex'));
+				} else {
+					$this->error('修改失败',U('Subject/examinationIndex'));
+				}
+			} else {
+				$this->error($basic->getError());
+			}
+		}
+		$id = I('get.id');
+		$month = I('get.month');
+		//先查看是否存在该试卷
+		$find = M('subject_basics')->where(array('id'=>$id,'month'=>$month))->find();
+		!$find ? $this->error('不存在该试卷，请刷新后重试') : '';
+		$this->assign('info',$find);
+		$this->display();
+	}
 
+	//删除一张试卷
+	public function deleteExamination()
+	{
+		$id = I('get.id');
+		M('subject_basics')->where(array('id'=>$id))->delete() ? $this->success('删除成功',U('Subject/examinationIndex')) : $this->error('删除失败',U('Subject/examinationIndex'));
+	}
 	//默认subject Index
 	public function defaultSubject()
 	{
 		$month = I('get.month');
 		$basic = D("Common/SubjectBasics");
 		$info = $basic->where(array('month'=>$month))->field(array('basicexam'))->find();
+		//var_dump($info);
 		$i = '';
 		$row = unserialize($info['basicexam']);
-		foreach ($row as $vo) {
-			$i .= $vo.',';
+		$i = implode(',',$row);
+		$i ? $where = " WHERE a.id IN ($i) " : $where = '';
+		//var_dump(array_count_values($row));
+		//由于IN中会存在多个相同的值，故此查询出重复项的重复次数使用union all进行拼接
+		$counts = array_count_values($row);
+		$union = '';
+		//var_dump($where);
+		foreach ($counts as $key=>$value) {
+			if ($value != 1) {
+				//var_dump($value);
+				//var_dump($key);
+				for ($j=1;$j<$value;$j++) {
+					$union .= " union all SELECT id,name,term_id,add_time FROM ".C('DB_PREFIX')."subject_info WHERE a.id = $key ";
+				}
+			}
 		}
-		$i = substr($i,0,strlen($i)-1);
-		$i ? $where = " WHERE id IN ($i) " : $where = '';
-		$result = $this->model->query("SELECT id,name,add_time FROM ".C('DB_PREFIX')."subject_info $where");
-		//var_dump($result);
-		$this->assign('result',$result);
+		//var_dump($union);exit;
+		if ($info) {
+			$result = $this->model->query("SELECT a.id,a.name,b.name AS term_name,a.add_time FROM ".C('DB_PREFIX')."subject_info a LEFT JOIN ".C('DB_PREFIX')."subject_term b ON a.term_id = b.id $where ");
+			foreach ($row as $vo) {
+				var_dump(array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; }));echo "<hr/>";
+				$arr[] = array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; })[0];
+			}
+
+		}
+		$this->assign('result',$arr);
 		$this->display();
 	}
+
+	function deep_in_array($value, $array) {   
+    foreach($array as $item) {   
+
+        if ($item['id'] == $value) {
+        	return $item;
+        }
+    }   
+    return false;   
+}
 
 	//selectInfo
 	public function selectInfo()
@@ -226,11 +289,12 @@ class SubjectController extends AdminbaseController
 		$month = I('get.month');
 		$term = I('get.term');
 		$name = I('get.name');
-		$where = " id > 0 ";
-		$month ? $where .= " AND month = $month ":'';
-		$term ? $where .= " AND term_id = $term " : '';
-		$name ? $where .= " AND INSTR(`name`,'$name') " : '';
-		$result = $this->subject->where($where)->field(array('id','name','add_time'))->select();
+		$where = " a.id > 0 ";
+		$month ? $where .= " AND a.month = $month ":'';
+		$term ? $where .= " AND a.term_id = $term " : '';
+		$name ? $where .= " AND INSTR(a.`name`,'$name') " : '';
+		$result = $this->model->query("SELECT a.id,a.name,b.name AS term_name,a.add_time FROM ".C('DB_PREFIX')."subject_info a LEFT JOIN ".C('DB_PREFIX')."subject_term b ON a.term_id = b.id WHERE $where");
+		//$result = $this->subject->where($where)->field(array('id','name','add_time'))->select();
 		//var_dump($where);
 		$this->assign('result',$result);
 		$this->display();
