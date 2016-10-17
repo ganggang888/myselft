@@ -251,7 +251,7 @@ class SubjectController extends AdminbaseController
 		$counts = array_count_values($row);
 		$union = '';
 		//var_dump($where);
-		foreach ($counts as $key=>$value) {
+		/*foreach ($counts as $key=>$value) {
 			if ($value != 1) {
 				//var_dump($value);
 				//var_dump($key);
@@ -259,29 +259,19 @@ class SubjectController extends AdminbaseController
 					$union .= " union all SELECT id,name,term_id,add_time FROM ".C('DB_PREFIX')."subject_info WHERE a.id = $key ";
 				}
 			}
-		}
+		}*/
 		//var_dump($union);exit;
 		if ($info) {
 			$result = $this->model->query("SELECT a.id,a.name,b.name AS term_name,a.add_time FROM ".C('DB_PREFIX')."subject_info a LEFT JOIN ".C('DB_PREFIX')."subject_term b ON a.term_id = b.id $where ");
 			foreach ($row as $vo) {
-				var_dump(array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; }));echo "<hr/>";
-				$arr[] = array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; })[0];
+				//var_dump(array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; }));echo "<hr/>";
+				$arr[] = current(array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; }));
 			}
 
 		}
 		$this->assign('result',$arr);
 		$this->display();
 	}
-
-	function deep_in_array($value, $array) {   
-    foreach($array as $item) {   
-
-        if ($item['id'] == $value) {
-        	return $item;
-        }
-    }   
-    return false;   
-}
 
 	//selectInfo
 	public function selectInfo()
