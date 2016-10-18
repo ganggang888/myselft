@@ -45,4 +45,22 @@ class LoginController extends HomeBaseController{
         );
         echo json_encode($arr);exit();
     }
+
+    //curl截图html信息
+    public function getHtml()
+    {
+        $result = curl_file_get_contents("http://www.lgxc.gov.cn/home.aspx");
+        $regex4 = "/<div class=\"weather_up_span\".*?>.*?<\/div>/ism";
+        preg_match_all($regex4,$result,$match);
+        $regex5 = "/<span>.*?<\/span>/ism";
+        preg_match_all($regex5,$match[0][0],$info);
+        foreach ($info[0] as $key=>$vo) {
+            $arr[] = strip_tags($vo);
+        }
+        //天气
+        $weather = curl_file_get_contents("http://www.soweather.com/DataService/GetData.aspx?DataType=WeatherForecast_NanHui");
+        $weather = json_decode($weather,true);
+        var_dump($weather);
+        var_dump($arr);
+    }
 }

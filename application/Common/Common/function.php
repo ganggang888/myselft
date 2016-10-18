@@ -1674,3 +1674,32 @@ function getRandCode($length)
 {
 	 return rand(pow(10,($length-1)), pow(10,$length)-1);
 }
+
+/**
+ *CURL获取链接内容
+ */
+function curl_file_get_contents($durl)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $durl);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+    curl_setopt($ch, CURLOPT_USERAGENT, _USERAGENT_);
+    curl_setopt($ch, CURLOPT_REFERER, _REFERER_);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $r = curl_exec($ch);
+    curl_close($ch);
+    return $r;
+}
+
+/**
+ *文章的标题和内容
+ */
+function getUrlInfo($url, $div, $array)
+{
+    $content = curl_file_get_contents($url);
+    $regex4 = "/<div class=\"" . $div . "\".*?>.*?<\/div>/ism";
+    preg_match_all($regex4, $content, $matches);
+    $nr = $matches[0][0];
+    $nr = str_replace($array, "", $nr);
+    return $nr;
+}
