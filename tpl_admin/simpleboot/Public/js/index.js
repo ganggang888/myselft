@@ -10,6 +10,29 @@ function writeObj(obj){
     }   
     alert(description); 
 }
+$(".col-sm-6 .drag.ui-draggable").click(function(){
+	var ids = $(this).children("a").html();
+	var add_time = $(this).children("#time"+ids).val();
+	var term_name = $(".one"+ids).val();
+	var title = $(this).children("#title"+ids).val();
+	
+	var text = '<div class="drop-item"><details><summary>'+ids+'&nbsp;&nbsp;【'+term_name+'】'+title+'&nbsp;&nbsp;</summary><div><label>创建时间：</label><input type="text" value="'+add_time+'" disabled=""></div></details><input type="hidden" name="test_id[]" value="'+ids+'"><button type="button" class="btn btn-default btn-xs remove"><span class="glyphicon glyphicon-trash"></span></button></div>';
+	if ($("#dropzone .drop-item").html()) {
+		$($("#dropzone .drop-item").last()).after(text);
+	} else {
+		$("#dropzone").append(text);
+	}
+	deleteSelf();
+	//alert(add_time);
+	//alert(ids);
+	//alert($(this).html());
+})
+function deleteSelf()
+{
+	$(".btn.btn-default.btn-xs").click(function(){
+		$(this).parent().remove();
+	})
+}
 $('#dropzone').droppable({
   activeClass: 'active',
   hoverClass: 'hover',

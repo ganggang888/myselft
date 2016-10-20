@@ -55,7 +55,7 @@ class LoginController extends HomeBaseController{
         $regex5 = "/<span>.*?<\/span>/ism";
         preg_match_all($regex5,$match[0][0],$info);
         foreach ($info[0] as $key=>$vo) {
-            $arr[] = strip_tags($vo);
+            $key == 0 ? $arr['pm'] = strip_tags($vo) : $arr['pmAuto'] = strip_tags($vo);
         }
         //天气
         $weather = curl_file_get_contents("http://www.soweather.com/DataService/GetData.aspx?DataType=WeatherForecast_NanHui");
