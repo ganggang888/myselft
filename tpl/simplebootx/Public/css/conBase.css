@@ -1,0 +1,42 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl, dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,iframe{margin:0; padding:0;}
+body,button,input,select,textarea { font-family:"Microsoft YaHei",tahoma,Verdana,Geneva,sans-serif; color:#222}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight: normal;}
+fieldset,img{border:0;}
+img{ vertical-align:top}
+address,caption,cite,dfn,em,th,var,optgroup{font-style:normal;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{display:block; margin:0; padding:0;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none; color:#222;}
+input,textarea{outline-style:none;}
+textarea{resize:none;}
+table{border-collapse:collapse; border-spacing:0;}
+.clearfix:after { content: "."; display: block; height: 0;  clear: both; visibility: hidden;}
+.fl{ float:left;}
+.fr{ float:right}
+body{height:100%;height: 100%;background: #ebebeb;padding: 0 0 50px 0;}
+footer, header, section {width: 100%;}
+header{height: 45px;line-height: 45px;/*position:fixed;top: 0;z-index: 555;*/color: #fff;position: relative;font-size: 14px;}
+header a{color: #fff;line-height: 45px;/*display: inline-block;*//*top: -17px;position: relative;*/}
+/*header i{font-style: normal;position: relative;}*/
+.go_a{margin: 0 20px 0 0;}
+.color1{background: #40a832;}
+.color2{background: #eb4b3f;}
+/*header span{overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width: 80px;display:inline-block;position: relative;top: 3px;
+    line-height: 16px;}*/
+header img{width: 25px;margin: 10px 5px 0 10px;}
+.last{border: none !important;}
+footer{background: #fff;position:fixed;bottom:0;z-index: 555;border-top:1px solid #dddddd;font-size: 15px;}
+footer .foot_nav a.fa{text-align: center;width: 33.33%;display: block;float: left;height: 45px;line-height: 45px;border-right: 1px solid #dddddd;box-sizing:border-box;background: url(../img/foot_ico.png) 97% 90% no-repeat;background-size: 10px;}
+.go{position: fixed;bottom:60px;right: 10px;z-index: 999;}
+.go img{width: 30px;}
+#wrap{width: 100%;height: 100%;}
+.menu{position: absolute;width: 33.33%;border: 1px solid #dddddd;bottom: 45px;display: none;}
+.menu a{width: 100%;display: block;line-height: 45px;text-align: center;border-bottom: 1px solid #dddddd;background: #fff;}
+.menu1{left:0;}
+.menu2{left:33.33%;}
+.menu3{right: 0;}
+.mask{width: 100%; height: 100%;z-index:55555; position: fixed; left: 0px; top: 0px; overflow: hidden; background:rgba(0,0,0,0.6); display: none;}
+.popshow{background: #ffffff; top: 0px; left: 0px; position:fixed;z-index:999999; width: 90%;padding: 10px 0; display: none;}
+
+
+

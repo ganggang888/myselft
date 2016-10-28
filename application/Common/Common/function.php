@@ -1703,3 +1703,21 @@ function getUrlInfo($url, $div, $array)
     $nr = str_replace($array, "", $nr);
     return $nr;
 }
+
+function weatherinfo($number)
+{
+	if ($number < 35) {
+		$info = '优';
+	} elseif ($number >= 35 && $number < 75) {
+		$info = '良';
+	} elseif ($number >= 75 && $number < 115) {
+		$info = '轻度污染';
+	} elseif ($number >= 115 && $number < 150) {
+		$info = '中度污染';
+	} elseif ($number >= 150 && $number < 250) {
+		$info = '重度污染';
+	} else {
+		$info = '严重污染';
+	}
+	return $info;
+}

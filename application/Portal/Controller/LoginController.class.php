@@ -60,7 +60,21 @@ class LoginController extends HomeBaseController{
         //天气
         $weather = curl_file_get_contents("http://www.soweather.com/DataService/GetData.aspx?DataType=WeatherForecast_NanHui");
         $weather = json_decode($weather,true);
-        var_dump($weather);
-        var_dump($arr);
+        $this->assign("weathers",$weather);
+        $this->assign('arr',$arr);
+        if(strstr($weather['weather24'],'雨')) {
+            $this->display('6');
+        } elseif (strstr($weather['weather24'],'雾霾')) {
+            $this->display('2');
+        } elseif (strstr($weather['weather24'],'晴转多云')) {
+            $this->display('3');
+        } elseif (strstr($weather['weather24'],'晴')) {
+            $this->display('4');
+        } elseif (strstr($weather['weather24'],'雪')) {
+            $this->display('5');
+        } elseif (strstr($weather['weather24'],'阴') || strstr($weather['weather24'],'多云')) {
+            $this->display('6');
+        }
+        
     }
 }
