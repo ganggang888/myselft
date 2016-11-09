@@ -9,4 +9,7 @@
   'COMMENT_TIME_INTERVAL' => 60,
   'MOBILE_TPL_ENABLED' => 0,
   'HTML_CACHE_ON' => false,
+  'DATA_CACHE_TYPE' => 'Memcache', 
+  'MEMCACHE_HOST'  => 'tcp://127.0.0.1:11211',
+  'DATA_CACHE_TIME' => '10',
 );?>

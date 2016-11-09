@@ -79,9 +79,18 @@ class TeacherController extends AdminbaseController
 	}
 	public function index()
 	{
-		$count = $this->users->where("user_type != 1")->count();
+		$test = S('test');
+if(!$test){
+     $test = '缓存信息';
+     S('test',$test,300);
+     echo $test.'-来自数据库';
+}else{
+     echo $test.'-来自memcached';
+}
+		$count = $this->users->where("user_type != 1")->cache(true)->count();
+		var_dump($count);
 		$page = $this->page($count,10);
-		$all = $this->model->query("SELECT a.id AS uid,a.user_login AS user_login,b.name AS name FROM sp_users a LEFT JOIN sp_classify b ON a.term = b.id WHERE user_type != 1 LIMIT ".$page->firstRow.",".$page->listRows);
+		$all = $this->model->cache(true)->query("SELECT a.id AS uid,a.user_login AS user_login,b.name AS name FROM sp_users a LEFT JOIN sp_classify b ON a.term = b.id WHERE user_type != 1 LIMIT ".$page->firstRow.",".$page->listRows);
 		$this->assign('page',$page->show('Admin'));
 		$this->assign('all',$all);
 		$this->display();

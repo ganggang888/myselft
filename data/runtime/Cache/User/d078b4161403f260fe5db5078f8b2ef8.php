@@ -46,66 +46,35 @@ var GV = {
 	</style><?php endif; ?>
 <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
 <link rel="stylesheet" href="/info/tpl_admin/simpleboot/Public/css/css.css" media="screen" type="text/css" />
-<link rel="stylesheet" type="text/css" href="/info/tpl_admin/simpleboot/Public/css/jquery.datetimepicker.css"/>
 
+<link rel="stylesheet" type="text/css" href="/info/tpl_admin/simpleboot/Public/css/jquery.datetimepicker.css"/>
 <body class="J_scroll_fixed">
 <div class="wrap J_check_wrap">
   <ul class="nav nav-tabs">
-    <li><a href="<?php echo U('book/index');?>">我的成长册</a></li>
-    <li class="active"><a href="javascript:;">添加成长册</a></li>
+    <li><a href="<?php echo U('Game/index');?>">游戏列表</a></li>
+    <li class="active"><a href="javascript:;">添加推荐游戏</a></li>
   </ul>
   <div class="common-form">
-    <form method="post" name="myform" id="myform" class="form-horizontal J_ajaxForm" action="<?php echo U('book/add_post');?>">
+    <form method="post" class="form-horizontal J_ajaxForm" action="">
       <fieldset style="margin-top:30px">
+      
+      
         <div class="control-group">
-          <label class="control-label">宝宝年龄:</label>
+          <label class="control-label">对应分类:</label>
           <div class="controls">
-            <select name="age">
-              <?php $num = 36; ?>
-              <?php for($i = 1;$i<=36;$i++) { ?>
-              <option value="<?php echo ($i); ?>">第<?php echo ($i); ?>个月</option>
-              <?php } ?>
+          
+            <select id="month" name="month" class="input">
+            <option value="0">月份选择</option>
+            <?php if(is_array($month)): foreach($month as $key=>$vo): ?><option value="<?php echo ($vo); ?>">第<?php echo ($vo); ?>个月</option><?php endforeach; endif; ?>
             </select>
-            <span class="must_red">*</span> </div>
-        </div>
-        <div class="control-group">
-          <label class="control-label">天数:</label>
-          <div class="controls">
-            <select name="day" id="day">
-            <?php for($i = 1;$i<=30;$i++) { ?>
-            <option value="<?php echo ($i); ?>">第<?php echo ($i); ?>天</option>
-            <?php } ?>
+            <select name="level">
+            <option value="0">级别选择</option>
+            <?php if(is_array($level)): foreach($level as $key=>$vo): ?><option value="<?php echo ($vo); ?>">第<?php echo ($vo); ?>级</option><?php endforeach; endif; ?>
             </select>
-            <span class="must_red">*</span> </div>
+            <span class="must_red">级别选择，三个分数区间，对应宝宝所得的分数由小到大</span> </div>
         </div>
-        <div class="control-group">
-          <label class="control-label">喂养方式:</label>
-          <div class="controls">
-            <select name="feedType" id="feedType">
-              <option value="0">母乳喂养</option>
-              <option value="1">混合喂养</option>
-              <option value="2">人工喂养</option>
-            </select>
-            <span class="must_red">*</span> </div>
-        </div>
-        <div class="control-group">
-          <label class="control-label">适用订单:</label>
-          <div class="controls">
-            <select name="orderMoney" id="orderMoney">
-              <option value="8866" >8866</option>
-              <option value="12888" >12888</option>
-              <option value="15888" >15888</option>
-            </select>
-            <span class="must_red">*</span> </div>
-        </div>
-        <div class="control-group">
-          <label class="control-label">成长册分类:</label>
-          <div class="controls">
-            <select name="term" id="orderMoney">
-            <?php if(is_array($term)): foreach($term as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
-            </select>
-            <span class="must_red">*</span> </div>
-        </div>
+        
+        
         <div class="control-group">
           <label class="control-label">说明:</label>
           <div class="controls">
@@ -115,22 +84,16 @@ var GV = {
         <div class="control-group">
           <label class="control-label">筛选条件:</label>
           <div class="controls">
-            <select id="ku">
-            <option value="0">库存选择</option>
-            <option value="1">行为库</option>
-            <option value="2">游戏库</option>
-            <option value="3">儿保库</option>
-            <option value="4">菜谱库</option>
-            </select>
-            -
-            <select id="month">
-            <option>月份选择</option>
+            
+            <select id="months">
+            <option value="0">月份选择</option>
             <?php for($i = 1;$i<=36;$i++) { ?>
             <option value="<?php echo ($i); ?>">第<?php echo ($i); ?>个月</option>
             <?php } ?>
             </select>
-            
-            <span class="must_red">*</span> </div>
+            -
+            <input type="text" name="search" id="name" class="input" placeholder="请输入检索名称" style="height:auto">
+            <span class="must_red"><a href="javascript:;" id="jian">检索</a></span> </div>
         </div>
         <div class="control-group">
           <div class="container">
@@ -157,17 +120,24 @@ var GV = {
         <!--<input type="hidden" name="post[id]" value="<?php echo ($info["id"]); ?>" />-->
       </fieldset>
       <div class="form-actions">
-      <button class="btn btn-primary btn_submit J_ajax_submit_btn"type="submit">提交</button>
+      <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">提交</button>
       </div>
     </form>
   </div>
 </div> 
-</body>
-</html><script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+
+<script src="/info/statics/js/common.js"></script>
+<script src='/info/tpl_admin/simpleboot/Public/js/jquery_and_jqueryui.js'></script>
+
 <script src="/info/tpl_admin/simpleboot/Public/js/index.js"></script>
+
+</body>
+</html>
+
 <style>
 .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
 	color: #95a5a6;
+
 	cursor: default;
 	background-color: #fff;
 	border: 1px solid #ddd;
@@ -182,16 +152,22 @@ var GV = {
 </style>
 <script>
 $(function(){
+  //$("#dropzone").load('<?php echo U("Subject/defaultSubject");?>&month=1');
 	$("#month").change(function(){
-		if ($("#ku").val() == 0) {
-			alert('请选择库');
-			return false;
-		}
-		var type = $("#ku").val();
 		var month = $("#month").val();
-		$("#modules").load('<?php echo U("book/find_month");?>&month='+month+'&type='+type);		
+		$("#dropzone").load('<?php echo U("Subject/defaultSubject");?>&month='+month);		
 	});
+  $("#day").change(function(){
+    var age = $("#age").val();
+    var day = $("#day").val();
+    var feedType = $("#feedType").val();
+    $("#dropzone").load('<?php echo U("book/defaultHandbook");?>&month='+age+'&day='+day+'&type='+feedType);
+  })
+  $("#jian").click(function(){
+	var term = $("#term").val();
+	var month = $("#months option:selected").val();
+	var name = $("#name").val();
+	$("#modules").load('<?php echo U("Subject/selectInfo");?>&month='+month+'&term='+term+'&name='+name);
+  });
 })
 </script>
-
-<script src="/info/statics/js/common.js"></script>

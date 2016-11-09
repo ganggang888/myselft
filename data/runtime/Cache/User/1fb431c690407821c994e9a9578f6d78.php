@@ -47,59 +47,28 @@ var GV = {
 <body class="J_scroll_fixed">
 	<div class="wrap J_check_wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="javascript:;">题库列表</a></li>
-            <li><a href="<?php echo U('Subject/addSubject');?>">添加题库</a></li>
+			<li class="active"><a href="javascript:;">用户列表</a></li>
+			<li><a href="<?php echo U('teacher/add_user');?>">添加用户</a></li>
 		</ul>
 
-		<form class="well form-search">
-			<div class="search_type cc mb10">
-				<div class="mb10">
-					<span class="mr20">
-						分类：
-                    <select name="term" id="term">
-                    <option value="0">全部</option>
-                        <?php if(is_array($allTerm)): foreach($allTerm as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>" <?php if($v['id'] == $term): ?>selected="selected"<?php endif; ?>><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
-                        </select>  --
-                          名称检索：
-                    <input type="text" id="name" value="<?php echo ($name); ?>" />
-                    --适用月龄：<input type="text" id="month" value="<?php echo ($month); ?>" />
-						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
-					</span>
-				  <script>
-					function todo() {
-						var term = $("#term").val();
-						var name = $("#name").val();
-						var month = $("#month").val();
-						window.location.href='index.php?g=User&m=Subject&a=subjectIndex&menuid=185&term='+term+'&name='+name+'&month='+month;
-					}
-					</script>
-				</div>
-			</div>
-		</form>
+		
 		<form class="form-horizontal J_ajaxForm" action="" method="post">
 			<table class="table table-hover table-bordered">
 				<thead>
 					<tr>
 						<th width="100">ID</th>
-						<th>名称</th>
-                        <th>分类名称</th>
-                        <th>适用月龄</th>
-                        <th>选题项目</th>
-                        <th>建议</th>
-                        <th>创建时间</th>
-                        <th width="120">操作</th>
+						<th>用户名</th>
+                        <th>分类</th>
+						<th width="120">操作</th>
 					</tr>
 				</thead>
-				<?php if(is_array($result)): foreach($result as $key=>$vo): ?><tr>
-					<td><?php echo ($vo["id"]); ?></td>
-					<td><?php echo ($vo["name"]); ?></td>
-                    <th><?php echo ($vo["term_name"]); ?></th>
-                    <td><?php echo ($vo["month"]); ?></td>
-                    <td><?php echo ($score_term[$vo['score_term']]['name']); ?></td>
-                    <td><?php echo mb_substr($vo['careful'],0,50,'utf-8');?></td>
-                    <td><?php echo ($vo["add_time"]); ?></td>
-                    <td>
-                    <a href="<?php echo U('Subject/editSubject',array('id'=>$vo['id']));?>">修改</a> | <a href="<?php echo U('Subject/deleteSubject',array('id'=>$vo['id']));?>" class="J_ajax_del">删除</a>
+				<?php if(is_array($all)): foreach($all as $key=>$vo): ?><tr>
+					<td><?php echo ($vo["uid"]); ?></td>
+					<td><?php echo ($vo["user_login"]); ?></td>
+                    <td><?php echo ($vo["name"]); ?></td>
+					<td>
+						<a href="<?php echo U('teacher/edit_user',array('id'=>$vo['uid']));?>">修改</a>|
+						<a href="<?php echo U('teacher/delete',array('id'=>$vo['uid']));?>" class="J_ajax_del">删除</a>
 					</td>
 				</tr><?php endforeach; endif; ?>
 			</table>
