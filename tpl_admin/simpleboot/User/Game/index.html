@@ -1,0 +1,68 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">游戏列表</a></li>
+    <li><a href="{:U('Game/add')}">添加推荐游戏</a></li>
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">月龄：<input type="text" id="month" value="{$month}" />
+						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+					</span>
+				  <script>
+					function todo() {
+						var month = $("#month").val();
+						window.location.href='index.php?g=User&m=Game&a=index&menuid=185&month='+month;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>适用月龄</th>
+                        <th>说明</th>
+                        <th>级别</th>
+                        <th>条目</th>
+                      <th>创建时间</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr valign="middle" >
+					<td>{$vo.id}</td>
+					<td>{$vo.month}</td>
+                    <th>{$vo.about}</th>
+                    <td>{$vo.level}</td>
+                    <th>
+                    <foreach name="vo[nr]" item="v">
+                    <li>{$v.title}</li>
+                    </foreach>
+                  </th>
+                  <td>{$vo.add_time}</td>
+                    <td><a href="{:U('Game/edit',array('id'=>$vo['id']))}">修改</a> | <a href="{:U('Game/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

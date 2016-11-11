@@ -1,0 +1,82 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">评估列表</a></li>
+    <li><a href="{:U('Assess/add')}">添加评估</a></li>
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">
+                    分类：
+                    <select name="term" id="term">
+                    <option value="0">全部</option>
+                    <foreach name="term" item="vo">
+                    <option value="{$vo.id}" <if condition="$term_id eq $vo[id]">selected</if>>{$vo.name}</option>
+                    </foreach>
+                    </select>
+                    月龄：<input type="text" id="month" value="{$month}" />
+						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+					</span>
+				  <script>
+					function todo() {
+						var month = $("#month").val();
+						var term = $("#term").val();
+						window.location.href='index.php?g=User&m=Assess&a=index&menuid=185&month='+month+'&term_id='+term;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>适用月龄</th>
+                        <th>评估</th>
+                        <th>级别</th>
+                        <th>分类名称</th>
+                      <th>创建时间</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr valign="middle" >
+					<td>{$vo.id}</td>
+					<td>{$vo.month}</td>
+                    <th>{$vo.sad}</th>
+                    <td>{$vo.level}</td>
+                    <th>
+                    <php>
+                    foreach ($term as $value) {
+                    	if ($value['id'] == $vo['term_id']){
+                        	echo $value['name'];
+                            break;
+                        }
+                    }
+                    </php>
+                    </th>
+                  <td>{$vo.add_time}</td>
+                    <td><a href="{:U('Assess/edit',array('id'=>$vo['id']))}">修改</a> | <a href="{:U('Assess/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

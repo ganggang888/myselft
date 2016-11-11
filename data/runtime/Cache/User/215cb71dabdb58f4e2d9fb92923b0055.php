@@ -65,11 +65,11 @@ var GV = {
           
             <select id="month" name="month" class="input">
             <option value="0">月份选择</option>
-            <?php if(is_array($month)): foreach($month as $key=>$vo): ?><option value="<?php echo ($vo); ?>">第<?php echo ($vo); ?>个月</option><?php endforeach; endif; ?>
+            <?php if(is_array($month)): foreach($month as $key=>$vo): ?><option value="<?php echo ($vo); ?>" <?php if($vo == $info[month]): ?>selected<?php endif; ?>>第<?php echo ($vo); ?>个月</option><?php endforeach; endif; ?>
             </select>
             <select name="level">
             <option value="0">级别选择</option>
-            <?php if(is_array($level)): foreach($level as $key=>$vo): ?><option value="<?php echo ($vo); ?>">第<?php echo ($vo); ?>级</option><?php endforeach; endif; ?>
+            <?php if(is_array($level)): foreach($level as $key=>$vo): ?><option value="<?php echo ($vo); ?>" <?php if($vo == $info[level]): ?>selected<?php endif; ?>>第<?php echo ($vo); ?>级</option><?php endforeach; endif; ?>
             </select>
             <span class="must_red">级别选择，三个分数区间，对应宝宝所得的分数由小到大</span> </div>
         </div>
@@ -78,7 +78,7 @@ var GV = {
         <div class="control-group">
           <label class="control-label">说明:</label>
           <div class="controls">
-            <textarea rows="4" name="about"></textarea>
+            <textarea rows="4" name="about"><?php echo ($vo["about"]); ?></textarea>
             <span class="must_red">*</span> </div>
         </div>
         <div class="control-group">
@@ -111,13 +111,18 @@ var GV = {
                 </div>
               </div>
               <div class="col-sm-6">
-                <div id="dropzone"></div>
+                <div id="dropzone">
+                <?php if(is_array($info[nr])): foreach($info[nr] as $key=>$vo): ?><div class="drop-item" id="<?php echo ($vo["id"]); ?>"><details><summary><?php echo ($vo["id"]); ?>&nbsp;&nbsp;【<?php echo ($vo["term_name"]); ?>】<?php echo ($vo["title"]); ?>&nbsp;&nbsp;</summary><div><label>添加时间：<?php echo ($vo["add_time"]); ?>
+</label></div></details><button type="button" class="btn btn-default btn-xs remove" onClick="$(this).parent().remove()"><span class="glyphicon glyphicon-trash"></span></button>
+<input type="hidden" name="test_id[]" value="<?php echo ($vo["id"]); ?>"></input>
+</div><?php endforeach; endif; ?>
+                </div>
                 <!--<button class="btn btn-primary pull-right">Save</button>-->
               </div>
             </div>
           </div>
         </div>
-        <!--<input type="hidden" name="post[id]" value="<?php echo ($info["id"]); ?>" />-->
+        <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>" />
       </fieldset>
       <div class="form-actions">
       <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">提交</button>
@@ -155,6 +160,7 @@ $(function(){
   $("#jian").click(function(){
 	var month = $("#months option:selected").val();
 	var name = $("#name").val();
+
 	$("#modules").load('<?php echo U("Game/checkTestStore");?>&month='+month+'&name='+name);
   });
 })

@@ -1,0 +1,9 @@
+
+<foreach name="result" item="vo">
+
+<p class="drag"><a class="btn btn-default">{$vo.id}</a><input type="" value="{$vo.title}" id="title{$vo.id}" disabled style="color:#F00"><input type="hidden" value="{$vo.add_time}" id="time{$vo.id}" /></p>
+<input type="hidden" class="one{$vo.id}" value="{$vo.term_name}" />
+</foreach>
+
+<p class="drag">
+<script src="__TMPL__Public/js/index.js"></script>

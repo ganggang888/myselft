@@ -11,6 +11,15 @@ class SubjectGameModel extends CommonModel
 			array('nr', 'require', '内容不能为空', 1, 'regex', 3),
 	);
 
+	//操作一些数据
+	protected function _before_insert(&$data,$option)
+	{
+		$data['add_time'] = date("Y-m-d H:i:s");
+		$data['admin_id'] = get_current_admin_id();
+	}
+
+	//根据数组
+
 	//获取所有分类月份数组
 	public function allMonth()
 	{
@@ -34,7 +43,8 @@ class SubjectGameModel extends CommonModel
 		$name ? $where .= " AND INSTR(`Title`,'$name') " : '';
 		$month ? $where .= " AND Month = $month " : '';
 		$where ? $where = preg_replace('/AND/','WHERE',$where,1) : '';
-		$info = $this->query("SELECT ID,Title FROM matt_app.M_TestStore WHERE $where");
+		//var_dump("SELECT ID,Title FROM matt_app.M_TestStore WHERE $where");exit;
+		$info = $this->query("SELECT ID,Title FROM matt_app.M_TestStore $where");
 		return $info;
 	}
 
@@ -43,7 +53,8 @@ class SubjectGameModel extends CommonModel
 	{
 		$row = unserialize($info);
 		$i = implode(',',$row);
-		$info = $this->query("SELECT ID,Title FROM matt_app.M_TestStore WHERE ID IN($i)");
+		//var_dump("SELECT ID,Title FROM matt_app.M_TestStore WHERE ID IN($i)");
+		$info = $this->query("SELECT ID,Title FROM matt_app.M_TestStore WHERE ID IN($i) ORDER BY FIELD(`ID`,$i)");
 		return $info;
 	}
 }

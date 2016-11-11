@@ -1,0 +1,58 @@
+<admintpl file="header" />
+
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+    <li><a href="{:U('Assess/index')}">评估列表</a></li>
+    <li class="active"><a href="javascript:;">添加</a></li>
+  </ul>
+  <div class="common-form">
+    <form method="post" class="form-horizontal J_ajaxForm" action="">
+      <fieldset style="margin-top:30px">
+      
+      
+        <div class="control-group">
+          <label class="control-label">对应分类:</label>
+          <div class="controls">
+           <select name="term_id">
+           <foreach name="term" item="vo">
+           <option value="{$vo.id}">{$vo.name}</option>
+           </foreach>
+           </select>
+            <select id="month" name="month" class="input">
+            <option value="0">月份选择</option>
+            <foreach name="month" item="vo">
+            <option value="{$vo}">第{$vo}个月</option>
+            </foreach>
+            </select>
+            <select name="level">
+            <option value="0">级别选择</option>
+            <foreach name="level" item="vo">
+            <option value="{$vo}">第{$vo}级</option>
+            </foreach>
+            </select>
+            <span class="must_red">级别选择，三个分数区间，对应宝宝所得的分数由小到大</span> </div>
+        </div>
+        
+        
+        <div class="control-group">
+          <label class="control-label">解读:</label>
+          <div class="controls">
+            <textarea rows="4" name="sad"></textarea>
+            <span class="must_red">*</span> </div>
+        </div>
+        
+        
+        <!--<input type="hidden" name="post[id]" value="{$info.id}" />-->
+      </fieldset>
+      <div class="form-actions">
+      <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">提交</button>
+      </div>
+    </form>
+  </div>
+</div> 
+
+<script src="__ROOT__/statics/js/common.js"></script>
+
+</body>
+</html>

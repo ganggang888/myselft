@@ -44,15 +44,12 @@ var GV = {
 			z-index:9999;
 		}
 	</style><?php endif; ?>
-<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
-<link rel="stylesheet" href="/info/tpl_admin/simpleboot/Public/css/css.css" media="screen" type="text/css" />
 
-<link rel="stylesheet" type="text/css" href="/info/tpl_admin/simpleboot/Public/css/jquery.datetimepicker.css"/>
 <body class="J_scroll_fixed">
 <div class="wrap J_check_wrap">
   <ul class="nav nav-tabs">
-    <li><a href="<?php echo U('Game/index');?>">游戏列表</a></li>
-    <li class="active"><a href="javascript:;">添加推荐游戏</a></li>
+    <li><a href="<?php echo U('Assess/index');?>">评估列表</a></li>
+    <li class="active"><a href="javascript:;">添加</a></li>
   </ul>
   <div class="common-form">
     <form method="post" class="form-horizontal J_ajaxForm" action="">
@@ -62,7 +59,9 @@ var GV = {
         <div class="control-group">
           <label class="control-label">对应分类:</label>
           <div class="controls">
-          
+           <select name="term_id">
+           <?php if(is_array($term)): foreach($term as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+           </select>
             <select id="month" name="month" class="input">
             <option value="0">月份选择</option>
             <?php if(is_array($month)): foreach($month as $key=>$vo): ?><option value="<?php echo ($vo); ?>">第<?php echo ($vo); ?>个月</option><?php endforeach; endif; ?>
@@ -76,47 +75,13 @@ var GV = {
         
         
         <div class="control-group">
-          <label class="control-label">说明:</label>
+          <label class="control-label">解读:</label>
           <div class="controls">
-            <textarea rows="4" name="about"></textarea>
+            <textarea rows="4" name="sad"></textarea>
             <span class="must_red">*</span> </div>
         </div>
-        <div class="control-group">
-          <label class="control-label">筛选条件:</label>
-          <div class="controls">
-            
-            <select id="months">
-            <option value="0">月份选择</option>
-            <?php for($i = 1;$i<=36;$i++) { ?>
-            <option value="<?php echo ($i); ?>">第<?php echo ($i); ?>个月</option>
-            <?php } ?>
-            </select>
-            -
-            <input type="text" name="search" id="name" class="input" placeholder="请输入检索名称" style="height:auto">
-            <span class="must_red"><a href="javascript:;" id="jian">检索</a></span> </div>
-        </div>
-        <div class="control-group">
-          <div class="container">
-            <div class="form-group"> 
-              <!--<input class="form-control" type="text" name="name" placeholder="Title" />--> 
-            </div>
-            <!--<details>
-              <div class="form-group">
-                <input class="form-control" type="text" name="blah" placeholder="Additional details here" />
-              </div>
-            </details>-->
-            <div class="row">
-              <div class="col-sm-6">
-                <div id="modules">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div id="dropzone"></div>
-                <!--<button class="btn btn-primary pull-right">Save</button>-->
-              </div>
-            </div>
-          </div>
-        </div>
+        
+        
         <!--<input type="hidden" name="post[id]" value="<?php echo ($info["id"]); ?>" />-->
       </fieldset>
       <div class="form-actions">
@@ -127,35 +92,6 @@ var GV = {
 </div> 
 
 <script src="/info/statics/js/common.js"></script>
-<script src='/info/tpl_admin/simpleboot/Public/js/jquery_and_jqueryui.js'></script>
-
-<script src="/info/tpl_admin/simpleboot/Public/js/index.js"></script>
 
 </body>
 </html>
-
-<style>
-.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
-	color: #95a5a6;
-
-	cursor: default;
-	background-color: #fff;
-	border: 1px solid #ddd;
-	border-bottom-color: transparent;
-}
-.active {
-	outline: 0px solid red;
-}
-#adds {
-	height: 36px!important
-}
-</style>
-<script>
-$(function(){
-  $("#jian").click(function(){
-	var month = $("#months option:selected").val();
-	var name = $("#name").val();
-	$("#modules").load('<?php echo U("Game/checkTestStore");?>&month='+month+'&name='+name);
-  });
-})
-</script>
