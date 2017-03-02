@@ -77,4 +77,62 @@ class LoginController extends HomeBaseController{
         }
         
     }
+
+    function sign()
+    {
+        /*$longitude = getPoint("121.489");
+        $latitude = getPoint("33.279");
+        $student = D("Common/Student");
+        $info = $student->sign(1541,$longitude,$latitude);*/
+        if ($_SESSION['number']) {
+          //$this->redirect("Portal/Login/signInfo");
+        }
+        $this->display();
+    }
+    function signInfo()
+    {
+      if (IS_POST) {
+        $longitude = getPoint(I('post.longitude'));
+        $latitude = getPoint(I('post.latitude'));
+        $number = I('post.number');
+        $student = D("Common/Student");
+        $info = $student->sign($number,$longitude,$latitude);
+        echo $info;exit;
+      }
+      $this->assign('number',$_SESSION['number']);
+      $this->display();
+    }
+
+    //签到历史记录
+    public function sign_history()
+    {
+        $number = $_SESSION['number'];
+        if (!$number) {
+            $this->error('没有权限');
+        }
+        $model = M();
+        $where = "";
+        $begin = I('get.begin');
+        $begin ? $begin = $begin." 00:00:00" : '';
+        $end ? $end = $end." 23:59:59" : '';
+        $end = I('get.end');
+        if ($begin && $end) {
+            $where .= " AND a.add_time >= '$begin' AND a.add_time <= '$end'";
+        } elseif ($begin && !$end) {
+            $where .= " AND a.add_time >= '$begin'";
+        } elseif (!$begin && $end) {
+            $where .= " AND a.add_time <= '$end'";
+        }
+        $number ? $where .= " AND b.number = $number " : '';
+        $where ? $where = preg_replace('/AND/','WHERE',$where,1)  : '';
+        $num = $model->query(" SELECT COUNT(*) AS num FROM sp_student_sign a LEFT JOIN sp_student b ON a.uid = b.id LEFT JOIN sp_student_term c ON a.term_id = c.id $where GROUP BY a.id ");
+        $count = $num[0]['num'];
+        $page = $this->page($count,300);
+        $result = $model->query("SELECT a.add_time,b.name,b.number,c.name AS term_name,b.phone FROM sp_student_sign a LEFT JOIN sp_student b ON a.uid = b.id LEFT JOIN sp_student_term c ON a.term_id = c.id $where GROUP BY a.id ORDER BY a.add_time DESC ");
+        $this->assign('page',$page->show('Admin'));
+        $this->assign('begin',$begin);
+        $this->assign('end',$end);
+        $this->assign('result',$result);
+        $this->display();
+    }
 }

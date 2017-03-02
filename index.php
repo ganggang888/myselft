@@ -1,5 +1,5 @@
 <?php
-
+set_time_limit(0);
 /**
  * 项目入口文件
  * Some rights reserved：www.simplewind.net
@@ -18,7 +18,7 @@ if (ini_get('magic_quotes_gpc')) {
 	$_GET = stripslashesRecursive($_GET);
 	$_POST = stripslashesRecursive($_POST);
 }
-set_time_limit(0);
+
 //开启调试模式
 define("APP_DEBUG", true);
 //网站当前路径

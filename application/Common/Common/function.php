@@ -1721,3 +1721,11 @@ function weatherinfo($number)
 	}
 	return $info;
 }
+
+function getPoint($num)
+{
+	$info = explode('.',$num);
+	$point = substr($info[1],0,2);
+	$num = $info[0].".".$point;
+	return $num;
+}

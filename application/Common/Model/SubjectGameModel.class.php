@@ -35,13 +35,21 @@ class SubjectGameModel extends CommonModel
 		$array = array(1,2,3);
 		return $array;
 	}
-
-	//根据条目名称对库进行模糊查询
-	public function selectTestStoreInfo($name,$month)
+        
+	/*
+         * 根据条目名称对库进行模糊查询
+         * @access public
+         * @param string $name 名称
+         * @param int $month 月份
+         * @param int $type 类型
+         * @return array
+         */
+        public function selectTestStoreInfo($name,$month,$type)
 	{
 		$where = "";
 		$name ? $where .= " AND INSTR(`Title`,'$name') " : '';
 		$month ? $where .= " AND Month = $month " : '';
+                $type ? $where .= " AND Type = $type" : '';
 		$where ? $where = preg_replace('/AND/','WHERE',$where,1) : '';
 		//var_dump("SELECT ID,Title FROM matt_app.M_TestStore WHERE $where");exit;
 		$info = $this->query("SELECT ID,Title FROM matt_app.M_TestStore $where");
@@ -57,4 +65,11 @@ class SubjectGameModel extends CommonModel
 		$info = $this->query("SELECT ID,Title FROM matt_app.M_TestStore WHERE ID IN($i) ORDER BY FIELD(`ID`,$i)");
 		return $info;
 	}
+
+	//查询宝宝测评记录
+	public function babyHistory($where = array())
+	{
+		$fields = "A.answer,A.month,A.score,A.weight,A.height,A.bmi,A.total,A.add_time,B.Baby_Name,B.Baby_Date";
+		$sql = " SELECT $fields FROM matt_chat.";
+	}	
 }

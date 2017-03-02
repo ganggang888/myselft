@@ -1,0 +1,85 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">学员列表</a></li>
+            <li><a href="{:U('Beautiful/add')}">添加学员</a></li>
+		</ul>
+
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">
+						名称： 
+						<input type="text" name="name" id="name" style="width: 200px;" value="{$name}" placeholder="请输入姓名..."> --
+						地址：
+						<input type="text" name="address" id="address" style="width: 200px;" value="{$address}" placeholder="请输入地址...">
+						 --
+                        分类：
+						<select name="term_id" id="term_id">
+                        <option value="0">请选择</option>
+                        <foreach name="term" item="vo">
+                        <option value="{$vo.id}"<if condition="$vo['id'] eq $term_id"> selected</if>>{$vo.name}</option>
+                        </foreach>
+                        </select>
+						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>&nbsp;&nbsp;
+					</span>
+					<script>
+					function todo() {
+						var name = $("#name").val();
+						var address = $("#address").val();
+						var term_id = $("#term_id").val();
+						window.location.href='index.php?g=User&m=Beautiful&a=index&menuid=185&name='+name+'&address='+address+'&term_id='+term_id;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>姓名</th>
+                        <th>所属分类</th>
+						<th>工号</th>
+                        <th>手机号</th>
+                        <th>地址</th>
+                        <th>添加时间</th>
+                        <th>操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr>
+					<td>{$vo.id}</td>
+					<td>{$vo.name}</td>
+                    <td>{$vo.term_name}</td>
+                    <td>{$vo.number}</td>
+					<td>
+					{$vo.phone}
+					</td>
+                    <td>{$vo.address}</td>
+                    <td>{$vo.add_time}</td>
+                    <td>
+                    <a href="{:U('Beautiful/edit',array('id'=>$vo['id']))}">修改</a>
+                    |
+                    <a class="J_ajax_del" href="{:U('Beautiful/delete',array('id'=>$vo['id']))}">删除</a>
+                    </td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

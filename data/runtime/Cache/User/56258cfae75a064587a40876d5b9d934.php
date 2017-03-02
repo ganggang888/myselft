@@ -50,17 +50,22 @@ var GV = {
 			<li class="active"><a href="javascript:;">游戏列表</a></li>
     <li><a href="<?php echo U('Game/add');?>">添加推荐游戏</a></li>
 		</ul>
-
 		<form class="well form-search">
 			<div class="search_type cc mb10">
 				<div class="mb10">
 					<span class="mr20">月龄：<input type="text" id="month" value="<?php echo ($month); ?>" />
-						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+						
 					</span>
+                    类型：
+                    <select name="type" id="type">
+                    <?php if(is_array($shareType)): foreach($shareType as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>" <?php if($v[id] == $type): ?>selected<?php endif; ?>><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
+                    </select>
+                    <a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
 				  <script>
 					function todo() {
 						var month = $("#month").val();
-						window.location.href='index.php?g=User&m=Game&a=index&menuid=185&month='+month;
+						var type = $("#type").val();
+						window.location.href='index.php?g=User&m=Game&a=index&menuid=185&month='+month+'&type='+type;
 					}
 					</script>
 				</div>
@@ -79,7 +84,7 @@ var GV = {
                         <th width="120">操作</th>
 					</tr>
 				</thead>
-				<?php if(is_array($result)): foreach($result as $key=>$vo): ?><tr valign="middle" >
+				<?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr valign="middle" >
 					<td><?php echo ($vo["id"]); ?></td>
 					<td><?php echo ($vo["month"]); ?></td>
                     <th><?php echo ($vo["about"]); ?></th>

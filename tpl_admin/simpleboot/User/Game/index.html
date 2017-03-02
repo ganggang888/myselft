@@ -2,20 +2,27 @@
 <body class="J_scroll_fixed">
 	<div class="wrap J_check_wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="javascript:;">游戏列表</a></li>
-    <li><a href="{:U('Game/add')}">添加推荐游戏</a></li>
+			<li class="active"><a href="javascript:;">推荐列表</a></li>
+    <li><a href="{:U('Game/add')}">添加推荐</a></li>
 		</ul>
-
 		<form class="well form-search">
 			<div class="search_type cc mb10">
 				<div class="mb10">
 					<span class="mr20">月龄：<input type="text" id="month" value="{$month}" />
-						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+						
 					</span>
+                    类型：
+                    <select name="type" id="type">
+                    <foreach name="shareType" item="v">
+                    <option value="{$v.id}" <if condition="$v[id] eq $type"> selected</if>>{$v.name}</option>
+                    </foreach>
+                    </select>
+                    <a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
 				  <script>
 					function todo() {
 						var month = $("#month").val();
-						window.location.href='index.php?g=User&m=Game&a=index&menuid=185&month='+month;
+						var type = $("#type").val();
+						window.location.href='index.php?g=User&m=Game&a=index&menuid=185&month='+month+'&type='+type;
 					}
 					</script>
 				</div>
@@ -34,7 +41,7 @@
                         <th width="120">操作</th>
 					</tr>
 				</thead>
-				<foreach name="result" item="vo">
+				<foreach name="data" item="vo">
 				<tr valign="middle" >
 					<td>{$vo.id}</td>
 					<td>{$vo.month}</td>

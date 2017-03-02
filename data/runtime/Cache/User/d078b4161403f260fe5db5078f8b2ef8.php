@@ -62,7 +62,10 @@ var GV = {
         <div class="control-group">
           <label class="control-label">对应分类:</label>
           <div class="controls">
-          
+          <select name="type" class="input">
+            <option value="0">分类选择</option>
+            <?php if(is_array($shareType)): foreach($shareType as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+            </select>
             <select id="month" name="month" class="input">
             <option value="0">月份选择</option>
             <?php if(is_array($month)): foreach($month as $key=>$vo): ?><option value="<?php echo ($vo); ?>">第<?php echo ($vo); ?>个月</option><?php endforeach; endif; ?>
@@ -92,6 +95,9 @@ var GV = {
             <?php } ?>
             </select>
             -
+            <select id="type">
+            <?php if(is_array($storeTerm)): foreach($storeTerm as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+            </select>
             <input type="text" name="search" id="name" class="input" placeholder="请输入检索名称" style="height:auto">
             <span class="must_red"><a href="javascript:;" id="jian">检索</a></span> </div>
         </div>
@@ -155,7 +161,8 @@ $(function(){
   $("#jian").click(function(){
 	var month = $("#months option:selected").val();
 	var name = $("#name").val();
-	$("#modules").load('<?php echo U("Game/checkTestStore");?>&month='+month+'&name='+name);
+	var type = $("#type").val();
+	$("#modules").load('<?php echo U("Game/checkTestStore");?>&month='+month+'&name='+name+'&type='+type);
   });
 })
 </script>
