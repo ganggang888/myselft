@@ -14,7 +14,7 @@
 						<input type="text" name="name" id="name" style="width: 200px;" value="{$name}" placeholder="请输入宝宝名称..."> --
 						妈妈手机：
 						<input type="text" name="phone" id="phone" style="width: 200px;" value="{$phone}" placeholder="请输入妈妈手机...">
-						<a href="javascript:;" onclick="todo()" class="btn btn-primary">搜索</a>
+						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
 					</span>
 					<script>
 					function todo() {
@@ -33,10 +33,9 @@
 						<th width="100">ID</th>
 						<th>用户名</th>
 						<th>生日</th>
-                        <th>剩余成长册天数</th>
                         <th>妈妈</th>
                         <th>成长册分类</th>
-						<th width="120">操作</th>
+						<th width="250">操作</th>
 					</tr>
 				</thead>
 				<foreach name="rows" item="vo">
@@ -44,12 +43,14 @@
 					<td>{$vo.id}</td>
 					<td>{$vo.name}</td>
 					<th>{$vo.birthday}</th>
-                    <td>{$vo.handbookdays}</td>
                     <td>{$vo.phone}</td>
                     <td>{$vo.term}</td>
 					<td>
-                    <a href="{:U('baby/give',array('id'=>$vo['id']))}">分配</a> |
-						<a href="{:U('baby/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a>
+                    <a href="{:U('User/SixForOne/add',array('babyId'=>$vo['id']))}" target="_blank">给宝宝做六对一测评</a>
+                    |
+                    <a href="{:U('baby/give',array('id'=>$vo['id']))}">分配成长册</a> |
+						<a href="{:U('baby/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a> |
+						<a href="{:U('baby/suggest',array('id'=>$vo['id']))}">建议</a>
 					</td>
 				</tr>
 				</foreach>

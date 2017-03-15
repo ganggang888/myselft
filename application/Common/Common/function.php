@@ -1418,7 +1418,13 @@ function teacher_name($id)
 	$row = $model->query("SELECT Telephone FROM matt_app.M_Teacher WHERE ID = (SELECT BandMother FROM matt_app.M_Baby WHERE Baby_ID = $id)");
 	return $row[0]['telephone'];
 }
-
+//取得育婴师id
+function teacher_id($telephone)
+{
+	$model = M();
+	$row = $model->query("SELECT ID FROM matt_app.M_Teacher WHERE Telephone = '$telephone'");
+	return $row[0]['id'];
+}
 //根据id获取管理员姓名
 function get_names($id)
 {
@@ -1511,7 +1517,30 @@ function getHandBookName($id)
 			19=>'查看考试秘籍条目',//ok
 			20=>'查看某个宝宝的家人分享',
 			21=>'查看某个宝宝的时间线信息',
-			23=>'读取单条考试秘籍信息'//ok
+			23=>'读取单条考试秘籍信息',//ok
+			24 => '查看宝宝列表',
+            25 => '查看麦麦绘本',
+            26 => '查看疫苗列表',
+            27 => '查看孕期食谱列表',
+            28 => '查看孕期食谱详细',
+            29 => '查看能不能吃',
+            30 => '查看聊天专家列表',
+            31 => '查看宝宝身高体重信息',
+            32 => '查看随机成长册内容',
+            33 => '查看宝宝评测信息',
+            34 => '获取用户绑定的信息',
+            35 => '上传用户头像或修改昵称',
+            36 => '获取可选疫苗信息',
+            37 => '给宝宝添加自费疫苗',
+            38 => '给宝宝打疫苗',
+            39 => '提交投诉与建议',
+            40 => '查看自己发送的投诉与建议',
+            41 => '用户收藏成长册信息',
+            42 => '用户查看收藏的成长册信息',
+            43 => '用户收藏绘本信息',
+            44 => '用户查看收藏的绘本列表',
+            45 => '用户取消收藏绘本信息',
+            46 => '上传宝宝的日常信息'
 		);
 		return $array[$action];
 	}
@@ -1524,7 +1553,21 @@ function getNameForBabyid($id)
 	$info = $model->query("SELECT Baby_Name FROM matt_app.M_Baby WHERE Baby_ID = '$id'");
 	return $info[0]['baby_name'];
 }
-
+//根据宝宝名称获取宝宝id
+function getIdForBabyName($babyName)
+{
+	if (!$babyName) {
+		return false;
+	}
+	$info = M()->query("SELECT Baby_ID FROM matt_app.M_Baby WHERE INSTR(`Baby_Name`,'$babyName')");
+	if ($info) {
+		array_map(function($v)use(&$data){$data[] = $v['baby_id'];},$info);
+		return $data;
+	} else {
+		return false;
+	}
+	
+}
 //根据teststore_id取得当前查看事情的名称
 function TestStoreName($id)
 {
@@ -1584,9 +1627,24 @@ function todoAction($action,$Baby_ID,$type,$info)
 		return "查看考试秘籍章节：".sectionName($info);
 	} elseif ($action == 23) {
 		return "查看考试秘籍：".questionsName($info);
+	} elseif ($action == 26) {
+		return "为宝宝：".getNameForBabyid($Baby_ID).' 查看疫苗时间表';
+	} elseif ($action == 36) {
+		return "查看 ".getNameForBabyid($Baby_ID).' 的可选疫苗列表';
+	} elseif ($action == 37) {
+		return "给 ".getNameForBabyid($Baby_ID). ' 添加自费疫苗信息' .getVaccineName($info);
+	} elseif ($action == 38) {
+		return "给 ".getNameForBabyid($Baby_ID). '打疫苗 :'.getVaccineName($info);
 	}
 }
 
+//根据疫苗id获取疫苗名称
+function getVaccineName($id)
+{
+	$model = M();
+	$info = $model->query("SELECT name FROM sp_vaccine WHERE id = '$id'");
+	return $info[0]['name'];
+}
 //根据专家分类id获取专家分类名称
 function getTermName($id) {
 	$model = D('classify');
@@ -1669,11 +1727,142 @@ function GetIP(){
 		return $cip;
 	}
 
-
-function getRandCode($length)
-{
-	 return rand(pow(10,($length-1)), pow(10,$length)-1);
+/*
+ * 加密
+ * @param $str 要加密的字符串
+ * @param $action 执行的动作,1:加密;0:解密
+ */
+function DoMcrypt($str,$action){
+	$key = ">.t;GHl=oV/_6V!(aHPj#;>t=uKn)j;Z";
+	$cipher = MCRYPT_RIJNDAEL_128;
+	$mode = MCRYPT_MODE_ECB;
+	//$iv = mcrypt_create_iv(mcrypt_get_iv_size($cipher, $mode),MCRYPT_RAND);
+	if($action ==1){
+		$value = mcrypt_encrypt($cipher, $key, $str, $mode);
+		return base64_encode($value);
+	}else if ($action == 0){
+		$str = base64_decode($str);
+		return trim(mcrypt_decrypt($cipher, $key, $str, $mode));
+	}
 }
+
+function AjaxReturn($errorCode,$errorMessage,$list,$result)
+{
+    header("Content-type: text/html; charset=utf-8");
+    $arr = array(
+        'errorCode'     => $errorCode,
+        'errorMessage'  => $errorMessage,
+        'list'          => $list,
+        'result'        => $result,
+    );
+    echo json_encode($arr);exit();
+}
+
+function uuid() {
+        $charid = md5(uniqid(mt_rand(), true));
+        $hyphen = chr(45);// "-"
+        $uuid = substr($charid, 0, 8).$hyphen
+               .substr($charid, 8, 4).$hyphen
+               .substr($charid,12, 4).$hyphen
+               .substr($charid,16, 4).$hyphen
+               .substr($charid,20,12);
+        return $uuid;
+}
+
+
+/**
+ * 发起一个post请求到指定接口
+ * 
+ * @param string $api 请求的接口
+ * @param array $params post参数
+ * @param int $timeout 超时时间
+ * @return string 请求结果
+ */
+function postRequest( $api, array $params = array(), $timeout = 30 ) {
+    $ch = curl_init();
+    curl_setopt( $ch, CURLOPT_URL, $api );
+    // 以返回的形式接收信息
+    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+    // 设置为POST方式
+    curl_setopt( $ch, CURLOPT_POST, 1 );
+    curl_setopt( $ch, CURLOPT_POSTFIELDS, http_build_query( $params ) );
+    // 不验证https证书
+    curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0 );
+    curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0 );
+    curl_setopt( $ch, CURLOPT_TIMEOUT, $timeout );
+    curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
+        'Content-Type: application/x-www-form-urlencoded;charset=UTF-8',
+        'Accept: application/json',
+    ) ); 
+    // 发送数据
+    $response = curl_exec( $ch );
+    // 不要忘记释放资源
+    curl_close( $ch );
+    return $response;
+}
+
+//截图source_path图片地址，target_width宽target_height高 name新文件名称
+function imagecropper($source_path, $target_width, $target_height,$name){
+  $source_info = getimagesize($source_path);
+  $source_width = $source_info[0];
+  $source_height = $source_info[1];
+  $source_mime = $source_info['mime'];
+  $source_ratio = $source_height / $source_width;
+  $target_ratio = $target_height / $target_width;
+   
+  // 源图过高
+  if ($source_ratio > $target_ratio){
+    $cropped_width = $source_width;
+    $cropped_height = $source_width * $target_ratio;
+    $source_x = 0;
+    $source_y = ($source_height - $cropped_height) / 2;
+  }elseif ($source_ratio < $target_ratio){ // 源图过宽
+    $cropped_width = $source_height / $target_ratio;
+    $cropped_height = $source_height;
+    $source_x = ($source_width - $cropped_width) / 2;
+    $source_y = 0;
+  }else{ // 源图适中
+    $cropped_width = $source_width;
+    $cropped_height = $source_height;
+    $source_x = 0;
+    $source_y = 0;
+  }
+   
+  switch ($source_mime){
+    case 'image/gif':
+      $source_image = imagecreatefromgif($source_path);
+      break;
+     
+    case 'image/jpeg':
+      $source_image = imagecreatefromjpeg($source_path);
+      break;
+     
+    case 'image/png':
+      $source_image = imagecreatefrompng($source_path);
+      break;
+     
+    default:
+      return false;
+      break;
+  }
+   
+  $target_image = imagecreatetruecolor($target_width, $target_height);
+  $cropped_image = imagecreatetruecolor($cropped_width, $cropped_height);
+   
+  // 裁剪
+  imagecopy($cropped_image, $source_image, 0, 0, $source_x, $source_y, $cropped_width, $cropped_height);
+  // 缩放
+  imagecopyresampled($target_image, $cropped_image, 0, 0, 0, 0, $target_width, $target_height, $cropped_width, $cropped_height);
+  $dotpos = strrpos($source_path, '.');
+  $imgName = substr($source_path, 0, $dotpos);
+  $suffix = substr($source_path, $dotpos);
+  $imgNew = $name;
+  imagejpeg($target_image, $imgNew, 100);
+  imagedestroy($source_image);
+  imagedestroy($target_image);
+  imagedestroy($cropped_image);
+}
+
 
 /**
  *CURL获取链接内容
@@ -1692,34 +1881,58 @@ function curl_file_get_contents($durl)
 }
 
 /**
- *文章的标题和内容
+ *生成随机数字验证码
+ *@param $length 验证码长度
  */
-function getUrlInfo($url, $div, $array)
+function getRandCode($length)
 {
-    $content = curl_file_get_contents($url);
-    $regex4 = "/<div class=\"" . $div . "\".*?>.*?<\/div>/ism";
-    preg_match_all($regex4, $content, $matches);
-    $nr = $matches[0][0];
-    $nr = str_replace($array, "", $nr);
-    return $nr;
+	 return rand(pow(10,($length-1)), pow(10,$length)-1);
 }
 
-function weatherinfo($number)
-{
-	if ($number < 35) {
-		$info = '优';
-	} elseif ($number >= 35 && $number < 75) {
-		$info = '良';
-	} elseif ($number >= 75 && $number < 115) {
-		$info = '轻度污染';
-	} elseif ($number >= 115 && $number < 150) {
-		$info = '中度污染';
-	} elseif ($number >= 150 && $number < 250) {
-		$info = '重度污染';
-	} else {
-		$info = '严重污染';
-	}
-	return $info;
+//aes256加密 key+偏移量
+function encrypt_256 ($value)
+{   
+    $key = "GUbjZBfniQzrtrCm055hxER6N37YeRyG";
+    $padSize = 16 - (strlen ($value) % 16) ;
+    $value = $value . str_repeat (chr ($padSize), $padSize) ;
+    $output = mcrypt_encrypt (MCRYPT_RIJNDAEL_128, $key, $value, MCRYPT_MODE_CBC, "055hxER6N37YeRyG") ;                
+    return base64_encode ($output) ;        
+}
+
+
+//远程下载文件，用于导出app内的数据
+function httpcopy($url, $file="", $timeout=60) {
+  $file = empty($file) ? pathinfo($url,PATHINFO_BASENAME) : $file;
+  $dir = pathinfo($file,PATHINFO_DIRNAME);
+  !is_dir($dir) && @mkdir($dir,0755,true);
+  $url = str_replace(" ","%20",$url);
+  
+  if(function_exists('curl_init')) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_TIMEOUT, $timeout);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    $temp = curl_exec($ch);
+    if(@file_put_contents($file, $temp) && !curl_error($ch)) {
+      return $file;
+    } else {
+      return false;
+    }
+  } else {
+    $opts = array(
+      "http"=>array(
+      "method"=>"GET",
+      "header"=>"",
+      "timeout"=>$timeout)
+    );
+    $context = stream_context_create($opts);
+    if(@copy($url, $file, $context)) {
+      //$http_response_header
+      return $file;
+    } else { 
+      return false;
+    }
+  }
 }
 
 function getPoint($num)
@@ -1728,4 +1941,26 @@ function getPoint($num)
 	$point = substr($info[1],0,2);
 	$num = $info[0].".".$point;
 	return $num;
+}
+
+function GrabImage($url,$filename="") { 
+	if($url=="") return false; 
+
+	if($filename=="") { 
+	$ext=strrchr($url,"."); 
+	if($ext!=".gif" && $ext!=".jpg" && $ext!=".png") return false; 
+	$filename=date("YmdHis").$ext; 
+	} 
+
+	ob_start(); 
+	readfile($url); 
+	$img = ob_get_contents(); 
+	ob_end_clean(); 
+	$size = strlen($img); 
+
+	$fp2=@fopen($filename, "a"); 
+	fwrite($fp2,$img); 
+	fclose($fp2); 
+
+	return $filename; 
 }

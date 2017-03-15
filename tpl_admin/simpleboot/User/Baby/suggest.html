@@ -1,0 +1,51 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Baby/index')}">宝宝列表</a></li>
+			<li class="active"><a href="javascript:;">发送建议</a></li>
+		</ul>
+		<div class="common-form">
+			<form method="post" class="form-horizontal J_ajaxForm" action="">
+				<fieldset>
+				<div class="control-group">
+						<label class="control-label">您的称呼:</label>
+						<div class="controls">
+							<input type="text" class="input" name="name" value="">
+							<span class="must_red">*</span>
+						</div>
+					</div>
+
+					
+					<div class="control-group">
+						<label class="control-label">您想对（{$info.baby_name}）说:</label>
+						<div class="controls">
+							<textarea name="say" id="description" required="" style="width:98%;height:50px;" placeholder="请填写建议"></textarea>
+							<span class="must_red">*</span>
+						</div>
+					</div>
+					<input type="hidden" name="id" value="{$info.baby_id}">
+					<input type="hidden" name="babyname" value="{$info.baby_name}">
+					<input type="hidden" name="mother" value="{$info.bandmother}">
+				</fieldset>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">建议</button>
+					<a class="btn" href="__URL__">返回</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+    <script type="text/javascript" src="__ROOT__/statics/js/content_addtop.js"></script>
+    <script>
+    $(function(){
+    	//编辑器
+        editorcontent = new baidu.editor.ui.Editor();
+        editorcontent.render( 'content' );
+    })
+    </script>
+    <style>
+#edui1_iframeholder{ height: 420px!important;}
+    </style>
+</body>
+</html>

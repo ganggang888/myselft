@@ -118,5 +118,43 @@ class GameController extends AdminbaseController
 	}
 
 	//宝宝测评历史记录
+	public function babyHistory()
+	{
+		$where = "";
+		$begin = I('get.begin');
+		$end = I('get.end');
+		$type = I('get.type');
+		$Baby_Date = I('get.Baby_Date');
+		$Baby_Name = I('get.Baby_Name');
+		$Baby_Name ? $where .= " AND B.Baby_Name LIKE '%$Baby_Name%'" : '';
+		$Baby_Date ? $where .= " AND B.Baby_Date = '$Baby_Date'" : '';
+		$type ? $where .= " AND A.type = $type" : '';
+		if ($begin && $end) {
+			$where .= " AND A.add_time >= '$begin' && A.add_time < '$end'";
+		} elseif ($begin && !$end) {
+			$where .= " AND A.add_time >= '$begin'";
+		} elseif (!$begin && $end) {
+			$where .= " AND A.add_time < '$end'";
+		}
+
+		$model = M();
+		$fields = "A.id,A.month,A.score,A.weight,A.header,A.height,A.bmi,A.total,A.add_time,B.Baby_Name,B.Baby_Date";
+		$where ? $where = preg_replace('/AND/','WHERE',$where,1)  : '';
+		$num = $model->query("SELECT COUNT(*) AS num FROM matt_chat.sp_examhistory A INNER JOIN matt_app.M_Baby B ON A.babyId = B.Baby_ID $where");
+		$count = $num[0]['num'];
+		$page = $this->page($count,15);
+		$result = $model->query("SELECT $fields FROM matt_chat.sp_examhistory A INNER JOIN matt_app.M_Baby B ON A.babyId = B.Baby_ID $where ORDER BY A.id DESC LIMIT ".$page->firstRow.",".$page->listRows);
+		$this->assign(compact('Baby_Name','Baby_Date','begin','end','result','page','type'));
+		$this->display();
+	}
+
+	//查看宝宝该条所做的测试题详细信息
+	public function babyDo(int $id)
+	{
+		$info = M('examhistory')->where("id=%d",array($id))->getField('answer');
+		$data = $this->game->getNames($info);
+		$this->assign(compact('data'));
+		$this->display();
+	}
 
 }

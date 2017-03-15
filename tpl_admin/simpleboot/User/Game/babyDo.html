@@ -1,0 +1,46 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Game/BabyHistory')}">测评列表</a></li>
+            <li class="active"><a href="javascript:;">测评详细信息</a></li>
+		</ul>
+		
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>题号</th>
+						<th>题目名称</th>
+                        <th>分类名称</th>
+                        <th width="50%">解读</th>
+                        <th>得分</th>
+                    </tr>
+				</thead>
+				<foreach name="data" item="vo">
+				<tr valign="middle" >
+					<td>{$key+1}</td>
+					<td>{$vo.name}</td>
+                    <th>{$vo.term_name}</th>
+                    <td>{$vo.unscramble}</td>
+                    <th>
+                    {$vo.score}
+                  </th>
+                  </tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -66,10 +66,35 @@ class SubjectGameModel extends CommonModel
 		return $info;
 	}
 
-	//查询宝宝测评记录
-	public function babyHistory($where = array())
+	//根据题目ID给题目加上名称
+	public function getNames($info = "")
 	{
-		$fields = "A.answer,A.month,A.score,A.weight,A.height,A.bmi,A.total,A.add_time,B.Baby_Name,B.Baby_Date";
-		$sql = " SELECT $fields FROM matt_chat.";
-	}	
+		$info = unserialize($info);
+		$i = 1;
+		$result = array_map(function($v)use($i){$v['listorder'] = $i;$i++;return $v;},$info);
+		$i = '';
+		//var_dump($result);exit;
+		foreach ($result as $vo) {
+			$i .= $vo['id'].',';
+		}
+		$i = substr($i,0,strlen($i)-1);
+
+		//开始查询所有出现的名称
+		$i ? $find = $this->query("SELECT id,name,unscramble FROM matt_chat.sp_subject_info WHERE id IN ($i)") : '';
+
+		//var_dump($find);exit;
+		$info = array();
+		foreach ($find as $value) {
+			//var_dump($value);exit;
+			$info[$value['id']] = $value;
+		}
+		foreach ($result as $vo) {
+
+			$vo['name'] = $info[$vo['id']]['name'];
+			$vo['score'] ? '' : $vo['unscramble'] = $info[$vo['id']]['unscramble'];
+			//$vo['unscramble'] = $info[$vo['id']]['name'];
+			$data[] = $vo;
+		}
+		return $data;
+	}
 }

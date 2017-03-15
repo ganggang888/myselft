@@ -1,0 +1,93 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">测评记录</a></li>
+		</ul>
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">宝宝名称：</span><input type="text" id="Baby_Name" value="{$Baby_Name}" />
+					
+                    宝宝生日：
+                    <input type="text" class="J_date date" value="{$Baby_Date}" id="Baby_Date">
+                    所属
+                    <select id="type" style="max-width:60px">
+                    <option value="0">手机</option>
+                    <option value="1" <if condition="$type eq 1">selected</if>>pad</option>
+                    </select>
+                    测评时间:<input type="text" value="{$begin}" class="J_date J_datetime" id="begin">
+                    -
+                    <input type="text" value="{$end}" class="J_date J_datetime" id="end">
+                    <a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+				  <script>
+					function todo() {
+						var Baby_Name = $("#Baby_Name").val();
+						var Baby_Date = $("#Baby_Date").val();
+						var begin = $("#begin").val();
+						var end = $("#end").val();
+						var type = $("#type").val();
+						window.location.href='index.php?g=User&m=Game&a=babyHistory&menuid=185&Baby_Name='+Baby_Name+'&Baby_Date='+Baby_Date+'&begin='+begin+'&end='+end+'&type='+type;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>适用月龄</th>
+                        <th>宝宝名称</th>
+                        <th>身高</th>
+                        <th>体重</th>
+                      <th>头围</th>
+                      <th>BMI</th>
+                      <th>总分</th>
+                      <th>各项得分</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr valign="middle" >
+					<td>{$vo.id}</td>
+					<td>{$vo.month}</td>
+                    <th>{$vo.baby_name}</th>
+                    <td>{$vo.height}</td>
+                    <th>
+                    {$vo.weight}
+                  </th>
+                  <td>{$vo.header}</td>
+                  <td>{$vo.bmi}</td>
+                  <td>{$vo.total}</td>
+                  <td>
+                  <php>
+                  $score = unserialize($vo['score']);
+                  </php>
+                  <foreach name="score" item="v">
+                  分类：{$v.term_name} | 得分：{:sprintf("%0.2f",$v['score'])}<br/>
+                  </foreach>
+                  
+                  </td>
+                    <td>
+                    <a href="{:U('Game/babyDo',array('id'=>$vo['id']))}" target="_blank">查看详细</a>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page->show('Admin')}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

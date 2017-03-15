@@ -1,0 +1,66 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">六对一评测列表</a></li>
+		</ul>
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">宝宝名称：<input type="text" id="babyName" value="{$babyName}" />
+						
+					</span>
+						日期查询：
+				  <input type="text" name="begin" id="begin" class="J_date date" value="{$begin}" style="width: 80px;" autocomplete="off">
+						-
+				  <input type="text" class="J_date date" name="end" id="end" value="{$end}" style="width: 80px;" autocomplete="off">
+                    <a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+				  <script>
+					function todo() {
+						var babyName = $("#babyName").val();
+						var begin = $("#begin").val();
+						var end = $("#end").val();
+						window.location.href='index.php?g=User&m=SixForOne&a=index&menuid=185&babyName='+babyName+'&begin='+begin+'&end='+end;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>宝宝名称</th>
+                        <th>六对一评测时间</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="lists" item="vo">
+				<tr valign="middle" >
+					<td>{$vo._id}</td>
+					<td>{:getNameForBabyid($vo['babyId'])}</td>
+                    <th>{$vo.times}</th>
+                    <td>
+                    <a href="{:U('SixForOne/seeOne')}&id={$vo._id}">查看详细</a>
+                    |
+                    <a href="{:U('SixForOne/edit')}&id={$vo._id}">修改</a> | <a href="{:U('SixForOne/delete')}&id={$vo._id}" class="J_ajax_del">删除</a>
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page->show('Admin')}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>
