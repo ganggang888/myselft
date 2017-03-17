@@ -6,37 +6,42 @@
 			<li class="active"><a href="javascript:;">修改<span style="color:#F00">{$babyName}</span>的测评</a></li>
 		</ul>
         <ul class="nav nav-tabs new" id="navs">
-        <li class="active" id="1"><a href="javascript:;">测评填写</a></li>
-        <li id="2"><a href="javascript:;">建议</a></li>
-        <li id="3"><a href="javascript:;">测评单</a></li>
-        <li id="4"><a href="javascript:;">辅食添加情况</a></li>
+        <li class="active" id="1"><a href="javascript:;">儿保（1）</a></li>
+        <li id="5"><a href="javascript:;">儿保（2）</a></li>
+        <li id="2"><a href="javascript:;">早教</a></li>
+        <li id="3"><a href="javascript:;">营养（1）</a></li>
+        <li id="4"><a href="javascript:;">营养（2）</a></li>
+        <li id="6"><a href="javascript:;">附件上传</a></li>
         </ul>
 		<div class="common-form">
         
 			<form method="post" class="form-horizontal J_ajaxForm" action="">
             <div class="navContent one">
-            <p>姓名：<input name="data[name]" value="{$info['data']['name']}" style="width:100px" type="text">性别：<input type="text" style="width:50px" name="data[sex]" value="{$info['data']['sex']}">年（月）龄：<input name="data[age]" style="width:100px" type="text" value="{$info['data']['age']}">胎龄：<input type="text" name="data[t_age]" value="{$info['data']['t_age']}">
-            娩出方式：<input name="data[birth_type]" type="text" value="{$info['data']['birth_type']}">出生体重（KG）：<input type="text" name="data[birthWeight]" value="{$info['data']['birthWeight']}">出生身长（cm）：<input type="text" name="data[birthHeight]" value="{$info['data']['birthHeight']}"></p>
+            <p>姓名：<input name="data[name]" value="{$info['data']['name']}" style="width:100px" type="text">性别：<input type="text" style="width:50px" name="data[sex]" value="{$info['data']['sex']}">年（月）龄：<input name="data[age]" style="width:50px" type="text" value="{$info['data']['age']}">胎龄：<input type="text" name="data[t_age]" value="{$info['data']['t_age']}" style="width:50px">
+            娩出方式：<input name="data[birth_type]" type="text" value="{$info['data']['birth_type']}" style="width:70px">
+            出生体重（KG）：<input type="text" name="data[birthWeight]" value="{$info['data']['birthWeight']}" style="width:60px"> &nbsp;&nbsp;出生身长（cm）：
+            <input type="text" name="data[birthHeight]" value="{$info['data']['birthHeight']}" style="width:70px"></p>
+				
 				<table width="100%" border="1">
-  <tr>
+  <tr class="tops">
     <td width="45" rowspan="2" align="center">目录</td>
     <td width="130" rowspan="2" align="center">名称</td>
     <td colspan="3" align="center">结果</td>
     <td rowspan="2" align="center">目录</td>
     <td colspan="9" rowspan="2" align="center">结果</td>
     </tr>
-  <tr>
+  <tr class="tops">
     <td width="40">正常</td>
     <td width="40">不正常</td>
     <td width="20">其他</td>
     </tr>
   <tr>
-    <td rowspan="6" align="center">一般情况</td>
+    <td rowspan="6" align="center" class="tops">一般情况</td>
     <td align="center">面色</td>
     <td width="40" align="center"><input type="radio" value="1" name="data[face]" <if condition="$info['data']['face'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[face]" <if condition="$info['data']['face'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[faceExplain]">{$info['data']['faceExplain']}</textarea></td>
-    <td rowspan="2" align="center">神经发育系统</td>
+    <td rowspan="2" align="center" class="tops">神经发育系统</td>
     <td align="center">拥抱反射</td>
     <td><textarea name="data[EmbraceReflex]">{$info['data']['EmbraceReflex']}</textarea></td>
     <td>握持反射</td>
@@ -60,7 +65,7 @@
     <td width="40" align="center"><input type="radio" value="1" name="data[cry]" <if condition="$info['data']['cry'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[cry]" <if condition="$info['data']['cry'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[cryExplain]">{$info['data']['cryExplain']}</textarea></td>
-    <td rowspan="3" align="center">体格发育</td>
+    <td rowspan="3" align="center" class="tops">体格发育</td>
     <td align="center">体重（KG）</td>
     <td colspan="2"><input type="text" name="data[weight]" value="{$info['data']['weight']}"></td>
     <td colspan="2">身高(CM)</td>
@@ -89,7 +94,7 @@
     <td width="40" align="center"><input type="radio" value="1" name="data[breathing]" <if condition="$info['data']['breathing'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[breathing]" <if condition="$info['data']['breathing'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[breathingExplain]">{$info['data']['breathingExplain']}</textarea></td>
-    <td rowspan="2" align="center"><p>生长发育评价</p>
+    <td rowspan="2" align="center" class="tops"><p>生长发育评价</p>
       <p>（百分位法）</p></td>
     <td align="center">体重/月（年）龄</td>
     <td align="center"><label>上&gt;97 <input type="radio" value="1" name="data[weightScore]" <if condition="$info['data']['weightScore'] eq 1">checked</if>></label></td>
@@ -99,7 +104,7 @@
     <td colspan="2" align="center"><label>下&lt;3 <input type="radio" value="5" name="data[weightScore]" <if condition="$info['data']['weightScore'] eq 5">checked</if>></label></td>
     </tr>
   <tr>
-    <td rowspan="6" align="center">头面</td>
+    <td rowspan="6" align="center" class="tops">头面</td>
     <td align="center">颅骨</td>
     <td width="40" align="center"><input type="radio" value="1" name="data[skull]" <if condition="$info['data']['skull'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[skull]" <if condition="$info['data']['skull'] eq 2">checked</if>></td>
@@ -116,7 +121,7 @@
     <td width="40" align="center"><input type="radio" value="1" name="data[hair]" <if condition="$info['data']['hair'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[hair]" <if condition="$info['data']['hair'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[hairExplain]">{$info['data']['hairExplain']}</textarea></td>
-    <td align="center">既往史</td>
+    <td align="center" class="tops">既往史</td>
     <td colspan="9">疾病名称：<input type="text" name="data[diseaseName]" value="{$info['data']['diseaseName']}"></td>
     </tr>
   <tr>
@@ -124,7 +129,7 @@
     <td width="40" align="center"><input type="radio" value="1" name="data[eyesFace]" <if condition="$info['data']['eyesFace'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[eyesFace]" <if condition="$info['data']['eyesFace'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[eyesFaceExplain]">{$info['data']['eyesFaceExplain']}</textarea></td>
-    <td rowspan="2" align="center">家族史</td>
+    <td rowspan="2" align="center" class="tops">家族史</td>
     <td colspan="9">遗传性疾病（名称）：<input type="text" name="data[GeneticDisease]" value="{$info['data']['GeneticDisease']}"></td>
     </tr>
   <tr>
@@ -139,7 +144,7 @@
     <td width="40" align="center"><input type="radio" value="1" name="data[nose]" <if condition="$info['data']['nose'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[nose]" <if condition="$info['data']['nose'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[noseExplain]">{$info['data']['noseExplain']}</textarea></td>
-    <td rowspan="5" align="center">喂养史</td>
+    <td rowspan="5" align="center" class="tops">喂养史</td>
     <td rowspan="2">乳类</td>
     <td>喂养方式</td>
     <td colspan="3"><input type="text" name="data[feedType]" value="{$info['data']['feedType']}"></td>
@@ -154,7 +159,7 @@
     <td colspan="8">每次乳量:<label><input type="radio" value="1" name="data[MilkPerServing]" <if condition="$info['data']['MilkPerServing'] eq 1">checked</if>>母乳</label><label><input type="radio" value="1" name="data[MilkPerServing]" <if condition="$info['data']['MilkPerServing'] eq 2">checked</if>>配方奶</label></td>
     </tr>
   <tr>
-    <td rowspan="3" align="center">胸部</td>
+    <td rowspan="3" align="center" class="tops">胸部</td>
     <td align="center">外型</td>
     <td width="40" align="center"><input type="radio" value="1" name="data[appearance]" <if condition="$info['data']['appearance'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[appearance]" <if condition="$info['data']['appearance'] eq 2">checked</if>></td>
@@ -182,12 +187,12 @@
     <td colspan="3"><input type="text" name="data[foodAllergy]" value="{$info['data']['foodAllergy']}"></td>
     </tr>
   <tr>
-    <td rowspan="5" align="center">腹部</td>
+    <td rowspan="5" align="center" class="tops">腹部</td>
     <td align="center">外形</td>
     <td width="40" align="center"><input type="radio" value="1" name="data[shape]" <if condition="$info['data']['shape'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="shape" <if condition="$info['data']['shape'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[shapeExplain]">{$info['data']['shapeExplain']}</textarea></td>
-    <td rowspan="6" align="center">作息习惯</td>
+    <td rowspan="6" align="center" class="tops">作息习惯</td>
     <td rowspan="5">作息习惯</td>
     <td rowspan="2">睡眠                                                                                                                                                                                                                                                                                               </td>
     <td colspan="3">起床时间：<input type="text" name="data[WakeUpTime]" value="{$info['data']['WakeUpTime']}"></td>
@@ -233,7 +238,7 @@
     <td colspan="3"><input type="text" name="data[outgoingTime]" value="{$info['data']['outgoingTime']}"></td>
     </tr>
   <tr>
-    <td rowspan="3" align="center"><p>生殖</p>
+    <td rowspan="3" align="center" class="tops"><p>生殖</p>
       <p>系统</p>
       <p>肛门</p></td>
     <td align="center">外生殖器</td>
@@ -247,19 +252,19 @@
     <td width="40" rowspan="2" align="center"><input type="radio" value="1" name="data[anus]" <if condition="$info['data']['anus'] eq 1">checked</if>></td>
     <td width="40" rowspan="2" align="center"><input type="radio" value="2" name="data[anus]" <if condition="$info['data']['anus'] eq 2">checked</if>></td>
     <td width="20" rowspan="2" align="center"><textarea name="data[anusExplain]">{$info['data']['anusExplain']}</textarea></td>
-    <td rowspan="2" align="center">父母关注的问题</td>
+    <td rowspan="2" align="center" class="tops">父母关注的问题</td>
     <td colspan="9">1.<textarea class="big" name="data[ParentsProblemOne]">{$info['data']['ParentsProblemOne']}</textarea></td>
     </tr>
   <tr>
     <td colspan="9">2.<textarea class="big" name="data[ParentsProblemTwo]">{$info['data']['ParentsProblemTwo']}</textarea></td>
     </tr>
   <tr>
-    <td rowspan="2" align="center">骨骼</td>
+    <td rowspan="2" align="center" class="tops">骨骼</td>
     <td align="center">脊柱</td>
     <td width="40" align="center"><input type="radio" value="1" name="data[spine]" <if condition="$info['data']['spine'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[spine]" <if condition="$info['data']['spine'] eq 2">checked</if>></td>
     <td width="20" align="center"><textarea name="data[spineExplain]">{$info['data']['spineExplain']}</textarea></td>
-    <td rowspan="4" align="center">保健指导</td>
+    <td rowspan="4" align="center" class="tops">保健指导</td>
     <td colspan="9">1.<textarea class="big" name="data[HealthGuidanceOne]">{$info['data']['HealthGuidanceOne']}</textarea></td>
     </tr>
   <tr>
@@ -270,7 +275,7 @@
     <td colspan="9">2.<textarea class="big" name="data[HealthGuidanceTwo]">{$info['data']['HealthGuidanceTwo']}</textarea></td>
     </tr>
   <tr>
-    <td rowspan="2" align="center">皮肤</td>
+    <td rowspan="2" align="center" class="tops">皮肤</td>
     <td align="center">黄瘟</td>
     <td width="40" align="center"><input type="radio" value="1" name="data[plague]" <if condition="$info['data']['plague'] eq 1">checked</if>></td>
     <td width="40" align="center"><input type="radio" value="2" name="data[plague]" <if condition="$info['data']['plague'] eq 2">checked</if>></td>
@@ -285,7 +290,7 @@
     <td colspan="9">4.<textarea class="big" name="data[HealthGuidanceFour]">{$info['data']['HealthGuidanceFour']}</textarea></td>
     </tr>
 </table>
-<p style="margin-top:10px">家长：<input type="text" value="{$info['data']['householder']}" name="data[householder]"> 测评专家：<input type="text" name="data[evaluationExpert]" value="{$info['data']['evaluationExpert']}"> 测评次数：<input type="text" name="data[evaluationNumber]" value="{$info['data']['evaluationNumber']}"> 时间：<input type="text" name="data[endTime]" value="{$info['data']['endTime']}"></p>
+<p style="margin-top:10px">家长：<input type="text" value="{$info['data']['householder']}" name="data[householder]">&nbsp;&nbsp;测评专家：<input type="text" name="data[evaluationExpert]" value="{$info['data']['evaluationExpert']}">&nbsp;&nbsp;测评次数：<input type="text" name="data[evaluationNumber]" value="{$info['data']['evaluationNumber']}">&nbsp;&nbsp;时间：<input type="text" name="data[endTime]" value="{$info['data']['endTime']}"></p>
 
 </div>
 <div class="navContent two" style="display:none">
@@ -551,6 +556,58 @@
 
 </fieldset>
 </div>
+<div class="navContent five" style="display:none">
+<table border="1">
+<tr class="tops">
+    <td>年龄</td>
+    <td>粗、细动作</td>
+    <td>语言</td>
+    <td>适应周围人物的能力与行为</td>
+  </tr>
+<foreach name="poor" item="vo">
+  
+  <tr>
+    <td><label><input type="radio" name="poor[type]" value="{$vo.id}" <if condition="$info['poor']['type'] eq $vo['id']">checked</if>> {$vo.age}</label></td>
+    <td>{$vo.action}</td>
+    <td>{$vo.language}</td>
+    <td>{$vo.adapt}</td>
+  </tr>
+  </foreach>
+</table>
+
+</div>
+
+<div class="navContent six" style="display:none">
+<fieldset>
+					<div class="control-group">
+						<label class="control-label">附件说明:</label>
+						<div class="controls">
+                        <textarea name="annex[about]"></textarea>
+							<span class="must_red">*</span>
+						</div>
+					</div>
+                    <foreach name="info['upload']" item="vo" key="key">
+                    	<div class="control-group">
+						<label class="control-label">已上传附件:</label>
+						<div class="controls">
+                        {$vo.name}
+                        <input type="hidden" name="hadUpload[]" value="$key">
+							<span class="must_red"><a href="javascript:;" onClick="$(this).parent().parent().parent().remove();">删除</a></span>
+						</div>
+					</div>
+                    </foreach>
+					<div class="control-group">
+						<label class="control-label">附件:</label>
+						<div class="controls">
+                        <input type="file" name="upload[]">
+							<span class="must_red">*<a href="javascript:;" id="addMore">添加更多</a></span>
+						</div>
+					</div>
+					
+					
+					
+				</fieldset>
+</div>
 <input type="hidden" name="babyId" value="{$info.babyId}">
 <input type="hidden" value="{$info._id}" name="id">
 				<div class="form-actions">
@@ -563,7 +620,9 @@
 	<script src="__ROOT__/statics/js/common.js"></script>
     <style>
     table .big{ width:90%}
-	table td{ padding:10px 10px}
+	table textarea{ height:68px}
+	table .tops{font-weight:bold; font-size:18px}
+	table td{ padding:7px 7px}
 	.nav.nav-tabs.new{}
     </style>
 <script>
@@ -581,9 +640,18 @@ $(function(){
 			$(".navContent.three").show();
 		} else if (id == 4) {
 			$(".navContent.four").show();
+		} else if (id == 5) {
+			$(".navContent.five").show();
+		} else if (id == 6) {
+			$(".navContent.six").show();
 		}
-		
-		
+	});
+	$("#addMore").click(function(){
+		var text = '<div class="control-group"><label class="control-label">附件:</label><div class="controls"><input type="file" name="upload[]"><span class="must_red"><a href="javascript:;" onclick="$(this).parent().parent().parent().remove();">删除</a></span></div></div>';
+		$(".navContent.six .control-group").last().after(text);
+	});
+	$(".dels").click(function(){
+		alert($(this).parent().parent().parent().html());
 	});
 })
 
