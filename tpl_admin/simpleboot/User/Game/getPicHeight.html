@@ -1,0 +1,406 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+<script src="tpl_admin/simpleboot/User/Game/echarts.min.js"></script>
+<link href="http://echarts.baidu.com/echarts2/doc/asset/css/codemirror.css" rel="stylesheet">
+<link href="http://echarts.baidu.com/echarts2/doc/asset/css/monokai.css" rel="stylesheet">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Game/babyHistory')}">测评列表</a></li>
+            <li><a href="{:U('Game/babyDo',array('id'=>$id))}">能力发展信息</a></li>
+            <li class="active"><a href="javascript:;">身体发育信息</a></li>
+		</ul>
+		<div id="main" style="width:100%; height:500px">
+        
+        </div>
+        <p style="text-align:center">{$heightResult}{$talk[0]['sad']}</p>
+        <div id="weight" style="width:100%; height:500px"></div>
+        <p style="text-align:center">{$weightResult}{$talk[1]['sad']}</p>
+        <div id="bmi" style="width:100%; height:500px"></div>
+        <p style="text-align:center">{$bmiResult}{$talk[2]['sad']}</p>
+        <div id="header" style="width:100%; height:500px"></div>
+        <p style="text-align:center">{$headerResult}{$talk[3]['sad']}</p>
+		<!--/.fluid-container-->
+        <div class="pagination">{$page}</div>
+	</div>
+    
+    
+    <script>   
+//初始化身长数据
+
+var myChart = echarts.init(document.getElementById('main'));
+
+//参数设置
+
+option = {
+	 title : {
+        text: '身长数据',
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+		orient : 'vertical',
+        data:['P3','P25','P75','P97','宝宝'],
+		x:'right',
+		y:'center',
+    },
+    toolbox: {
+        show : true,
+		default: ['toolbox'],
+        feature : {
+            /*mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},*/
+            saveAsImage : {show: true,default: ['toolbox']}
+        },
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : {$allMonth},
+			axisLabel : {
+                formatter: '{value} 月龄'
+            },
+        }
+    ],
+    yAxis : [
+        {
+			max:'104',
+			min:'46',
+			type: 'value',
+			axisLabel : {
+                formatter: '{value} CM'
+            },
+			
+        }
+    ],
+    series : [
+		
+        {
+            name:'P3',
+            type:'line',
+            data:{$height_p3},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P25',
+            type:'line',
+            data:{$height_p25},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P75',
+            type:'line',
+            data:{$height_p75},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P97',
+            type:'line',
+            data:{$height_p97},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+		{
+            name:'宝宝',
+            type:'scatter',
+            data:[[{$height_month},{$height}]],
+			markPoint : {
+                data : [
+                    {type : 'max', name: '宝宝'}
+                ]
+            },
+        },
+		
+    ]
+};
+                    
+
+ 
+
+    myChart.setOption(option);   //参数设置方法     
+
+</script>
+
+    <script>   
+//初始化体重
+
+var myChart = echarts.init(document.getElementById('weight'));
+
+//参数设置
+
+option = {
+	 title : {
+        text: '体重数据',
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+		orient : 'vertical',
+        data:['P3','P25','P75','P97','宝宝'],
+		x:'right',
+		y:'center',
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            saveAsImage : {show: true}
+        }
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : {$allMonth},
+			axisLabel : {
+                formatter: '{value} 月龄'
+            },
+        }
+    ],
+    yAxis : [
+        {
+			max:'20',
+			min:'2',
+			type: 'value',
+			axisLabel : {
+                formatter: '{value} KG'
+            },
+        }
+    ],
+    series : [
+		
+        {
+            name:'P3',
+            type:'line',
+            data:{$weight_p3},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P25',
+            type:'line',
+            data:{$weight_p25},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P75',
+            type:'line',
+            data:{$weight_p75},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P97',
+            type:'line',
+            data:{$weight_p97},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+		{
+            name:'宝宝',
+            type:'scatter',
+            data:[[{$height_month},{$weight}]],
+			markPoint : {
+                data : [
+                    {type : 'max', name: '宝宝'}
+                ]
+            },
+        },
+		
+    ]
+};
+myChart.setOption(option);   //参数设置方法     
+</script>
+
+<script>   
+//初始化bmi
+
+var myChart = echarts.init(document.getElementById('bmi'));
+
+//参数设置
+
+option = {
+	 title : {
+        text: 'BMI数据',
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+		orient : 'vertical',
+        data:['P3','P15','P85','P95','宝宝'],
+		x:'right',
+		y:'center',
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            saveAsImage : {show: true}
+        }
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : {$allMonth},
+			axisLabel : {
+                formatter: '{value} 月龄'
+            },
+        }
+    ],
+    yAxis : [
+        {
+			max:'21',
+			min:'10',
+			type: 'value',
+			axisLabel : {
+                formatter: '{value} BMI'
+            },
+        }
+    ],
+    series : [
+		
+        {
+            name:'P3',
+            type:'line',
+            data:{$bmi_p3},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P15',
+            type:'line',
+            data:{$bmi_p15},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P85',
+            type:'line',
+            data:{$bmi_p85},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'P95',
+            type:'line',
+            data:{$bmi_p95},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+		{
+            name:'宝宝',
+            type:'scatter',
+            data:[[{$height_month},{$bmi}]],
+			markPoint : {
+                data : [
+                    {type : 'max', name: '宝宝'}
+                ]
+            },
+        },
+		
+    ]
+};
+myChart.setOption(option);   //参数设置方法     
+</script>
+
+<script>   
+//初始化头围信息
+
+var myChart = echarts.init(document.getElementById('header'));
+
+//参数设置
+
+option = {
+	 title : {
+        text: '头围数据',
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+		orient : 'vertical',
+        data:['-3SD','-2SD','均数','2SD','3SD','宝宝'],
+		x:'right',
+		y:'center',
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            saveAsImage : {show: true}
+        }
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : {$allMonth},
+			axisLabel : {
+                formatter: '{value} 月龄'
+            },
+        }
+    ],
+    yAxis : [
+        {
+			max:'55',
+			min:'30',
+			type: 'value',
+			axisLabel : {
+                formatter: '{value} CM'
+            },
+        }
+    ],
+    series : [
+		
+        {
+            name:'-3SD',
+            type:'line',
+            data:{$header_one},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'-2SD',
+            type:'line',
+            data:{$header_two},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'均数',
+            type:'line',
+            data:{$header_three},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+        {
+            name:'2SD',
+            type:'line',
+            data:{$header_four},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+		{
+            name:'3SD',
+            type:'line',
+            data:{$header_five},
+			itemStyle : { normal: {label : {show: true}}},
+        },
+		{
+            name:'宝宝',
+            type:'scatter',
+            data:[[{$height_month},{$header}]],
+			markPoint : {
+                data : [
+                    {type : 'max', name: '宝宝'}
+                ]
+            },
+        },
+		
+    ]
+};
+myChart.setOption(option);   //参数设置方法     
+</script>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

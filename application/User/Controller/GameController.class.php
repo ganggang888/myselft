@@ -153,7 +153,59 @@ class GameController extends AdminbaseController
 	{
 		$info = M('examhistory')->where("id=%d",array($id))->getField('answer');
 		$data = $this->game->getNames($info);
-		$this->assign(compact('data'));
+		$this->assign(compact('data','id'));
+		$this->display();
+	}
+
+	//获取测评结果所需要的图表数据
+	public function getPicHeight(int $id)
+	{
+		$info = M('examhistory')->where("id=%d",array($id))->find();
+		$message = $this->game->getAllMessage($info['babyid'],$info['month'],$info['weight'],$info['height'],$info['header'],$info['bmi']);
+
+		//得到数据后开始处理数据，生成对应的数据结构图
+		//1.身长数据处理
+		$msg = $message['msg'];
+		$height_p3 = json_encode(array_column($msg[0],'p3'));
+		$height_p25 = json_encode(array_column($msg[0],'p25'));
+		$height_p75 = json_encode(array_column($msg[0],'p75'));
+		$height_p97 = json_encode(array_column($msg[0],'p97'));
+		$height_x = json_encode($message['xy'][0]['x']);
+		$height_y = json_encode($message['xy'][0]['y']);
+		$height = $info['height'];
+		$height_month = $info['month'];
+		$talk = $message['talk'];
+		$heightResult = $message['height'][0]['getSay'];
+		$allMonth = json_encode(array(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36));
+		$this->assign(compact('height_p3','height_p25','height_p75','height_p97','height_x','height_y','allMonth','height','height_month','talk','heightResult'));
+
+		//2.开始获取体重数据
+		$weight_p3 = json_encode(array_column($msg[1],'p3'));
+		$weight_p25 = json_encode(array_column($msg[1],'p25'));
+		$weight_p75 = json_encode(array_column($msg[1],'p75'));
+		$weight_p97 = json_encode(array_column($msg[1],'p97'));
+		$weight = $info['weight'];
+		$weightResult = $message['weight'][0]['getSay'];
+		$this->assign(compact('weight_p3','weight_p25','weight_p75','weight_p97','weight','weightResult','id'));
+
+		//3.开始获取BMI数据
+		$bmi_p3 = json_encode(array_column($msg[2],'p3'));
+		$bmi_p15 = json_encode(array_column($msg[2],'p15'));
+		$bmi_p85 = json_encode(array_column($msg[2],'p85'));
+		$bmi_p95 = json_encode(array_column($msg[2],'p95'));
+		$bmi = $info['bmi'];
+		$bmiResult = $message['bmi'][0]['getSay'];
+		$this->assign(compact('bmi_p3','bmi_p15','bmi_p85','bmi_p95','bmi','bmiResult'));
+
+		//4.开始获取头围数据
+		$header_one = json_encode(array_column($msg[3],'one'));
+		$header_two = json_encode(array_column($msg[3],'two'));
+		$header_three = json_encode(array_column($msg[3],'three'));
+		$header_four = json_encode(array_column($msg[3],'four'));
+		$header_five = json_encode(array_column($msg[3],'five'));
+		$header = $info['header'];
+		$headerResult = $message['header'][0]['getSay'];
+		$this->assign(compact('header_one','header_two','header_three','header_four','header_five','header','headerResult'));
 		$this->display();
 	}
 
