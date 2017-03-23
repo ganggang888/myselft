@@ -1,0 +1,44 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Wchat/index')}">公众号分类</a></li>
+			<li><a href="{:U('Wchat/add_term')}">添加分类</a></li>
+		</ul>
+		
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>分类名称</th>
+                        <th>说明</th>
+                        <th>操作</th>
+                        <th>添加时间</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr valign="middle" >
+					<td>{$vo.id}</td>
+					<td>{$vo.term_name}</td>
+                    <th>{$vo.about}</th>
+                    <th>{$vo.add_time}</th>
+                    <td><a href="{:U('Wchat/edit_term',array('id'=>$vo['id']))}">修改</a> | <a href="{:U('Wchat/delete_term',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a></td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page->show('Admin')}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

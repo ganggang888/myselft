@@ -1,0 +1,46 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">试题列表</a></li>
+		</ul>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>试题名称</th>
+                        <th>试题内容</th>
+                        <th>视频名称</th>
+                        <th>缩略图名称</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr>
+					<td>{$vo.questionid}</td>
+					<td>{$vo.title}</td>
+                    <th>{:mb_substr(strip_tags($vo['question']),0,'40','utf-8')}</th>
+                    <td>{$vo.media}</td>
+                    <td>{$vo.img}</td>
+                    <td>
+                    <a href="{:U('User/Default/editQuestions',array('id'=>$vo['questionid']))}">修改</a> 
+					</td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Wchat/index')}">公众号文章</a></li>
+			<li><a href="{:U('Wchat/add_term')}">添加文章</a></li>
+		</ul>
+		<form class="well form-search">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<span class="mr20">文章标题：</span><input type="text" id="title" value="{$title}" />
+					作者名称：<input type="text" id="author" value="{$author}" />
+                    分类名称：
+                    <select name="term_id" id="term_id">
+                    <option value="0">请选择分类</option>
+                    <foreach name="term" item="vo">
+                    <option value="{$vo.id}">{$vo.term_name}</option>
+                    </foreach>
+                    </select>
+                    
+                    添加时间:<input type="text" value="{$begin}" class="J_date J_date" id="begin">
+                    -
+                    <input type="text" value="{$end}" class="J_date J_date" id="end">
+                    <a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
+				  <script>
+					function todo() {
+						var title = $("#title").val();
+						var author = $("#author").val();
+						var term_id = $("#term_id").val();
+						var begin = $("#begin").val();
+						var end = $("#end").val();
+						window.location.href='index.php?g=User&m=Wchat&a=index&menuid=185&title='+title+'&author='+author+'&begin='+begin+'&end='+end+'&term_id='+term_id;
+					}
+					</script>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal J_ajaxForm" action="" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th>标题</th>
+                        <th>分类名称</th>
+                        <th>作者</th>
+                        <th>摘要</th>
+                        <th>链接地址</th>
+                        <th>缩略图</th>
+                        <th>添加时间</th>
+                        <th>操作</th>
+					</tr>
+				</thead>
+				<foreach name="result" item="vo">
+				<tr valign="middle" >
+					<td>{$vo.id}</td>
+					<td>{$vo.title}</td>
+                    <th>{$vo.term_name}</th>
+                    <th>{$vo.author}</th>
+                    <th>{$vo.excerpt}</th>
+                    <th><a href="{$vo.link}" target="_blank">点击查看</a></th>
+                    <th><img src="{$vo.img}" width="130px"></th>
+                    <th>{$vo.add_time}</th>
+                    <td><a href="{:U('Wchat/edit',array('id'=>$vo['id']))}">修改</a> | <a href="{:U('Wchat/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a></td>
+				</tr>
+				</foreach>
+			</table>
+		</form>
+        <div class="pagination">{$page->show('Admin')}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		$(function() {
+
+			$("#navcid_select").change(function() {
+				$("#mainform").submit();
+			});
+
+		});
+	</script>
+</body>
+</html>

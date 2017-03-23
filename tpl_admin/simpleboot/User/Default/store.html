@@ -12,8 +12,8 @@
 					<span class="mr20">
 						库：
                     <select name="stotr_type" id="stotr_type">
+                    <option value="0">全部</option>
                         <foreach name="stotr_type" item="v">
-                        <option value="0">全部</option>
                         <option value="{$v.id}" <if condition="$v['id'] eq $type">selected="selected"</if>>{$v.name}</option>
                         </foreach>
                         </select>  --
@@ -32,6 +32,12 @@
                           --
                           名称检索：
                           <input type="text" id="title" value="{$title}" />
+                          --
+                          是否有缩略图
+                          <select name="img" id="img">
+							<option value="0" >全部</option>
+							<option value="1" <if condition="$img eq 1"> selected</if>>有缩略图</option>
+                          </select>
 						<a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
 					</span>
 				  <script>
@@ -39,14 +45,15 @@
 						var stotr_type = $("#stotr_type").val();
 						var month = $("#month").val();
 						var title = $("#title").val();
-						window.location.href='index.php?g=User&m=Default&a=store&menuid=185&type='+stotr_type+'&month='+month+"&title="+title;
+						var img = $("#img").val();
+						window.location.href='index.php?g=User&m=Default&a=store&menuid=185&type='+stotr_type+'&month='+month+"&title="+title+'&img='+img;
 					}
 					</script>
 				</div>
 			</div>
 		</form>
         <php>
-        $ku = array('1'=>'行为库','2'=>'游戏库','3'=>'儿宝库','4'=>'菜谱库');
+        $ku = array('1'=>'行为库','2'=>'游戏库','3'=>'儿宝库','4'=>'菜谱库','100'=>'月子餐');
         </php>
 		<form class="form-horizontal J_ajaxForm" action="" method="post">
 			<table class="table table-hover table-bordered">
@@ -56,6 +63,7 @@
 						<th>名称</th>
                         <th>库名称</th>
                         <th>适用月龄</th>
+                        <th>小图标</th>
                         <th>上传视频名称</th>
                         <th>创建时间</th>
                         <th width="120">操作</th>
@@ -67,6 +75,14 @@
 					<td>{$vo.title}</td>
                     <th>{$ku[$vo['type']]}</th>
                     <td>{$vo.month}</td>
+                    <td>
+                    	<if condition="$vo['img']">
+                    		<img src="{$vo.img}">
+						<else />
+						无
+                    	</if>
+
+                    </td>
                     <td>{$vo.media}</td>
                     <td>{$vo.createdate}</td>
                     <td>

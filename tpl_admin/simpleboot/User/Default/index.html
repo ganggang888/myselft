@@ -66,7 +66,7 @@
                     <td>{:getFeedTypeName($vo['feed_type'])}</td>
                     <td>
                     <a href="{:U('User/Default/edit',array('month'=>$vo['month'],'day'=>$vo['day'],'feed_type'=>$vo['feed_type'],'order_money'=>$vo['order_money']))}">修改</a>
-					</td>
+					| <a href="{:U('User/Default/seePoint',array('month'=>$vo['month'],'day'=>$vo['day'],'feed_type'=>$vo['feed_type'],'order_money'=>$vo['order_money']))}" target="_blank">查看观测点</a></td>
 				</tr>
 				</foreach>
 			</table>

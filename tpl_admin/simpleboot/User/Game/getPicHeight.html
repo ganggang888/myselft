@@ -12,11 +12,11 @@
 		<div id="main" style="width:100%; height:500px">
         
         </div>
-        <p style="text-align:center">{$heightResult}{$talk[0]['sad']}</p>
+        <p style="text-align:center">{$heightResult}</p>
         <div id="weight" style="width:100%; height:500px"></div>
-        <p style="text-align:center">{$weightResult}{$talk[1]['sad']}</p>
+        <p style="text-align:center">{$weightResult}</p>
         <div id="bmi" style="width:100%; height:500px"></div>
-        <p style="text-align:center">{$bmiResult}{$talk[2]['sad']}</p>
+        <p style="text-align:center">{$bmiResult}</p>
         <div id="header" style="width:100%; height:500px"></div>
         <p style="text-align:center">{$headerResult}{$talk[3]['sad']}</p>
 		<!--/.fluid-container-->
@@ -34,6 +34,7 @@ var myChart = echarts.init(document.getElementById('main'));
 option = {
 	 title : {
         text: '身长数据',
+		subtext:'{$talk[0]['sad']}',
     },
     tooltip : {
         trigger: 'axis'
@@ -82,25 +83,25 @@ option = {
             name:'P3',
             type:'line',
             data:{$height_p3},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P25',
             type:'line',
             data:{$height_p25},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P75',
             type:'line',
             data:{$height_p75},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P97',
             type:'line',
             data:{$height_p97},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
 		{
             name:'宝宝',
@@ -133,6 +134,7 @@ var myChart = echarts.init(document.getElementById('weight'));
 option = {
 	 title : {
         text: '体重数据',
+		subtext:'{$talk[1]['sad']}',
     },
     tooltip : {
         trigger: 'axis'
@@ -175,25 +177,25 @@ option = {
             name:'P3',
             type:'line',
             data:{$weight_p3},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P25',
             type:'line',
             data:{$weight_p25},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P75',
             type:'line',
             data:{$weight_p75},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P97',
             type:'line',
             data:{$weight_p97},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
 		{
             name:'宝宝',
@@ -221,6 +223,7 @@ var myChart = echarts.init(document.getElementById('bmi'));
 option = {
 	 title : {
         text: 'BMI数据',
+		subtext:'{$talk[2]['sad']}',
     },
     tooltip : {
         trigger: 'axis'
@@ -263,25 +266,25 @@ option = {
             name:'P3',
             type:'line',
             data:{$bmi_p3},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P15',
             type:'line',
             data:{$bmi_p15},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P85',
             type:'line',
             data:{$bmi_p85},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'P95',
             type:'line',
             data:{$bmi_p95},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
 		{
             name:'宝宝',
@@ -351,31 +354,31 @@ option = {
             name:'-3SD',
             type:'line',
             data:{$header_one},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'-2SD',
             type:'line',
             data:{$header_two},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'均数',
             type:'line',
             data:{$header_three},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
         {
             name:'2SD',
             type:'line',
             data:{$header_four},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
 		{
             name:'3SD',
             type:'line',
             data:{$header_five},
-			itemStyle : { normal: {label : {show: true}}},
+			
         },
 		{
             name:'宝宝',

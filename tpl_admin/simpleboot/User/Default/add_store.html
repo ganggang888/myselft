@@ -7,12 +7,12 @@
 </style>
 </head>
 <body class="J_scroll_fixed">
-<div class="wrap J_check_wrap">
-  <ul class="nav nav-tabs">
+  <div class="wrap jj">
+    <ul class="nav nav-tabs">
      <li><a href="{:U('Default/store')}">所有库</a></li>
      <li class="active"><a href="javascript:;"  target="_self">添加库</a></li>
   </ul>
-  <form name="myform" id="myform" action="{:u('Default/add_store_post')}" method="post" class="form-horizontal J_ajaxForms" enctype="multipart/form-data">
+  <form name="myform" id="myform" method="post" class="form-horizontal J_ajaxForms"  action="{:u('Default/add_store_post')}" enctype="multipart/form-data">
   
   <div class="col-auto">
     <div class="table_full">
@@ -35,6 +35,15 @@
               <th width="80">适用月龄</th>
               <td><input type='text' name='month' id='source' value='{$info.month}' style='width:400px'   class='input' placeholder='请输入适用月龄'></td>
             </tr>
+            <tr>
+              <th width="80">截图</th>
+              <td><div  style="text-align: left;"><input type='hidden' name='img' id='thumb' value=''>
+      <a href='javascript:void(0);' onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+      <img src='__ROOT__/statics/images/icon/upload-pic.png' id='thumb_preview' width='135' height='113' style='cursor:hand' /></a>
+      <!-- <input type="button" class="btn" onclick="crop_cut_thumb($('#thumb').val());return false;" value="裁减图片">  -->
+            <input type="button"  class="btn" onclick="$('#thumb_preview').attr('src','__ROOT__/statics/images/icon/upload-pic.png');$('#thumb').val('');return false;" value="取消图片">
+            </div></td>
+            </tr>
             <tr id="one">
               <th width="80">食材准备</th>
               <td><textarea name='foodstuff' id='description'   style='width:98%;height:50px;' placeholder='请填写食材'>{$info.foodstuff}</textarea><span class="must_red">*</span></td>
@@ -53,7 +62,7 @@
             </tr>
             <tr>
               <th width="80">上传多媒体</th>
-              <td><input type="file" name="uploadmedia" id="uploadmedia"><span class="must_red">已上传多媒体:{$info.media}</span></td>
+              <td><input type="file" name="uploadmedia" id="uploadmedia"><span class="must_red">已上传多媒体:{$info.media}</span><if condition="$info['media']"><a href='http://app.mattservice.com/{$info.media}' target="_blank">点击查看视频</a></if></td>
             </tr>
             <tr>
               <th width="80">内容</th>
