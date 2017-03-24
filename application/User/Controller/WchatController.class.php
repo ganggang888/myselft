@@ -75,26 +75,27 @@ class WchatController extends AdminbaseController
 		$end = I('get.end');
 		$this->assign(compact('begin','end'));
 		$begin ? $begin = $begin." 00:00:00" : '';
-		$end ? $end = $end." 23:59:59" : '';
-
+		$end ? $end = $end." 23:59:59" : '';	
+		$where['a.is_delete'] = 0;
 		$title ? $where['a.title'] = array('like',"%$title%") : '';
 		$author ? $where['a.author'] = $author : '';
 		$term_id ? $where['a.term_id'] = $term_id : '';
 		if ($begin && $end) {
-			$where['add_time'] = array('EGT',$add_time);
-			$where['add_time'] = array('LT',$add_time);
+			$where['a.add_time'] = array('EGT',$begin);
+			$where['a.add_time'] = array('LT',$end);
 		} elseif ($begin && !$end) {
-			$where['add_time'] = array('EGT',$add_time);
+			$where['a.add_time'] = array('EGT',$begin);
 		} elseif (!$begin && $end) {
-			$where['add_time'] = array('LT',$add_time);
+			$where['a.add_time'] = array('LT',$end);
 		}
 		$join = "".C('DB_PREFIX').'wchat_term as b on a.term_id = b.id';
 		$count = $this->wchat->alias('a')->join($join,'LEFT')->where($where)->count();
-		$field = array('a.id','a.title','a.author','a.excerpt','a.img','a.link','a.add_time','a.admin_id','b.term_name');
-		$order = array('add_time'=>'DESC');
+		$field = array('a.id','a.title','a.author','a.excerpt','a.img','a.link','a.add_time','a.admin_id','b.term_name','a.listorder');
+		$order = array('listorder'=>'ASC');
 		$page = $this->page($count,15);
 		$result = $this->wchat->alias('a')->join($join,'LEFT')->where($where)->field($field)->order($order)->limit($page->firstRow,$page->listRows)->select();
-		$this->assign(compact('title','author','term_id','page','result'));
+		$term = $this->term->allLists();
+		$this->assign(compact('title','author','term_id','page','result','term'));
 		$this->display();
 	}
 
@@ -131,7 +132,7 @@ class WchatController extends AdminbaseController
 				$this->error($this->wchat->getError());
 			}
 		}
-		$field = ['title','term_id','author','excerpt','img','link','add_time'];
+		$field = ['id','title','term_id','author','excerpt','img','link','add_time'];
 		$info = $this->wchat->where("id=%d",array($id))->field($field)->find();
 		$term = $this->term->allLists();
 		$this->assign(compact('info','term'));
@@ -148,6 +149,7 @@ class WchatController extends AdminbaseController
 	public function listorders()
 	{
 		$info = I('post.info');
+		$nowUrl = $_POST['nowUrl'];
 		$caseThen = '';
 		$i = '';
 		foreach ($info as $key=>$vo) {
@@ -155,7 +157,12 @@ class WchatController extends AdminbaseController
 			$i .= "$key,";
 		}
 		$i ? $i = substr($i,0,strlen($i)-1) : '';
-		$sql = " UPDATE sp_wchat SET listorder = CASE id $caseThen \n END \n WHERE ID IN()";
-		$try = M()->execute($sql);
+		if ($i && $caseThen) {
+			$sql = " UPDATE sp_wchat SET listorder = CASE id $caseThen \n END \n WHERE ID IN($i)";
+
+			$try = M()->execute($sql);
+		}
+		$this->success('排序成功',$nowUrl);
+		
 	}
 }

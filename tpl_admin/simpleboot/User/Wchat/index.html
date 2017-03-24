@@ -3,24 +3,24 @@
 	<div class="wrap J_check_wrap">
 		<ul class="nav nav-tabs">
 			<li class="active"><a href="{:U('Wchat/index')}">公众号文章</a></li>
-			<li><a href="{:U('Wchat/add_term')}">添加文章</a></li>
+			<li><a href="{:U('Wchat/add')}">添加文章</a></li>
 		</ul>
 		<form class="well form-search">
 			<div class="search_type cc mb10">
 				<div class="mb10">
 					<span class="mr20">文章标题：</span><input type="text" id="title" value="{$title}" />
-					作者名称：<input type="text" id="author" value="{$author}" />
+					作者名称：<input type="text" id="author" value="{$author}"  style="width:120px"/>
                     分类名称：
                     <select name="term_id" id="term_id">
                     <option value="0">请选择分类</option>
                     <foreach name="term" item="vo">
-                    <option value="{$vo.id}">{$vo.term_name}</option>
+                    <option value="{$vo.id}" <if condition="$term_id eq $vo['id']">selected</if>>{$vo.term_name}</option>
                     </foreach>
                     </select>
                     
-                    添加时间:<input type="text" value="{$begin}" class="J_date J_date" id="begin">
+                    添加时间:<input type="text" value="{$begin}" class="J_date J_date" id="begin" style="width:120px">
                     -
-                    <input type="text" value="{$end}" class="J_date J_date" id="end">
+                    <input type="text" value="{$end}" class="J_date J_date" id="end" style="width:120px">
                     <a href="javascript:;" onClick="todo()" class="btn btn-primary">搜索</a>
 				  <script>
 					function todo() {
@@ -35,16 +35,18 @@
 				</div>
 			</div>
 		</form>
+        
 		<form class="form-horizontal J_ajaxForm" action="" method="post">
 			<table class="table table-hover table-bordered">
 				<thead>
 					<tr>
-						<th width="100">ID</th>
+                    <th>排序</th>
+						<th>ID</th>
 						<th>标题</th>
                         <th>分类名称</th>
                         <th>作者</th>
-                        <th>摘要</th>
-                        <th>链接地址</th>
+                        <th width="15%">摘要</th>
+                        <th width="100px">链接地址</th>
                         <th>缩略图</th>
                         <th>添加时间</th>
                         <th>操作</th>
@@ -52,6 +54,7 @@
 				</thead>
 				<foreach name="result" item="vo">
 				<tr valign="middle" >
+                <td><input type="text" name="info[{$vo.id}]" value="{$vo.listorder}" style="width:20px"></td>
 					<td>{$vo.id}</td>
 					<td>{$vo.title}</td>
                     <th>{$vo.term_name}</th>
@@ -64,6 +67,10 @@
 				</tr>
 				</foreach>
 			</table>
+            <div class="table-actions">
+            <button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:U('Wchat/listorders')}">排序</button>
+            <input type="hidden" value="__SELF__" name="nowUrl">
+            </div>
 		</form>
         <div class="pagination">{$page->show('Admin')}</div>
 	</div>
