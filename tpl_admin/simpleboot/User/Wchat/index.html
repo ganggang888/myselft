@@ -2,8 +2,8 @@
 <body class="J_scroll_fixed">
 	<div class="wrap J_check_wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="{:U('Wchat/index')}">公众号文章</a></li>
-			<li><a href="{:U('Wchat/add')}">添加文章</a></li>
+			<li class="active"><a href="{:U('Wchat/index')}">{$listnav[$type]['list']}</a></li>
+			<li><a href="{:U('Wchat/add',array('type'=>$type))}">{$listnav[$type]['add']}</a></li>
 		</ul>
 		<form class="well form-search">
 			<div class="search_type cc mb10">
@@ -17,7 +17,6 @@
                     <option value="{$vo.id}" <if condition="$term_id eq $vo['id']">selected</if>>{$vo.term_name}</option>
                     </foreach>
                     </select>
-                    
                     添加时间:<input type="text" value="{$begin}" class="J_date J_date" id="begin" style="width:120px">
                     -
                     <input type="text" value="{$end}" class="J_date J_date" id="end" style="width:120px">
@@ -46,7 +45,9 @@
                         <th>分类名称</th>
                         <th>作者</th>
                         <th width="15%">摘要</th>
+                        <if condition="$type eq 0">
                         <th width="100px">链接地址</th>
+                        </if>
                         <th>缩略图</th>
                         <th>添加时间</th>
                         <th>操作</th>
@@ -60,10 +61,12 @@
                     <th>{$vo.term_name}</th>
                     <th>{$vo.author}</th>
                     <th>{$vo.excerpt}</th>
+                    <if condition="$type eq 0">
                     <th><a href="{$vo.link}" target="_blank">点击查看</a></th>
+                    </if>
                     <th><img src="{$vo.img}" width="130px"></th>
                     <th>{$vo.add_time}</th>
-                    <td><a href="{:U('Wchat/edit',array('id'=>$vo['id']))}">修改</a> | <a href="{:U('Wchat/delete',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a></td>
+                    <td><a href="{:U('Wchat/edit',array('id'=>$vo['id'],'type'=>$type))}">修改</a> | <a href="{:U('Wchat/delete',array('id'=>$vo['id'],array('type'=>$type)))}" class="J_ajax_del">删除</a></td>
 				</tr>
 				</foreach>
 			</table>

@@ -2,8 +2,8 @@
 <body class="J_scroll_fixed">
 	<div class="wrap jj">
 		<ul class="nav nav-tabs">
-			<li><a href="{:U('Wchat/index')}">公众号文章</a></li>
-			<li class="active"><a href="{:U('Wchat/add')}">添加文章</a></li>
+			<li><a href="{:U('Wchat/index',array('type'=>$type))}">{$listnav[$type]['list']}</a></li>
+			<li class="active"><a href="{:U('Wchat/add',array('type'=>$type))}">{$listnav[$type]['edit']}</a></li>
 		</ul>
 		<div class="common-form">
 			<form method="post" class="form-horizontal J_ajaxForm" action="">
@@ -41,7 +41,7 @@
 							<span class="must_red">*</span>
 						</div>
 					</div>
-                    
+                    <if condition="$type eq 0">
                     <div class="control-group">
 						<label class="control-label">微信链接:</label>
 						<div class="controls">
@@ -49,6 +49,7 @@
 							<span class="must_red">*</span>
 						</div>
 					</div>
+                    </if>
                     <div class="control-group">
 						<label class="control-label">缩略图:</label>
 						<div class="controls">
@@ -68,7 +69,21 @@
 							<span class="must_red">*</span>
 						</div>
 					</div>
-                    
+                    <if condition="$type eq 1">
+                    <div class="control-group">
+						<label class="control-label">内容:</label>
+						<div class="controls">
+							<div id='content_tip'></div>
+              <script type="text/plain" id="content" name="content">{:htmlspecialchars_decode($info['content'])}</script>
+                <script type="text/javascript">
+                //编辑器路径定义
+                var editorURL = GV.DIMAUB;
+                </script>
+                <script type="text/javascript"  src="__ROOT__/statics/js/ueditor/ueditor.config.js"></script>
+                <script type="text/javascript"  src="__ROOT__/statics/js/ueditor/ueditor.all.min.js"></script>
+						</div>
+					</div>
+                    </if>
                     <div class="control-group">
 						<label class="control-label">添加时间:</label>
 						<div class="controls">
@@ -87,5 +102,18 @@
 	</div>
 	<script src="__ROOT__/statics/js/common.js"></script>
     <script type="text/javascript" src="__ROOT__/statics/js/content_addtop.js"></script>
+    <if condition="$type eq 1">
+<script type="text/javascript"> 
+$(function(){
+	editorcontent = new baidu.editor.ui.Editor();
+	editorcontent.render( 'content' );
+	
+})
+</script>
+<style>
+#edui1_iframeholder{ height:200px; width:720px!important}
+#edui1{ width:680px!important;}
+</style>
+</if>
 </body>
 </html>

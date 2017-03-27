@@ -2,8 +2,8 @@
 <body class="J_scroll_fixed">
 	<div class="wrap J_check_wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="{:U('Wchat/index')}">公众号分类</a></li>
-			<li><a href="{:U('Wchat/add_term')}">添加分类</a></li>
+			<li class="active"><a href="{:U('Wchat/index')}">{$listnav[$type]['list']}</a></li>
+			<li><a href="{:U('Wchat/add_term',array('type'=>$type))}">{$listnav[$type]['add']}</a></li>
 		</ul>
 		
 		<form class="form-horizontal J_ajaxForm" action="" method="post">
@@ -23,7 +23,7 @@
 					<td>{$vo.term_name}</td>
                     <th>{$vo.about}</th>
                     <th>{$vo.add_time}</th>
-                    <td><a href="{:U('Wchat/edit_term',array('id'=>$vo['id']))}">修改</a> | <a href="{:U('Wchat/delete_term',array('id'=>$vo['id']))}" class="J_ajax_del">删除</a></td>
+                    <td><a href="{:U('Wchat/edit_term',array('id'=>$vo['id'],'type'=>$type))}">修改</a> | <a href="{:U('Wchat/delete_term',array('id'=>$vo['id'],'type'=>$type))}" class="J_ajax_del">删除</a></td>
 				</tr>
 				</foreach>
 			</table>

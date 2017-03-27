@@ -30,7 +30,7 @@ class WchatTermModel extends CommonModel
 	//获取所有分类列表
 	public function allLists()
 	{
-		$field = array('id','term_name');
+		$field = array('id','term_name','type');
 		$result = $this->where(array('is_delete'=>0))->field($field)->select();
 		return $result;
 	}
