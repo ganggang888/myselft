@@ -33,7 +33,7 @@
 						<th width="100">ID</th>
 						<th>宝宝名称</th>
                         <th>六对一评测时间</th>
-                        <th width="120">操作</th>
+                        <th width="200">操作</th>
 					</tr>
 				</thead>
 				<foreach name="lists" item="vo">
@@ -44,6 +44,7 @@
                     <td>
                     <a href="{:U('SixForOne/seeOne')}&id={$vo._id}">查看详细</a>
                     |
+                    <a href="{:U('SixForOne/add',array('babyId'=>$vo['babyId']))}">继续测评</a> |
                     <a href="{:U('SixForOne/edit')}&id={$vo._id}">修改</a> | <a href="{:U('SixForOne/delete')}&id={$vo._id}" class="J_ajax_del">删除</a>
 					</td>
 				</tr>

@@ -64,7 +64,7 @@
                     <if condition="$type eq 0">
                     <th><a href="{$vo.link}" target="_blank">点击查看</a></th>
                     </if>
-                    <th><img src="{$vo.img}" width="130px"></th>
+                    <th><a href="{$vo.img}" target="_blank"><img src="{$vo.img}" width="150px"></a></th>
                     <th>{$vo.add_time}</th>
                     <td><a href="{:U('Wchat/edit',array('id'=>$vo['id'],'type'=>$type))}">修改</a> | <a href="{:U('Wchat/delete',array('id'=>$vo['id'],array('type'=>$type)))}" class="J_ajax_del">删除</a></td>
 				</tr>

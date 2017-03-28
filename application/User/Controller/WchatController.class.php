@@ -145,7 +145,14 @@ class WchatController extends AdminbaseController
 	{
 		$type = I('get.type');
 		$type == 1 ? '' : $type = 0;
+		$field = ['id','title','term_id','content','author','excerpt','img','link','add_time'];
+		$info = $this->wchat->where("id=%d",array($id))->field($field)->find();
 		if (IS_POST) {
+			//修改图片或者content后删除旧的图文信息
+			if ($info['img'] != I('post.img')) {
+				$this->deletePic(array('old'=>$info['img'],'now'=>I('post.img')),2);
+			}
+			
 			if ($this->wchat->create() !== false) {
 				if ($this->wchat->save() !== false) {
 					$this->success('修改成功',U('Wchat/index',array('type'=>$type)));
@@ -156,8 +163,7 @@ class WchatController extends AdminbaseController
 				$this->error($this->wchat->getError());
 			}
 		}
-		$field = ['id','title','term_id','content','author','excerpt','img','link','add_time'];
-		$info = $this->wchat->where("id=%d",array($id))->field($field)->find();
+		
 		$term = $this->term->allLists();
 		$listnav = [['list'=>'公众号文章','edit'=>'修改文章'],['list'=>'课程列表','edit'=>'修改课程']];
 		$term = array_filter($term,function($vo)use($type){return $vo['type'] == $type;});
@@ -168,7 +174,9 @@ class WchatController extends AdminbaseController
 	//删除微信文章
 	public function delete(int $id)
 	{
-		$this->wchat->where("id=%d",array($id))->save(array('is_delete'=>1)) ? $this->success('删除成功',U('Wchat/index')) : $this->error('删除失败',U('Wchat/index'));
+		$type = I('get.type');
+		$type == 1 ? '' : $type = 0;
+		$this->wchat->where("id=%d",array($id))->save(array('is_delete'=>1)) ? $this->success('删除成功',U('Wchat/index',array('type'=>$type))) : $this->error('删除失败',U('Wchat/index',array('type'=>$type)));
 	}
 
 	//文章排序
@@ -192,51 +200,26 @@ class WchatController extends AdminbaseController
 		
 	}
 
-	//课程分类
-	public function education_term_index()
+	//删除指定的图文信息
+	//$data = array('old'=>'3.jpg','now'=>'4.jpg');  $data = array('old'=>array('4.jpg','5.jpg'),'now'=>array('6.jpg','7.jpg'));  type1
+	private function deletePic(array $data,$type)
 	{
-		$where = ['is_delete'=>0,'type'=>1];
-		$count = $this->term->where($where)->count();
-		$page = $this->page($page,15);
-		$result = $this->term->where($where)->field(array('id','term_name','about','add_time'))->limit($page->firstRow,$page->listRows)->select();
-		$this->assign(compact('page','result'));
-		$this->display();
-	}
-
-	//添加课程分类
-	public function education_term_add()
-	{
-		if (IS_POST) {
-			if ($this->term->create() !== false) {
-				if ($this->term->add() !== false) {
-					$this->success('添加成功',U('Wchat/education_term_index'));
-				} else {
-					$this->error('添加失败',U('Wchat/education_term_index'));
+		switch ($type) {
+			case 1:
+				
+				break;
+			case 2:
+				if ($data['old'] != $data['now']) {
+					$img = str_replace("/info/","./",$data['old']);
+					unlink($img);
 				}
-			} else {
-				$this->error($this->term->getError());
-			}
+				break;
+			default:
+				# code...
+				break;
 		}
-		$this->display();
-	}
-
-	//修改课程分类
-	public function education_term_edit(int $id)
-	{
-		if (IS_POST) {
-			if ($this->term->create() !== false) {
-				if ($this->term->save() !== false) {
-					$this->success('修改成功',U('Wchat/education_term_index'));
-				} else {
-					$this->error('修改失败',U('Wchat/education_term_index'));
-				}
-			} else {
-				$this->error($this->term->getError());
-			}
-		}
-		$info = $this->term->where("id=%d",array($id))->field(array('id','term_name','about','add_time'))->find();
-		$this->assign(compact('info'));
-		$this->display();
+		//都是array获取差集
+		
 	}
 
 }
