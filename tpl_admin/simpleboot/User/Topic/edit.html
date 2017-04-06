@@ -1,0 +1,40 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap jj">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Topic/index')}">话题列表</a></li>
+			<li class="active"><a href="javascript:;">修改话题</a></li>
+		</ul>
+		<div class="common-form">
+			<form method="post" class="form-horizontal J_ajaxForm" action="">
+				<fieldset>
+                
+                <div class="control-group">
+						<label class="control-label">父级ID:</label>
+						<div class="controls">
+                         <select name="parentid">
+                         <option value="0">作为一级菜单</option>
+                         {$select_categorys}
+                            </select>
+							<span class="must_red">*</span>
+						</div>
+					</div>
+                <div class="control-group">
+						<label class="control-label">分类名称:</label>
+						<div class="controls">
+                         <input type="text" class="input" name="name" value="{$rs.name}">
+							<span class="must_red">*</span>
+						</div>
+					</div>
+                    <input type="hidden" name="id" value="{$rs.id}">
+				</fieldset>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">修改</button>
+					<a class="btn" href="javascript:;" onClick="history.go(-1);">返回</a>
+				</div>
+			</form>
+		</div>  
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

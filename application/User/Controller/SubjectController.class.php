@@ -267,7 +267,6 @@ class SubjectController extends AdminbaseController
 				//var_dump(array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; }));echo "<hr/>";
 				$arr[] = current(array_filter($result, function($t) use ($vo) { return $t['id'] == $vo; }));
 			}
-
 		}
 		$this->assign('result',$arr);
 		$this->display();

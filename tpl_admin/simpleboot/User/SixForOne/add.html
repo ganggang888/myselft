@@ -11,6 +11,7 @@
         <li id="2"><a href="javascript:;">早教</a></li>
         <li id="3"><a href="javascript:;">营养（1）</a></li>
         <li id="4"><a href="javascript:;">营养（2）</a></li>
+        <li id="7"><a href="javascript:;">产后护理</a></li>
         <li id="6"><a href="javascript:;">附件上传</a></li>
         </ul>
 		<div class="common-form">
@@ -596,6 +597,231 @@
 					
 				</fieldset>
 </div>
+
+<div class="navContent seven" style="display:none">
+<fieldset>
+<p>产妇姓名：<input type="text" name="maternal[name]"> 生产日期：<input type="text" name="maternal[date]" class="J_date"> 婴儿性别：<input type="text"  name="maternal[sex]"> 产后第<input type="text" name="maternal[day]">天 第<input type="text" name="maternal[number]">次测评</p>
+		<table border="1" width="100%">
+  <tr>
+    <td width="4%" align="center" valign="middle" bgcolor="#669933" style="color:#FFF; font-size:20px; font-weight:bold">目录</td>
+    <td width="100" align="center" bgcolor="#FF9900" style="color:#FFF; font-size:20px; font-weight:bold">名称</td>
+    <td colspan="6" align="center" bgcolor="#669933" style="color:#FFF; font-size:20px; font-weight:bold">结果记录</td>
+    <td width="8%" align="center" bgcolor="#FF9900" style="color:#FFF; font-size:20px; font-weight:bold">目录</td>
+    <td width="4%" align="center" bgcolor="#669900" style="color:#FFF; font-size:20px; font-weight:bold">名称</td>
+    <td colspan="6" align="center" bgcolor="#669933" style="color:#FFF; font-size:20px; font-weight:bold">结果记录</td>
+    </tr>
+  <tr>
+    <td rowspan="8" valign="middle" bgcolor="#FF9900" style="color:#FFF; font-size:20px; font-weight:bold">基础信息</td>
+    <td>生产方式</td>
+    <td width="300"><label><input type="radio" name="maternal[methods]" value="1">顺产</label></td>
+    <td width="13%"><label><input type="radio" name="maternal[methods]" value="2">剖宫产</label></td>
+    <td width="5%"><label><input type="radio" name="maternal[methods]" value="3">产钳</label></td>
+    <td width="4%"><label><input type="radio" name="maternal[methods]" value="4">吸引产</label></td>
+    <td width="5%"><label><input type="radio" name="maternal[methods]" value="5">臀牵引产</label></td>
+    <td width="12%">剖宫产原因：<textarea name="maternal[cesarean_section]"></textarea></td>
+    <td rowspan="12" bgcolor="#669933" style="color:#FFF; font-size:20px; font-weight:bold">产后修复</td>
+    <td rowspan="2">乳头</td>
+    <td width="3%">左侧</td>
+    <td width="5%"><label><input type="radio" name="maternal[papilla_left]" value="1">正常</label></td>
+    <td width="5%"><label><input type="radio" name="maternal[papilla_left]" value="2">凹陷</label></td>
+    <td width="4%"><label><input type="radio" name="maternal[papilla_left]" value="3">短小</label></td>
+    <td width="8%"><label><input type="radio" name="maternal[papilla_left]" value="4">肿大</label></td>
+    <td width="12%"><label><input type="radio" name="maternal[papilla_left]" value="5">皲裂</label></td>
+  </tr>
+  <tr>
+    <td rowspan="2">喂养方式</td>
+    <td>母乳</td>
+    <td>配方奶</td>
+    <td>混合</td>
+    <td colspan="3">每次加奶量(ML)</td>
+    <td>右侧</td>
+    <td><label><input type="radio" name="maternal[papilla_right]" value="1">正常</label></td>
+    <td><label><input type="radio" name="maternal[papilla_right]" value="2">凹陷</label></td>
+    <td><label><input type="radio" name="maternal[papilla_right]" value="3">短小</label></td>
+    <td><label><input type="radio" name="maternal[papilla_right]" value="4">肿大</label></td>
+    <td><label><input type="radio" name="maternal[papilla_right]" value="5">皲裂</label></td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="maternal[feed_ype]" value="1"></td>
+    <td><input type="radio" name="maternal[feed_ype]" value="2"></td>
+    <td><input type="radio" name="maternal[feed_ype]" value="3"></td>
+    <td colspan="3"><textarea name="maternal[withMilk]"></textarea></td>
+    <td rowspan="2">乳房</td>
+    <td>左侧</td>
+    <td><label><input type="radio" name="maternal[breast_left]" value="1">正常</label></td>
+    <td><label><input type="radio" name="maternal[breast_left]" value="2">水肿</label></td>
+    <td><label><input type="radio" name="maternal[breast_left]" value="3">肿胀</label></td>
+    <td colspan="2">乳汁淤积：<input type="text" name="maternal[breast_left_bad]"></td>
+    </tr>
+  <tr>
+    <td>过敏史</td>
+    <td><label><input type="radio" name="maternal[allergy]" value="1">无</label></td>
+    <td colspan="5"><label><input type="radio" name="maternal[allergy]" value="2">有</label>
+      名称：<input type="text" name="maternal[allergy_name]">
+    </td>
+    <td>右侧</td>
+    <td><label><input type="radio" name="maternal[breast_right]" value="1">正常</label>正常</td>
+    <td><label><input type="radio" name="maternal[breast_right]" value="2">水肿</label></td>
+    <td><label><input type="radio" name="maternal[breast_right]" value="3">肿胀</label></td>
+    <td colspan="2">乳汁淤积<input type="text" name="maternal[breast_right_bad]">：</td>
+    </tr>
+  <tr>
+    <td>病史（孕期）</td>
+    <td><label><input type="radio" name="maternal[medical]" value="1">高血压</label></td>
+    <td><label><input type="radio" name="maternal[medical]" value="2">糖尿病</label></td>
+    <td><label><input type="radio" name="maternal[medical]" value="3">便秘</label></td>
+    <td colspan="3">其他：<textarea name="maternal[medical_other]"></textarea></td>
+    <td rowspan="2">乳腺</td>
+    <td>左侧</td>
+    <td><label><input type="radio" name="maternal[breasts_left]" value="1"></label>通畅</td>
+    <td><label><input type="radio" name="maternal[breasts_left]" value="2">不畅</label></td>
+    <td colspan="3"><label><input type="radio" name="maternal[breasts_left]" value="3">欠通畅</label></td>
+    </tr>
+  <tr>
+    <td>孕期用药</td>
+    <td><label><input type="radio" name="maternal[pregnancy_medication]" value="1">无</label></td>
+    <td><label><input type="radio" name="maternal[pregnancy_medication]" value="2">有</label></td>
+    <td colspan="4">名称：<textarea name="maternal[pregnancy_medication_name]"></textarea></td>
+    <td>右侧</td>
+    <td><label><input type="radio" name="maternal[breasts_right]" value="1">通畅</label></td>
+    <td><label><input type="radio" name="maternal[breasts_right]" value="2">不畅</label></td>
+    <td colspan="3"><label><input type="radio" name="maternal[breasts_right]" value="3">欠通畅</label></td>
+    </tr>
+  <tr>
+    <td>孕后用药</td>
+    <td><label><input type="radio" value="1" name="maternal[late_pregnancy_medication]">无</label></td>
+    <td><label><input type="radio" value="2" name="maternal[late_pregnancy_medication]">有</label></td>
+    <td colspan="4">名称：<textarea name="maternal[late_pregnancy_name]"></textarea></td>
+    <td>会阴</td>
+    <td><label><input type="radio" name="maternal[perineum]" value="1">无切</label></td>
+    <td><label><input type="radio" name="maternal[perineum]" value="2">侧切</label></td>
+    <td><label><input type="radio" name="maternal[perineum]" value="3">正中切</label></td>
+    <td><label><input type="radio" name="maternal[perineum]" value="4">红肿</label></td>
+    <td colspan="2">其他：<input type="text" name="maternal[perineum_other]"></td>
+    </tr>
+  <tr>
+    <td>婴儿用药</td>
+    <td><label><input type="radio" name="maternal[infant_medication]" value="1">无</label></td>
+    <td><label><input type="radio" name="maternal[infant_medication]" value="2">有</label></td>
+    <td colspan="4">名称:<textarea name="maternal[infant_medication_name]"></textarea></td>
+    <td>剖宫产</td>
+    <td><label><input type="radio" name="maternal[cesarean_type]" value="1"></label>横切</td>
+    <td><label><input type="radio" name="maternal[cesarean_type]" value="2">竖切</label></td>
+    <td><label><input type="radio" name="maternal[cesarean_type]" value="3">红肿</label></td>
+    <td colspan="3"><label><input type="radio" name="maternal[cesarean_type]" value="4">其他</label></td>
+    </tr>
+  <tr>
+    <td rowspan="14" valign="middle" bgcolor="#669933" style="color:#FFF; font-size:20px; font-weight:bold">产后常规</td>
+    <td>体温</td>
+    <td>正常</td>
+    <td><input type="radio" value="1" name="maternal[temperature]"></td>
+    <td>异常</td>
+    <td colspan="3"><textarea name="maternal[temperature_info]"></textarea></td>
+    <td>宫底高度</td>
+    <td colspan="6">脐下 横指：<input type="text" name="maternal[infra_umbilical]"></td>
+    </tr>
+  <tr>
+    <td>脉搏</td>
+    <td>正常</td>
+    <td><input type="radio" value="1" name="maternal[pulse]"></td>
+    <td>异常</td>
+    <td colspan="3"><textarea name="maternal[pulse_info]"></textarea></td>
+    <td>恶露量</td>
+    <td><label><input type="radio" name="maternal[lochia_number]" value="1">正常</label></td>
+    <td><label><input type="radio" name="maternal[lochia_number]" value="2">偏多</label></td>
+    <td colspan="4">其他：<input type="text" name="maternal[lochia_number_other]"></td>
+    </tr>
+  <tr>
+    <td rowspan="2">呼吸</td>
+    <td>平稳</td>
+    <td>稳急促</td>
+    <td>急促</td>
+    <td colspan="3" rowspan="2">呼吸频率：<textarea name="maternal[breathing_info]"></textarea></td>
+    <td>恶露颜色</td>
+    <td><label><input type="radio" name="maternal[lochia_color]" value="1">红色</label></td>
+    <td><label><input type="radio" name="maternal[lochia_color]" value="2">血红</label></td>
+    <td colspan="4">暗红：<input type="text" name="maternal[lochia_color_other]"></td>
+    </tr>
+  <tr>
+    <td><input type="radio" name="maternal[breathing]" value="1"></td>
+    <td><input type="radio" name="maternal[breathing]" value="2"></td>
+    <td><input type="radio" name="maternal[breathing]" value="3"></td>
+    <td>恶露气味</td>
+    <td><label><input type="radio" name="maternal[lochia_smell]" value="1">正常</label></td>
+    <td><label><input type="radio" name="maternal[lochia_smell]" value="2">腐臭味</label></td>
+    <td colspan="4">其他：<input type="text" name="maternal[lochia_smell_other]"></td>
+    </tr>
+  <tr>
+    <td>血压</td>
+    <td>正常</td>
+    <td><input type="text" name="maternal[blood_good]"> mmHg</td>
+    <td colspan="4">异常：<textarea name="maternal[blood_bad]"></textarea></td>
+    <td colspan="8" rowspan="10">&nbsp;</td>
+    </tr>
+  <tr>
+    <td rowspan="2">精神</td>
+    <td>正常</td>
+    <td>倦怠</td>
+    <td>烦躁</td>
+    <td colspan="3">嗜睡</td>
+    </tr>
+  <tr>
+    <td><input type="radio" value="1" name="maternal[spirit]"></td>
+    <td><input type="radio" value="2" name="maternal[spirit]"></td>
+    <td><input type="radio" value="3" name="maternal[spirit]"></td>
+    <td colspan="3"><input type="radio" value="4" name="maternal[spirit]"></td>
+    </tr>
+  <tr>
+    <td rowspan="2">面色</td>
+    <td>红润</td>
+    <td>稍苍白</td>
+    <td>苍白</td>
+    <td colspan="3">稍黄</td>
+    </tr>
+  <tr>
+    <td><input type="radio" value="1" name="maternal[complexion]"></td>
+    <td><input type="radio" value="2" name="maternal[complexion]"></td>
+    <td><input type="radio" value="3" name="maternal[complexion]"></td>
+    <td colspan="3"><input type="radio" value="4" name="maternal[complexion]"></td>
+    </tr>
+  <tr>
+    <td rowspan="2">排便</td>
+    <td>正常</td>
+    <td>便秘</td>
+    <td>失禁</td>
+    <td colspan="3">其他</td>
+    </tr>
+  <tr>
+    <td><input type="radio" value="1" name="maternal[defecation]"></td>
+    <td><input type="radio" value="2" name="maternal[defecation]"></td>
+    <td><input type="radio" value="3" name="maternal[defecation]"></td>
+    <td colspan="3"><input type="radio" value="4" name="maternal[defecation]"></td>
+    </tr>
+  <tr>
+    <td rowspan="2">排尿</td>
+    <td>正常</td>
+    <td>便秘</td>
+    <td>失禁</td>
+    <td colspan="3">其他</td>
+    </tr>
+  <tr>
+    <td><input type="radio" name="maternal[micturition]" value="1"></td>
+    <td><input type="radio" name="maternal[micturition]" value="2"></td>
+    <td><input type="radio" name="maternal[micturition]" value="3"></td>
+    <td colspan="3"><input type="radio" name="maternal[micturition]" value="4"></td>
+    </tr>
+  <tr>
+    <td>排气</td>
+    <td>正常</td>
+    <td><input type="radio" name="maternal[exhaust]" value="1"></td>
+    <td colspan="4">其他:<textarea name="maternal[exhaust_other]"></textarea></td>
+    </tr>
+</table>
+<p>家长：<input type="text" name="maternal[mother]"> 测评专家：<input type="text" name="maternal[teacher]"> 测评次数<input type="text" name="maternal[numbers]"> 测评时间：<input type="text" name="maternal[addTime]"></p>
+					
+					
+				</fieldset>
+</div>
 <input type="hidden" name="babyId" value="{$babyId}">
 				<div class="form-actions">
 				  <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">添加</button>
@@ -631,6 +857,8 @@ $(function(){
 			$(".navContent.five").show();
 		} else if (id == 6) {
 			$(".navContent.six").show();
+		} else if (id == 7) {
+			$(".navContent.seven").show();
 		}
 	});
 	$("#addMore").click(function(){

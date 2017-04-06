@@ -47,8 +47,8 @@ var GV = {
 <body class="J_scroll_fixed">
 	<div class="wrap jj">
 		<ul class="nav nav-tabs">
-			<li><a href="<?php echo U('Wchat/index',array('type'=>$type));?>">公众号文章</a></li>
-			<li class="active"><a href="<?php echo U('Wchat/add_term',array('type'=>$type));?>">添加文章</a></li>
+			<li><a href="<?php echo U('Wchat/index',array('type'=>$type));?>"><?php echo ($listnav[$type]['list']); ?></a></li>
+			<li class="active"><a href="<?php echo U('Wchat/add_term',array('type'=>$type));?>"><?php echo ($listnav[$type]['add']); ?></a></li>
 		</ul>
 		<div class="common-form">
 			<form method="post" class="form-horizontal J_ajaxForm" action="">
@@ -142,7 +142,7 @@ $(function(){
 })
 </script>
 <style>
-#edui1_iframeholder{ height:200px; width:720px!important}
+#edui1_iframeholder{ height:200px; width:740px!important}
 #edui1{ width:680px!important;}
 </style><?php endif; ?>
 </body>

@@ -69,6 +69,7 @@ class SixForOneController extends AdminbaseController
                 'times'=>date("Y-m-d H:i:s"),
                 'babyId'=>I('post.babyId'),
                 'poor'=>I('post.poor'),
+                'maternal'=>I('post.maternal'),
             );
             if ($_FILES['upload']['name'][0]) {
                 //处理文件上传的信息
@@ -131,6 +132,7 @@ class SixForOneController extends AdminbaseController
                 'times'=>date("Y-m-d H:i:s"),
                 'babyId'=>I('post.babyId'),
                 'poor'=>I('post.poor'),
+                'maternal'=>I('post.maternal'),
             );
             $hadUpload = I('post.hadUpload');
             //有新文件上传
@@ -155,7 +157,8 @@ class SixForOneController extends AdminbaseController
                     $array['upload'] = array_merge($infos,$info['upload']);
                 } elseif (!$infos) {
                     $this->error($upload->getError());
-                }            } else {
+                }           
+                 } else {
 
                 //删除过文件信息并提交
                 if ($hadUpload) {
