@@ -222,4 +222,50 @@ class WchatController extends AdminbaseController
 		
 	}
 
+	//活跃数量。日活图表
+	public function activeDay()
+	{
+		$begin = I('get.begin');
+		$end = I('get.end');
+		$this->assign(compact('begin','end'));
+		$begin ? $begin = $begin." 00:00:00" : '';
+		$end ? $end = $end." 23:59:59" : '';
+		if ($begin OR $end) {
+			$result = $this->wchat->messageInfo($begin,$end,1);
+			//得到数据后分别取出Y轴数据和曲线数据
+			$info = array_column($result, 'num');
+			$info = implode(',',$info);
+			$x = array_column($result,'day');
+
+			array_map(function($v)use(&$i){$i .= "'$v',";},$x);
+			$x = substr($i,0,strlen($i)-1);
+			$this->assign(compact('info','x'));
+			
+		}
+		$this->display();
+		
+	}
+	//活跃数量。月活图表
+	public function activeMonth()
+	{
+		$begin = I('get.begin');
+		$end = I('get.end');
+		$ago = $this->wchat->getYear();
+		$this->assign(compact('begin','end','ago'));
+		$begin ? $begin = $begin."-01-01 00:00:00" : '';
+		$end ? $end = $end."-12-31 23:59:59" : '';
+		if ($begin OR $end) {
+			$result = $this->wchat->messageInfo($begin,$end,2);
+			//得到数据后分别取出X数据和曲线图数据
+			$info = array_column($result,'num');
+			$info = implode(',',$info);
+			$x = array_column($result,'yearmonth');
+			array_map(function($v)use(&$i){$i .= "'$v',";},$x);
+			$x = substr($i,0,strlen($i)-1);
+			$this->assign(compact('info','x'));
+		}
+		
+		$this->display();
+	}
+
 }
